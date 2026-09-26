@@ -2,9 +2,13 @@
 
 紙のテストのための電子採点ソフト「Scoring64」のインストーラーを置いています。ソースコードは、ここにはありません。
 
+**使い方・よくある質問・料金は、こちらのサイトにまとめています：<https://fermion-company.github.io/scoring64-download/>**
+
 ## ダウンロード
 
-[最新版のページ](https://github.com/Fermion-company/scoring64-download/releases/latest)を開き、「Assets」の `Scoring64-Setup-〈版〉.exe` をダウンロードします。版ごとのファイルの SHA-256 は、各版のページに載せています。
+[最新版をダウンロード](https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe)（`Scoring64-Setup.exe`）
+
+版ごとのファイルと SHA-256 は、[最新版のページ](https://github.com/Fermion-company/scoring64-download/releases/latest)の「Assets」にあります。
 
 ## 動作環境
 
@@ -14,7 +18,8 @@
 
 ## インストールのときの表示
 
-「WindowsによってPCが保護されました」と出たときは、「詳細情報」を押し、発行元とファイル名を確かめてから「実行」を押します。
+- Edge に「一般的にダウンロードされていません」と出たとき：「…」→「保持」→「詳細表示」→「保持する」
+- 「Windows によって PC が保護されました」と出たとき：「詳細情報」→「実行」
 
 ## ライセンスキー
 

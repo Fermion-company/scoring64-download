@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>よくある質問｜Scoring64</title>
+<meta name="description" content="要確認・未対応になるとき、画面が開かないとき、動作環境、データ、料金についての質問と答え。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 17.5l7 7L27.5 7" fill="none" stroke="#29AEA7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Scoring64<small>電子採点</small>
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="start.html">はじめかた</a></li>
+        <li><a href="guide.html">使い方</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="faq.html" aria-current="page">よくある質問</a></li>
+        <li><a href="pricing.html">料金と申し込み</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap narrow page-head">
+    <p class="eyebrow">FAQ</p>
+    <h1>よくある質問</h1>
+    <p class="lead">ここにないことは、<a href="contact.html">お問い合わせ</a>ください。</p>
+    <ul class="toc" aria-label="このページの内容">
+      <li><a href="#trouble">困ったとき</a></li>
+      <li><a href="#env">動作環境・データ</a></li>
+      <li><a href="#plan">料金・契約</a></li>
+    </ul>
+  </div>
+
+  <section class="section" id="trouble" aria-labelledby="trouble-title">
+    <div class="prose">
+      <h2 id="trouble-title">困ったとき</h2>
+
+      <div class="qa" id="q-check">
+        <h3>記号問題が「要確認」になる</h3>
+        <div class="a">
+          <p>薄い塗り、丸囲み、2つ塗りは、自動で決めずに先生の確認に回します。自動で0点にはしません。</p>
+          <p>生徒には「枠の中をしっかり塗りつぶす」よう伝えてください。枠が6mm未満だと、見分けにくくなります。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-unmatched">
+        <h3>答案が「未対応」になる</h3>
+        <div class="a">
+          <p>QRコードが読めていません。折れ・汚れ・大きな傾きがないか確かめ、200dpi以上で読み取り直してください。</p>
+          <p>縮小して印刷した用紙も読めますが、スキャンは印刷したときと同じ用紙サイズで行います。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-candidates">
+        <h3>解答欄の候補が出ない・足りない</h3>
+        <div class="a">
+          <p>Word・Excel から直接PDFに保存したファイルを使うと、見つかりやすくなります。足りない欄は<span class="ui">「採点欄を追加」</span>で描き足せます。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-undo">
+        <h3>編集を元に戻したい</h3>
+        <div class="a">
+          <p>用紙作成では <span class="key">Ctrl</span> + <span class="key">Z</span> で戻せます。保存しないまま閉じた編集は、次に開いたときに右上に出る赤いカードの<span class="ui">「編集を戻す」</span>から戻せます。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-open">
+        <h3>画面が開かない</h3>
+        <div class="a">
+          <p>スタートメニューの<span class="ui">「Scoring64」</span>をもう一度開きます。すでに動いているときは、開いている画面に切り替わります。初めての起動は30秒ほどかかることがあります。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-expired">
+        <h3>「返却ZIPを作成」が押せない</h3>
+        <div class="a">
+          <p>キーの期限が過ぎています。期限が過ぎると、成績表と返却データの出力だけが止まります。採点・バックアップ・復元はこれまでどおり使え、データも消えません。</p>
+          <p>新しいキーを<span class="ui">「キーを入力」</span>から貼り付けると、すぐに出力できます。</p>
+          <figure class="shot">
+            <a class="zoom" href="assets/img/s13-licence-expired.webp"><img src="assets/img/s13-licence-expired.webp" width="1440" height="900" loading="lazy" alt="期限が過ぎたときの出力の画面。「体験版の期限が過ぎたため、成績表と返却の出力を止めています。データはそのまま残っています」と出て、横に「キーを入力」のボタンがある"></a>
+            <figcaption>期限が過ぎたときの出力の画面</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="env" aria-labelledby="env-title">
+    <div class="prose">
+      <h2 id="env-title">動作環境・データ</h2>
+
+      <div class="qa" id="q-mac">
+        <h3>Mac で使えますか</h3>
+        <div class="a">
+          <!-- 要確認：Mac 版の配布方針が決まったら書き直す -->
+          <p>いまお配りしているのは、Windows 10／11（64ビット）版です。Mac でお使いになりたいときは、<a href="contact.html">お問い合わせ</a>ください。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-scanner">
+        <h3>どのスキャナーを使えばいいですか</h3>
+        <div class="a">
+          <p>PDFで保存でき、200〜300dpiで読み取れるものなら使えます。塾の複合機で構いません。専用の読み取り機は要りません。</p>
+          <p>何枚もまとめて読み取れる（原稿を自動で送る）機種だと楽です。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-privacy">
+        <h3>答案や成績が、外部に送られることはありますか</h3>
+        <div class="a">
+          <p>ありません。答案の画像・成績・名簿は、塾のパソコンの中だけで処理します。使うときにインターネットへの接続も要りません。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-pcs">
+        <h3>何台のパソコンで使えますか</h3>
+        <div class="a">
+          <p>1つの教室の中なら、台数に上限はありません。同じキーをそれぞれのパソコンで登録します。</p>
+          <p>データはパソコンごとに保存されます。別のパソコンへ移すときは、<a href="start.html#move">バックアップ</a>を使います。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-backup">
+        <h3>バックアップはどうすればいいですか</h3>
+        <div class="a">
+          <p><span class="ui">「出力・バックアップ」</span>のタブの<span class="ui">「全試験をバックアップ」</span>で、すべての試験を1つのファイルに保存します。採点が終わるたびに取り、USBメモリなど別の場所にも置いてください。</p>
+          <p>画面の右上の点が緑ならバックアップ済み、黄色なら未作成か、前回から変更があります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plan" aria-labelledby="plan-title">
+    <div class="prose">
+      <h2 id="plan-title">料金・契約</h2>
+
+      <div class="qa" id="q-students">
+        <h3>生徒数に上限はありますか</h3>
+        <div class="a">
+          <p>1つの教室で、生徒200人までです。200人を超える場合や、複数の教室でお使いの場合は、お見積もりします。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-trial-end">
+        <h3>お試しが終わると、どうなりますか</h3>
+        <div class="a">
+          <p>成績表と返却データの出力だけが止まります。作った試験や採点のデータは消えません。新しいキーを貼り付けると、そのまま続きから使えます。</p>
+        </div>
+      </div>
+
+      <div class="qa" id="q-buy">
+        <h3>延長や購入はどうすればいいですか</h3>
+        <div class="a">
+          <p><a href="pricing.html">料金と申し込み</a>から、カードか請求書（振込）でお申し込みください。お支払いが済むと、新しいキーをメールでお送りします。お試しの延長は、<a href="contact.html">お問い合わせ</a>ください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="company">株式会社Fermion</p>
+      <p><a href="mailto:contact@fermion.company">contact@fermion.company</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="サイトの案内">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="start.html">はじめかた</a></li>
+        <li><a href="guide.html">使い方</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="pricing.html">料金と申し込み</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p class="copy">Scoring64 の著作権は株式会社Fermionにあります。© 2026 株式会社Fermion</p>
+  </div>
+</footer>
+</body>
+</html>

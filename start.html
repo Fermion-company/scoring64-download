@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>はじめかた｜Scoring64</title>
+<meta name="description" content="Scoring64 のダウンロードとインストール、キーの入れ方、見本で試す方法、データの保存先。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 17.5l7 7L27.5 7" fill="none" stroke="#29AEA7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Scoring64<small>電子採点</small>
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="start.html" aria-current="page">はじめかた</a></li>
+        <li><a href="guide.html">使い方</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="pricing.html">料金と申し込み</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap narrow page-head">
+    <p class="eyebrow">Getting started</p>
+    <h1>はじめかた</h1>
+    <p class="lead">ダウンロードから、見本で試すまでの手順です。</p>
+    <ul class="toc" aria-label="このページの内容">
+      <li><a href="#install">インストール</a></li>
+      <li><a href="#first">初めて開く</a></li>
+      <li><a href="#key">キーを入れる</a></li>
+      <li><a href="#sample">見本で試す</a></li>
+      <li><a href="#data">データの保存先</a></li>
+      <li><a href="#uninstall">アンインストール</a></li>
+      <li><a href="#move">別のパソコンへ移す</a></li>
+    </ul>
+  </div>
+
+  <section class="section" id="install" aria-labelledby="install-title">
+    <div class="prose">
+      <p class="eyebrow">01 · Install</p>
+      <h2 id="install-title">ダウンロードとインストール</h2>
+      <ol class="steps">
+        <li>下のボタンから、インストーラー（Scoring64-Setup.exe）をダウンロードします。<br>
+          <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">ダウンロード</a>
+          <span class="muted small nowrap">　Windows 10／11（64ビット）</span></li>
+        <li>ダウンロードしたファイルを開き、画面に従って進めます。管理者の権限は要りません。</li>
+      </ol>
+
+      <h3>Windows の警告が出たとき</h3>
+      <p>新しいアプリのため、警告が出ることがあります。次の順に押して進めてください。</p>
+
+      <p><b>Edge に「一般的にダウンロードされていません」と出たら</b></p>
+      <ol class="seq" aria-label="押す順番">
+        <li><span class="key">…</span></li>
+        <li><span class="key">保持</span></li>
+        <li><span class="key">詳細表示</span></li>
+        <li><span class="key">保持する</span></li>
+      </ol>
+
+      <p><b>開くときに「Windows によって PC が保護されました」と出たら</b></p>
+      <ol class="seq" aria-label="押す順番">
+        <li><span class="key">詳細情報</span></li>
+        <li><span class="key">実行</span></li>
+      </ol>
+
+      <div class="two-col">
+        <!-- TODO: screenshot — Edge の「一般的にダウンロードされていません」と、「…」→「保持」の画面 -->
+        <figure>
+          <div class="placeholder" role="img" aria-label="画面写真は準備中です：Edge の警告">
+            <div><b>Screenshot · 準備中</b><span>Edge の「一般的にダウンロードされていません」</span></div>
+          </div>
+          <figcaption><span class="fig-no">図 1</span>Edge の警告</figcaption>
+        </figure>
+        <!-- TODO: screenshot — 「Windows によって PC が保護されました」と「詳細情報」→「実行」の画面 -->
+        <figure>
+          <div class="placeholder" role="img" aria-label="画面写真は準備中です：Windows の警告">
+            <div><b>Screenshot · 準備中</b><span>「Windows によって PC が保護されました」</span></div>
+          </div>
+          <figcaption><span class="fig-no">図 2</span>Windows の警告</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="first" aria-labelledby="first-title">
+    <div class="prose">
+      <p class="eyebrow">02 · First launch</p>
+      <h2 id="first-title">初めて開く</h2>
+      <ol class="steps">
+        <li>インストールが終わると、Scoring64 が開きます。次からは、スタートメニューかデスクトップの<span class="ui">「Scoring64」</span>から開きます。</li>
+        <li>ブラウザ（Edge か Chrome）が開き、Scoring64 の画面が出ます。<b>初めての起動は30秒ほどかかる</b>ことがあります。</li>
+      </ol>
+      <div class="note">
+        <span class="note-label">NOTE</span>
+        <p>画面はブラウザに出ますが、インターネットにはつながず、このパソコンの中だけで動きます。</p>
+      </div>
+      <figure class="shot wide">
+        <a class="zoom" href="assets/img/s01-welcome.webp"><img src="assets/img/s01-welcome.webp" width="1440" height="900" loading="lazy" alt="Scoring64 の最初の画面。上に「新しい試験」「教材を取り込む」「バックアップ」のボタンが並ぶ"></a>
+        <figcaption><span class="fig-no">図 3</span>最初の画面</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="key" aria-labelledby="key-title">
+    <div class="prose">
+      <p class="eyebrow">03 · Licence key</p>
+      <h2 id="key-title">キーを入れる</h2>
+      <p>お試しやご契約のときに、メールでキー（<code>S64-1.</code> で始まる長い文字列）をお送りします。</p>
+      <ol class="steps">
+        <li>画面の右上の<span class="ui">「キー未登録」</span>を押します。</li>
+        <li>メールのキーを、そのまま全部コピーして貼り付けます。途中で改行されていてもかまいません。</li>
+        <li><span class="ui">「登録」</span>を押します。右上に<span class="ui">「体験版 残り30日」</span>のように出ます。</li>
+      </ol>
+      <figure class="shot wide">
+        <a class="zoom" href="assets/img/s12-licence.webp"><img src="assets/img/s12-licence.webp" width="1440" height="900" loading="lazy" alt="ライセンスの画面。塾名・種類・期限・生徒数・IDが並び、下に新しいキーを貼り付ける欄と「登録」ボタンがある"></a>
+        <figcaption><span class="fig-no">図 4</span>キーの画面。塾名・種類・期限を確かめられます</figcaption>
+      </figure>
+      <div class="note">
+        <span class="note-label">NOTE</span>
+        <p>キーがなくても、見本で試す・取り込み・採点はできます。キーが要るのは、成績表と返却データの出力です。キーをお持ちでないときは、<a href="contact.html">お問い合わせ</a>ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sample" aria-labelledby="sample-title">
+    <div class="prose">
+      <p class="eyebrow">04 · Try the sample</p>
+      <h2 id="sample-title">見本で試す</h2>
+      <p>アプリに入っている見本の試験で、ひととおり試せます。紙・スキャナー・キーは要りません。5分ほどです。</p>
+      <!-- TODO: 「見本で試す」はアプリに追加中。入った版を出したら、ボタンの場所と名前をアプリに合わせて確かめ、下の注記を消す -->
+      <ol class="steps">
+        <li><span class="ui">「見本で試す」</span>を押します。</li>
+        <li>見本の答案を取り込みます。</li>
+        <li>記号問題が自動で採点されます。<span class="ui">「要確認」</span>に回った答案を確かめます。</li>
+        <li>記述問題を、1人ずつ採点します。</li>
+        <li>返却データを作ります。</li>
+      </ol>
+      <p class="muted small">「見本で試す」は、次の版で入ります。</p>
+      <p>いつものプリントで使うときは、<a href="guide.html">使い方</a>を見てください。</p>
+    </div>
+  </section>
+
+  <section class="section" id="data" aria-labelledby="data-title">
+    <div class="prose">
+      <p class="eyebrow">05 · Your data</p>
+      <h2 id="data-title">データの保存先</h2>
+      <p>試験・答案の画像・成績は、このパソコンの次のフォルダに保存します。外部のサーバーには送りません。</p>
+      <p><code>%LOCALAPPDATA%\Scoring64\data</code></p>
+      <p>スタートメニューの<span class="ui">「Scoring64 のデータフォルダ」</span>から開けます。</p>
+    </div>
+  </section>
+
+  <section class="section" id="uninstall" aria-labelledby="uninstall-title">
+    <div class="prose">
+      <p class="eyebrow">06 · Uninstall</p>
+      <h2 id="uninstall-title">アンインストール</h2>
+      <p>スタートメニューの<span class="ui">「Scoring64 をアンインストール」</span>を開きます。Windows の「設定」→「アプリ」からも消せます。</p>
+      <p>アンインストールしても、データのフォルダは消えません。入れ直すと、そのまま続きから使えます。</p>
+    </div>
+  </section>
+
+  <section class="section" id="move" aria-labelledby="move-title">
+    <div class="prose">
+      <p class="eyebrow">07 · Move to another PC</p>
+      <h2 id="move-title">別のパソコンへ移す</h2>
+      <ol class="steps">
+        <li>今のパソコンで、<span class="ui">「出力・バックアップ」</span>のタブの<span class="ui">「全試験をバックアップ」</span>を押します。すべての試験が1つのファイル（<code>.scoring64</code>）になります。</li>
+        <li>そのファイルを、USBメモリなどで新しいパソコンに移します。</li>
+        <li>新しいパソコンに Scoring64 を入れ、同じキーを登録します。</li>
+        <li><span class="ui">「バックアップから復元」</span>でファイルを選びます。</li>
+      </ol>
+      <div class="note">
+        <span class="note-label">NOTE</span>
+        <p>パソコンを買い替えるときも同じです。1つの教室の中なら、何台のパソコンで使ってもかまいません。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="company">株式会社Fermion</p>
+      <p><a href="mailto:contact@fermion.company">contact@fermion.company</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="サイトの案内">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="start.html">はじめかた</a></li>
+        <li><a href="guide.html">使い方</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="pricing.html">料金と申し込み</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p class="copy">Scoring64 の著作権は株式会社Fermionにあります。© 2026 株式会社Fermion</p>
+  </div>
+</footer>
+</body>
+</html>
