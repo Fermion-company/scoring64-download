@@ -66,7 +66,7 @@
       <p>いつもの Word・Excel のプリントを、そのまま使えます。</p>
       <ol class="steps">
         <li>Word・Excel で<span class="ui">「ファイル」</span>→<span class="ui">「名前を付けて保存」</span>を選び、PDFで保存します。紙しかないときは、300dpiでスキャンしてPDFにします。</li>
-        <li><span class="ui">「教材を取り込む」</span>から、そのPDFを選びます。</li>
+        <li>画面の上の<span class="ui">「PDF・教材を開く」</span>から、そのPDFを選びます。</li>
         <li>解答欄の<b>候補</b>が出ます。紫は記述、橙は記号の欄です。</li>
         <li>候補を1つずつ確かめます。違っていたら、クリックして種類・番号・範囲を直します。</li>
         <li><span class="ui">「採用した候補を採点欄に追加」</span>を押し、<span class="ui">「切り出しを一覧で確認」</span>で範囲を確かめます。</li>
@@ -103,7 +103,7 @@
         <li>右の欄の<span class="ui">「正解・配点を一覧で入力」</span>を押します。</li>
         <li>記号問題の正解を、順に打ちます（例：<code>3142</code>）。Excel の正解表を貼り付けることもできます。</li>
         <li>配点と採点方式を選びます。</li>
-        <li>右上の<span class="ui">「確定用PDFを生成」</span>→<span class="ui">「印刷に使う用紙版を確定」</span>を押します。</li>
+        <li>右上の<span class="ui">「用紙を確定して発行へ」</span>を押します。確かめる点が一覧で出るので、<span class="ui">「保存して確定する」</span>を押します。保存・印刷用PDFの作成・用紙版の確定が続けて進みます。</li>
       </ol>
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の一覧の画面。問題ごとに正解、配点、採点方式を入れる行が並ぶ"></a>
@@ -132,7 +132,7 @@
       <div class="side">
         <div>
           <ol class="steps">
-            <li><span class="ui">「答案取込」</span>のタブで、人数を入れます。名簿があるときは<span class="ui">「名簿CSVを選ぶ」</span>で読み込みます（見出しは <code>番号,氏名</code>）。</li>
+            <li><span class="ui">「発行・取込」</span>のタブで、人数を入れます。名簿があるときは<span class="ui">「名簿CSVを選ぶ」</span>で読み込みます（1行目が見出し：<code>番号,氏名</code> か <code>組,番,氏名</code>）。</li>
             <li>名前を印刷しておくときは、<span class="ui">「氏名・生徒番号を事前印字」</span>にチェックを入れます。</li>
             <li><span class="ui">「印刷用PDFを作成」</span>を押し、できたPDFを<b>等倍</b>で印刷します。</li>
           </ol>
@@ -146,7 +146,7 @@
           </div>
         </div>
         <figure class="shot tall">
-          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="908" loading="lazy" alt="用紙の発行の欄。人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンが並ぶ"></a>
+          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1073" loading="lazy" alt="用紙の発行の欄。人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンが並ぶ"></a>
           <figcaption><span class="fig-no">図 4</span>用紙の発行</figcaption>
         </figure>
       </div>
@@ -159,8 +159,8 @@
       <h2 id="step4-title">答案をスキャンして取り込む</h2>
       <ol class="steps">
         <li>答案を複合機で読み取り、PDFにします。クラス分をまとめて1つのPDFにして構いません。</li>
-        <li><span class="ui">「PDFを選んで取り込む」</span>から読み込みます。向きと表裏の順番は、QRコードで自動で整えます。</li>
-        <li>上の<span class="ui">「未対応」</span><span class="ui">「答案なし」</span><span class="ui">「氏名を確認」</span>で、残っているものを確かめます。</li>
+        <li>左の<span class="ui">「スキャンPDF」</span>に、PDFを選ぶかドラッグして入れます。複数のファイル・両面にも対応します。向きと表裏の順番は、QRコードで自動で整えます。</li>
+        <li><span class="ui">「取り込んだ答案」</span>の上の<span class="ui">「直すページ」</span>（誰の答案か分からない・位置合わせに失敗・重複）、<span class="ui">「答案がまだない用紙を見る」</span>、<span class="ui">「氏名を確認」</span>で、残っているものを確かめます。</li>
       </ol>
       <table class="table stack" aria-label="スキャナーの設定">
         <tr><th scope="row">解像度</th><td>200〜300dpi</td></tr>
@@ -169,8 +169,8 @@
         <tr><th scope="row">用紙サイズ</th><td>印刷したときと同じ</td></tr>
       </table>
       <figure class="shot wide">
-        <a class="zoom" href="assets/img/s09-scan.webp"><img src="assets/img/s09-scan.webp" width="1440" height="900" loading="lazy" alt="答案取込のタブ。左に用紙の発行とスキャンPDFの取り込み、右に取り込んだ5人分の答案が並ぶ"></a>
-        <figcaption><span class="fig-no">図 5</span>答案取込のタブ。左で発行し、右で取り込んだ答案を確かめます</figcaption>
+        <a class="zoom" href="assets/img/s09-scan.webp"><img src="assets/img/s09-scan.webp" width="1440" height="900" loading="lazy" alt="発行・取込のタブ。左に用紙の発行とスキャンPDFの取り込み、右に取り込んだ5人分の答案が並ぶ"></a>
+        <figcaption><span class="fig-no">図 5</span>発行・取込のタブ。左で発行し、右で取り込んだ答案を確かめます</figcaption>
       </figure>
     </div>
   </section>
@@ -184,8 +184,8 @@
       <h3>記述問題は1問ずつ</h3>
       <ol class="steps">
         <li><span class="ui">「採点」</span>のタブで問題を選びます。</li>
-        <li>答案が1人ずつ大きく出ます。<span class="ui">「満点」</span><span class="ui">「0点」</span><span class="ui">「部分点」</span>で採点すると、次の生徒に進みます。</li>
-        <li>必要なら<span class="ui">「コメントを追加」</span>で答案に書き込みます。</li>
+        <li>答案が1人ずつ大きく出ます。<span class="ui">「○」</span>（満点）・<span class="ui">「△」</span>（部分点）・<span class="ui">「✓」</span>（0点）のボタンで採点すると、次の生徒に進みます。キーボードなら Space で満点、0 で0点、数字で部分点です。</li>
+        <li>必要なら<span class="ui">「コメントを置く」</span>（C キー）で答案に書き込みます。</li>
       </ol>
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答、中央に生徒の答案、右に採点の一覧が出ている"></a>
