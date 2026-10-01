@@ -329,7 +329,7 @@ details.more > div { padding: 0 18px 10px; }
 
 /* ---------------- home ---------------- */
 
-.hero { padding: clamp(40px, 7vw, 96px) 0 0; }
+.hero { padding: clamp(40px, 7vw, 96px) 0 clamp(56px, 8vw, 112px); }
 .hero-top { display: flex; justify-content: space-between; gap: 24px; margin: 0; }
 .hero-grid {
   margin-top: clamp(36px, 6vw, 80px); display: grid;
@@ -337,10 +337,6 @@ details.more > div { padding: 0 18px 10px; }
 }
 .hero h1 { font-size: clamp(38px, 6.6vw, 88px); line-height: 1.18; letter-spacing: -.03em; margin: 0; }
 .hero .lead { margin: 0; }
-.hero-art { margin-top: clamp(40px, 6vw, 80px); border-radius: 24px; overflow: hidden; background: var(--paper); }
-.hero-art img {
-  width: 100%; height: clamp(180px, 28vw, 360px); object-fit: cover; object-position: 50% 62%;
-}
 .hero + .section { border-top: 0; }
 .section.tight { border-top: 0; padding-top: 0; }
 @media (max-width: 900px) {
