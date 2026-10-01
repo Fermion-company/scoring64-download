@@ -336,7 +336,6 @@ details.more > div { padding: 0 18px 10px; }
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 80px); align-items: end;
 }
 .hero h1 { font-size: clamp(38px, 6.6vw, 88px); line-height: 1.18; letter-spacing: -.03em; margin: 0; }
-.hero h1 .dot { color: var(--teal); }
 .hero .lead { margin: 0; }
 .hero-art { margin-top: clamp(40px, 6vw, 80px); border-radius: 24px; overflow: hidden; background: var(--paper); }
 .hero-art img {
