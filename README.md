@@ -30,3 +30,7 @@
 株式会社Fermion　contact@fermion.company
 
 このソフトウェアの著作権は株式会社Fermionにあります。使用には、当社との使用許諾契約への同意が必要です。
+
+## アクセス解析
+
+各案内ページは `assets/analytics.js` から GA4 を読み込みます。測定 ID は同ファイルの `measurementId` に設定します。GA4 の拡張計測を有効にし、閲覧を `page_view`、インストーラーへのクリックを `file_download` で確認します。クリック数はダウンロード完了数ではありません。実際のリリース資産の取得数は GitHub Releases で確認します。広告向け設定は無効です。解析についての案内は `contact.html#analytics` にあります。
