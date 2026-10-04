@@ -53,7 +53,7 @@
     <div class="prose">
       <h2 id="need-title">用意するもの</h2>
       <table class="table stack">
-        <tr><th scope="row">パソコン</th><td>Windows 10／11（64ビット）、または Apple Silicon（M1 以降）の Mac。使うときにインターネットは要りません</td></tr>
+        <tr><th scope="row">パソコン</th><td>Windows 10／11（64ビット）、または Apple Silicon（M1 以降）の Mac。採点や読み取りにインターネットは要りません（新しい版の確認と TeX の準備のときだけ使います）</td></tr>
         <tr><th scope="row">プリンター</th><td>用紙を等倍で印刷できるもの</td></tr>
         <tr><th scope="row">スキャナー</th><td>塾の複合機で構いません。PDFで保存でき、200〜300dpiで読み取れるもの</td></tr>
         <tr><th scope="row">生徒の筆記用具</th><td>記号問題は、HBかBの鉛筆で塗りつぶします</td></tr>
@@ -93,7 +93,20 @@
           <li>下線の空欄は15mm以上にします。</li>
         </ul>
       </div>
-      <p class="muted small">アプリの中で用紙を作ることもできます（<span class="ui">「新しい試験」</span>から。TeX（無料）を入れたパソコンで使えます）。</p>
+      <p class="muted small">アプリの中で用紙を作ることもできます（<span class="ui">「新しい試験」</span>から）。用紙の組版に TeX（無料）を使います。パソコンに TeX がなければ、<span class="ui">「新しい試験」</span>や<span class="ui">「？」</span>の<span class="ui">「TeX の状態」</span>から、軽量版かフル版を選んで準備できます（初回はインターネットに接続します）。Word・Excel のPDFを取り込むだけなら、TeX は要りません。</p>
+      <details class="more">
+        <summary>アプリで用紙を作るときの操作</summary>
+        <div>
+          <ol class="steps">
+            <li><span class="ui">「新しい試験」</span>で試験名を入れ、最初の用紙を選びます。<span class="ui">「番号・氏名欄付きの文書」</span>が最初に選ばれています。<span class="ui">「白紙の文書」</span>、<span class="ui">「共通テスト用マークシート」</span>（22科目）、<span class="ui">「登録したテンプレートから作成」</span>（東大の編集版8種を含む）、<span class="ui">「これまでの試験を複製」</span>からも始められます。</li>
+            <li>紙面をクリックして追加する位置を決め、<span class="ui">「＋ 部品を追加」</span>で解答欄・文字・数式・図などを置きます。欄は、<span class="ui">「追加先」</span>に出ている大問に入ります。自動のままでも、大問を選んでもかまいません。</li>
+            <li>紙面の何もないところをドラッグすると、触れた欄をまとめて選べます（<span class="key">Ctrl</span> + <span class="key">A</span> ですべて）。選んだ欄は、<span class="key">Ctrl</span> + <span class="key">C</span>・<span class="key">X</span>・<span class="key">V</span> でコピー・切り取り・貼り付けできます。</li>
+            <li>文字の書体は、メニューから選べます。このパソコンにある書体は<span class="ui">「その他の書体」</span>に並びます。</li>
+            <li>よく使う用紙は、<span class="ui">「テンプレート登録」</span>で保存しておけます。</li>
+          </ol>
+          <p class="muted small">紙面は画面でそのまま描き、TeX は裏で仕上がりを確かめます。東大の編集版は配点が0点から始まるので、確定する前に入れてください。</p>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -103,12 +116,12 @@
       <h2 id="step2-title">正解と配点</h2>
       <ol class="steps">
         <li>右の欄の<span class="ui">「正解・配点を一覧で入力」</span>を押します。</li>
-        <li>記号問題の正解を、順に打ちます（例：<code>3142</code>）。Excel の正解表を貼り付けることもできます。記述問題の「正解」に模範解答を書いておくと、採点のときに画面の上に出ます。</li>
+        <li>記号問題は、<span class="ui">「連続入力の開始欄」</span>を選び、正解を順に打って<span class="ui">「正解を反映」</span>を押します（例：<code>3142</code>）。Excel の正解表を貼り付けることもできます。記述問題の「正解」に模範解答を書いておくと、採点のときに画面の上に出ます。</li>
         <li>配点と採点方式を選びます。</li>
         <li>右上の<span class="ui">「用紙を確定して発行へ」</span>を押します。確かめる点が一覧で出るので、<span class="ui">「保存して確定する」</span>を押します。保存・印刷用PDFの作成・用紙版の確定が続けて進みます。</li>
       </ol>
       <figure class="shot wide">
-        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の一覧の画面。問題ごとに正解、配点、採点方式を入れる行が並ぶ"></a>
+        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に連続入力の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></a>
         <figcaption><span class="fig-no">図 3</span>正解・配点の一覧</figcaption>
       </figure>
       <details class="more">
@@ -148,7 +161,7 @@
           </div>
         </div>
         <figure class="shot tall">
-          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1073" loading="lazy" alt="用紙の発行の欄。人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンが並ぶ"></a>
+          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1090" loading="lazy" alt="用紙の発行の欄。新しく発行する人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンが並び、下にスキャンPDFを入れる欄がある"></a>
           <figcaption><span class="fig-no">図 4</span>用紙の発行</figcaption>
         </figure>
       </div>
@@ -162,7 +175,7 @@
       <ol class="steps">
         <li>答案を複合機で読み取り、PDFにします。クラス分をまとめて1つのPDFにして構いません。</li>
         <li>左の<span class="ui">「スキャンPDF」</span>に、PDFを選ぶかドラッグして入れます。複数のファイル・両面にも対応します。向きと表裏の順番は、QRコードで自動で整えます。</li>
-        <li><span class="ui">「取り込んだ答案」</span>の上の<span class="ui">「直すページ」</span>（誰の答案か分からない・位置合わせに失敗・重複）、<span class="ui">「答案がまだない用紙を見る」</span>、<span class="ui">「氏名を確認」</span>で、残っているものを確かめます。</li>
+        <li>残っているものがあると、<span class="ui">「取り込んだ答案」</span>の上に<span class="ui">「直すページ」</span>（誰の答案か分からない・位置合わせに失敗・重複）や<span class="ui">「答案がまだない用紙を見る」</span>、<span class="ui">「氏名を確認」</span>が出ます。押して確かめます。</li>
       </ol>
       <table class="table stack" aria-label="スキャナーの設定">
         <tr><th scope="row">解像度</th><td>200〜300dpi</td></tr>
@@ -186,11 +199,12 @@
       <h3>記述問題は1問ずつ</h3>
       <ol class="steps">
         <li><span class="ui">「採点」</span>のタブで問題を選びます。</li>
-        <li>答案が1人ずつ大きく出ます。<span class="ui">「○」</span>（満点）・<span class="ui">「△」</span>（部分点）・<span class="ui">「✓」</span>（0点）のボタンで採点すると、次の生徒に進みます。キーボードなら Space で満点、0 で0点、数字で部分点です。</li>
+        <li>答案が1人ずつ大きく出ます。画面の下の<span class="ui">「満点」</span>（○）・<span class="ui">「0点」</span>（✓）・<span class="ui">「部分点」</span>（△）のボタンで採点すると、次の生徒に進みます。キーボードなら Space（か Enter）で満点、X か 0 で0点、P で部分点です。</li>
+        <li><span class="ui">「部分点」</span>を押すとテンキーが開きます。0点から配点までの整数を入れ、<span class="ui">「確定」</span>か Enter で決めます（Esc で取り消し）。9点以下の問題は、数字キーを押すだけでその点になります。</li>
         <li>必要なら<span class="ui">「コメントを置く」</span>（C キー）で答案に書き込みます。</li>
       </ol>
       <figure class="shot wide">
-        <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答、中央に生徒の答案、右に採点の一覧が出ている"></a>
+        <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答の欄、中央に生徒の答案、下に満点・0点・部分点の3つのボタン、右に採点内容の一覧が出ている"></a>
         <figcaption><span class="fig-no">図 6</span>1人ずつ採点。上に模範解答（登録したとき）、右に採点の一覧</figcaption>
       </figure>
       <div class="note">
@@ -223,9 +237,9 @@
 
 <section class="section" id="free-marks" aria-labelledby="free-marks-title"><div class="prose">
   <h2 id="free-marks-title">無料のマークシート読み取り・採点</h2>
-  <p>アプリ上部の「無料のマークシート読み取り」を押します。期限なし・キー不要で、答案はこのPCで処理します。</p>
-  <ol class="steps"><li>未記入の用紙（1ページのPDF）と答案PDF（100ページまで）を選びます。各PDFは20MB以内。同じページサイズ・向きにそろえてください。</li><li>用紙上で最初のマーク欄の左上をクリックし、問題数・選択肢数・欄の間隔と大きさを入力します。赤い枠をマーク欄に合わせます。等間隔のマーク欄に対応します。</li><li>「読み取る」を押します。選択肢は左から1、2、3…です。「複数マーク」「要確認」は答案と見比べてください。</li><li>正答と配点を問題順に入力して「読み取り・採点」を押すと、正誤・得点・ページごとの合計点を計算します。「結果CSV」で保存できます。複数マーク・要確認があるページは合計点を確定せず、小計を表示します。記述採点・成績表・返却PDFの作成は有料版の機能です。</li></ol>
-  <figure class="shot"><a class="zoom" href="assets/img/free-marks.png"><img src="assets/img/free-marks.png" width="1470" height="802" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙・答案PDFと、正答・配点を入力する欄"></a><figcaption>無料のマークシート読み取り</figcaption></figure>
+  <p>最初の画面の<span class="ui">「マークシート読み取り」</span>を押します。期限なし・キー不要で、答案はこのPCで処理します。</p>
+  <ol class="steps"><li>未記入の用紙（1ページのPDF）と答案PDF（100ページまで）を選びます。各PDFは20MB以内。同じページサイズ・向きにそろえてください。</li><li>用紙上で最初のマーク欄の左上をクリックし、問題数・選択肢数・横間隔・縦間隔・マーク欄の大きさを入力します。赤い枠をマーク欄に合わせます。等間隔のマーク欄に対応します。</li><li>「読み取る」を押します。選択肢は左から1、2、3…です。「複数マーク」「要確認」は答案と見比べてください。</li><li>正答と配点を問題順に入力して「読み取り・採点」を押すと、正誤・得点・ページごとの合計点を計算します。「結果CSV」で保存できます。要確認があるページも、読み取り候補で採点して合計点と要確認の問数を表示します（複数マークや候補のない問題は0点です）。要確認の答案は用紙と見比べ、合計点をそのまま確定した点にしないでください。記述採点・成績表・返却PDFの作成は有料版の機能です。</li></ol>
+  <figure class="shot"><a class="zoom" href="assets/img/free-marks.png"><img src="assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙・答案PDFと、正答・配点を入力する欄"></a><figcaption>無料のマークシート読み取り</figcaption></figure>
 </div></section>
 </main>
 
