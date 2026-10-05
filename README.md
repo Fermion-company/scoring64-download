@@ -6,24 +6,30 @@
 
 ## ダウンロード
 
-[最新版をダウンロード](https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe)（`Scoring64-Setup.exe`）
+- Windows：[最新版をダウンロード](https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe)（`Scoring64-Setup.exe`）
+- Mac（Apple Silicon）：[最新版のページ](https://github.com/Fermion-company/scoring64-download/releases/latest)の「Assets」から `Scoring64-版-mac-arm64.zip` をダウンロードし、開いてできた `Scoring64.app` を「アプリケーション」フォルダに移します。
+
+一度入れると、新しい版が出たときはアプリの中でお知らせし、再起動するだけで更新できます。
 
 版ごとのファイルと SHA-256 は、[最新版のページ](https://github.com/Fermion-company/scoring64-download/releases/latest)の「Assets」にあります。
 
 ## 動作環境
 
 - Windows 10／11（64ビット）
-- Microsoft Edge または Google Chrome（起動すると自動で開きます）
+- Apple Silicon の Mac（M1 以降）
+- 専用のウィンドウで開きます。ブラウザは要りません。
 - 管理者の権限は要りません。使うときにインターネットへの接続は要りません。答案と成績は、このパソコンの中だけで処理します。
 
 ## インストールのときの表示
 
 - Edge に「一般的にダウンロードされていません」と出たとき：「…」→「保持」→「詳細表示」→「保持する」
 - 「Windows によって PC が保護されました」と出たとき：「詳細情報」→「実行」
+- Mac で「開発元を確認できないため開けません」と出たとき：「システム設定」→「プライバシーとセキュリティ」の下にある「このまま開く」を押します。
+- Mac で更新したあとに「キーチェーンへのアクセス」の確認が出たとき：ログインのパスワードを入れて「常に許可」を押します。ライセンスはそのまま使えます。
 
 ## ライセンスキー
 
-成績表と返却データの出力には、塾ごとのライセンスキーが要ります。無料のお試しやご契約のときに、メールでお送りします。キーがなくても、取り込みや採点はできます。
+初めて使うときから10日間は、すべての機能を試せます。マークシートの読み取り・正誤判定・得点計算・結果CSVは、その後もキーなしで使えます。用紙作成・記述採点・成績表・返却PDFなどには、ご契約のときにお送りするライセンスキーが要ります。
 
 ## お問い合わせ
 

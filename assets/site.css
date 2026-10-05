@@ -323,8 +323,14 @@ details.more > div { padding: 0 18px 10px; }
 .download-note { margin: 14px 0 0; font-size: 14.5px; color: var(--ink-2); }
 .download-note .os { font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--muted); margin-right: 1.2em; }
 .nowrap { white-space: nowrap; }
+.download-options { display: inline-grid; gap: 18px; max-width: 100%; }
+.download-option { min-width: 0; }
+.download-option .btn-download { display: flex; }
+.download-option .download-note { margin-top: 10px; }
+.download-options + .download-note { margin-top: 18px; }
 @media (max-width: 520px) {
   .btn-download { display: flex; justify-content: center; }
+  .download-options { display: grid; }
 }
 
 /* ---------------- home ---------------- */

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>はじめかた｜Scoring64</title>
 <link rel="canonical" href="https://fermion-company.github.io/scoring64-download/start.html">
-<meta name="description" content="Scoring64 のダウンロードとインストール、キーの入れ方、見本で試す方法、データの保存先。">
+<meta name="description" content="Scoring64 のダウンロードとインストール（Windows・Mac）、キーの入れ方、見本で試す方法、データの保存先。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,8 @@
     <h1>はじめかた</h1>
     <p class="lead">ダウンロードから、見本で試すまでの手順です。</p>
     <ul class="toc" aria-label="このページの内容">
-      <li><a href="#install">インストール</a></li>
+      <li><a href="#install">インストール（Windows）</a></li>
+      <li><a href="#install-mac">インストール（Mac）</a></li>
       <li><a href="#first">初めて開く</a></li>
       <li><a href="#key">10日間の無料期間とキー</a></li>
       <li><a href="#sample">見本で試す</a></li>
@@ -54,6 +55,8 @@
     <div class="prose">
       <p class="eyebrow">01 · Install</p>
       <h2 id="install-title">ダウンロードとインストール</h2>
+      <p>Windows と Mac（Apple Silicon）で使えます。Mac のときは<a href="#install-mac">Mac に入れる</a>へ進んでください。</p>
+      <h3>Windows に入れる</h3>
       <ol class="steps">
         <li>下のボタンから、インストーラー（Scoring64-Setup.exe）をダウンロードします。<br>
           <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">ダウンロード</a>
@@ -94,6 +97,53 @@
           <figcaption><span class="fig-no">図 2</span>Windows の警告</figcaption>
         </figure>
       </div>
+
+      <h3 id="install-mac">Mac に入れる</h3>
+      <ol class="steps">
+        <li>下のボタンから、Mac 版（Scoring64-mac-arm64.zip）をダウンロードします。<br>
+          <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">ダウンロード</a>
+          <span class="muted small nowrap">　Mac（Apple Silicon・M1 以降）</span></li>
+        <li>ダウンロードした zip を開くと、<span class="ui">「Scoring64.app」</span>ができます。これを<span class="ui">「アプリケーション」</span>フォルダに移します。</li>
+        <li><span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>を開きます。管理者の権限は要りません。</li>
+      </ol>
+
+      <h3>Mac の警告が出たとき</h3>
+      <p>新しいアプリのため、確認の表示が出ることがあります。次の順に進めてください。</p>
+
+      <p><b>初めて開くときに「開発元を確認できないため開けません」と出たら</b></p>
+      <p>表示を閉じてから、<span class="ui">「システム設定」</span>を開きます。<span class="ui">「プライバシーとセキュリティ」</span>の下のほうにある<span class="ui">「このまま開く」</span>を押し、Mac のパスワードを入れてから<span class="ui">「開く」</span>を押します。</p>
+      <ol class="seq" aria-label="押す順番">
+        <li><span class="key">システム設定</span></li>
+        <li><span class="key">プライバシーとセキュリティ</span></li>
+        <li><span class="key">このまま開く</span></li>
+        <li><span class="key">Mac のパスワード</span></li>
+        <li><span class="key">開く</span></li>
+      </ol>
+      <p>次からは、そのまま開けます。</p>
+
+      <p><b>アプリの中で更新したあとに「キーチェーンへのアクセス」と出たら</b></p>
+      <ol class="seq" aria-label="押す順番">
+        <li><span class="key">ログインのパスワード</span></li>
+        <li><span class="key">常に許可</span></li>
+      </ol>
+      <p>更新のあとに一度だけ出ることがあります。ライセンスはそのまま使えます。</p>
+
+      <div class="two-col">
+        <!-- TODO: screenshot — 「プライバシーとセキュリティ」の下のほうにある「このまま開く」の画面 -->
+        <figure>
+          <div class="placeholder" role="img" aria-label="画面写真は準備中です：Mac の警告">
+            <div><b>Screenshot · 準備中</b><span>「このまま開く」</span></div>
+          </div>
+          <figcaption><span class="fig-no">図 3</span>Mac の警告</figcaption>
+        </figure>
+        <!-- TODO: screenshot — 「キーチェーンへのアクセス」の確認と「常に許可」の画面 -->
+        <figure>
+          <div class="placeholder" role="img" aria-label="画面写真は準備中です：キーチェーンへのアクセス">
+            <div><b>Screenshot · 準備中</b><span>「キーチェーンへのアクセス」</span></div>
+          </div>
+          <figcaption><span class="fig-no">図 4</span>更新のあとの確認</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -102,16 +152,16 @@
       <p class="eyebrow">02 · First launch</p>
       <h2 id="first-title">初めて開く</h2>
       <ol class="steps">
-        <li>インストールが終わると、Scoring64 が開きます。次からは、スタートメニューかデスクトップの<span class="ui">「Scoring64」</span>から開きます。</li>
-        <li>ブラウザ（Edge か Chrome）が開き、Scoring64 の画面が出ます。<b>初めての起動は30秒ほどかかる</b>ことがあります。</li>
+        <li>インストールが終わると、Scoring64 が開きます。次からは、スタートメニューかデスクトップの<span class="ui">「Scoring64」</span>から開きます。Mac では<span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>から開きます。</li>
+        <li>Windows でも Mac でも、Scoring64 の専用のウィンドウが開きます（ブラウザは使いません）。<b>初めての起動は30秒ほどかかる</b>ことがあります。</li>
       </ol>
       <div class="note">
         <span class="note-label">NOTE</span>
-        <p>画面はブラウザに出ますが、インターネットにはつながず、このパソコンの中だけで動きます。</p>
+        <p>インターネットにはつながず、このパソコンの中だけで動きます。</p>
       </div>
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s01-welcome.webp"><img src="assets/img/s01-welcome.webp" width="1440" height="900" loading="lazy" alt="Scoring64 の最初の画面。上に「新しい試験」「PDF・教材を開く」「バックアップから復元」のボタンが並ぶ"></a>
-        <figcaption><span class="fig-no">図 3</span>最初の画面</figcaption>
+        <figcaption><span class="fig-no">図 5</span>最初の画面</figcaption>
       </figure>
     </div>
   </section>
@@ -157,6 +207,9 @@
       <p>試験・答案の画像・成績は、このパソコンの次のフォルダに保存します。外部のサーバーには送りません。</p>
       <p><code>%LOCALAPPDATA%\Scoring64\data</code></p>
       <p>スタートメニューの<span class="ui">「Scoring64 のデータフォルダ」</span>から開けます。</p>
+      <p>Mac では、次のフォルダに保存します。</p>
+      <p><code>~/Library/Application Support/Scoring64</code></p>
+      <p>Finder の<span class="ui">「移動」</span>→<span class="ui">「フォルダへ移動」</span>に、この場所を貼り付けると開けます。</p>
     </div>
   </section>
 
@@ -165,6 +218,7 @@
       <p class="eyebrow">06 · Uninstall</p>
       <h2 id="uninstall-title">アンインストール</h2>
       <p>スタートメニューの<span class="ui">「Scoring64 をアンインストール」</span>を開きます。Windows の「設定」→「アプリ」からも消せます。</p>
+      <p>Mac では、<span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64.app」</span>をゴミ箱に入れます。データは <code>~/Library/Application Support/Scoring64</code> に残ります。</p>
       <p>アンインストールしても、データのフォルダは消えません。入れ直すと、そのまま続きから使えます。</p>
     </div>
   </section>
