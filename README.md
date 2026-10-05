@@ -7,7 +7,7 @@
 ## ダウンロード
 
 - Windows：[最新版をダウンロード](https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe)（`Scoring64-Setup.exe`）
-- Mac（Apple Silicon）：[最新版のページ](https://github.com/Fermion-company/scoring64-download/releases/latest)の「Assets」から `Scoring64-版-mac-arm64.zip` をダウンロードし、開いてできた `Scoring64.app` を「アプリケーション」フォルダに移します。
+- Mac（Apple Silicon）：[最新版をダウンロード](https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip)（`Scoring64-mac-arm64.zip`）。開いてできた `Scoring64.app` を「アプリケーション」フォルダに移します。
 
 一度入れると、新しい版が出たときはアプリの中でお知らせし、再起動するだけで更新できます。
 

@@ -75,15 +75,27 @@
       </ol>
       <div class="note">
         <span class="note-label">NOTE</span>
-        <p>候補は、見落としや間違いが出ることがあります。必ず目で確かめてください。足りない欄は<span class="ui">「採点欄を追加」</span>で描き足せます。</p>
+        <p>候補は、見落としや間違いが出ることがあります。必ず目で確かめてください。足りない欄は、右の欄の<span class="ui">「欄を手動で追加」</span>で描き足せます（<a href="#manual">下の手順</a>）。</p>
       </div>
       <figure class="shot wide">
-        <a class="zoom" href="assets/img/s06-import.webp"><img src="assets/img/s06-import.webp" width="1440" height="900" loading="lazy" alt="Wordで作った理科の小テストを取り込んだ画面。記号の欄が橙、記述の欄が紫の枠で囲まれ、右に解答欄の候補の一覧が出ている"></a>
-        <figcaption><span class="fig-no">図 1</span>Word のプリントを取り込んだところ。枠と空欄を候補として出します</figcaption>
+        <a class="zoom" href="assets/img/s06-import.webp"><img src="assets/img/s06-import.webp" width="1440" height="900" loading="lazy" alt="数学の小テストのPDFを取り込んだ画面。解答欄が紫の枠で囲まれ、右に「欄を手動で追加」のボタンと解答欄の候補の一覧が出ている"></a>
+        <figcaption><span class="fig-no">図 1</span>プリントのPDFを取り込んだところ。枠と空欄を候補として出します</figcaption>
       </figure>
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s07-crop-check.webp"><img src="assets/img/s07-crop-check.webp" width="1440" height="900" loading="lazy" alt="切り出しの一覧。問題ごとに切り出す範囲が並んでいる"></a>
         <figcaption><span class="fig-no">図 2</span>切り出しの確認</figcaption>
+      </figure>
+      <h3 id="manual">欄を手動で追加する</h3>
+      <ol class="steps">
+        <li>右の欄の<span class="ui">「欄を手動で追加」</span>を押します。</li>
+        <li>紙面をドラッグして、足したい範囲を囲みます。囲み直すと範囲を置きかえます。</li>
+        <li>右に出る設定で、欄名・種類（氏名・番号・解答欄・その他）・採点するかどうか・所属を選びます。ページや枠をまたぐ解答は、所属を<span class="ui">「既存の欄の続き」</span>にすると同じ問題として採点します。</li>
+        <li><span class="ui">「追加する」</span>を押します。続けて囲むと、次の欄を足せます。終わったら<span class="ui">「追加を終える」</span>を押します。</li>
+      </ol>
+      <p>追加した範囲は、選んでから <span class="key">Delete</span> で消せます。矢印キーで動かし、<span class="key">Shift</span> + 矢印キーで大きさを変えられます。</p>
+      <figure class="shot wide">
+        <a class="zoom" href="assets/img/s07-manual.webp"><img src="assets/img/s07-manual.webp" width="1440" height="900" loading="lazy" alt="欄を手動で追加の画面。紙面の得点の欄をドラッグで囲み、右に欄名・種類・採点・所属の設定と「追加する」のボタンが出ている"></a>
+        <figcaption><span class="fig-no">図 3</span>欄を手動で追加。囲んだ範囲を、右の設定で追加します</figcaption>
       </figure>
       <div class="caution">
         <span class="note-label">TIPS · プリントを作るとき</span>
@@ -98,13 +110,15 @@
         <summary>アプリで用紙を作るときの操作</summary>
         <div>
           <ol class="steps">
-            <li><span class="ui">「新しい試験」</span>で試験名を入れ、最初の用紙を選びます。<span class="ui">「番号・氏名欄付きの文書」</span>が最初に選ばれています。<span class="ui">「白紙の文書」</span>、<span class="ui">「共通テスト用マークシート」</span>（22科目）、<span class="ui">「登録したテンプレートから作成」</span>（東大の編集版8種を含む）、<span class="ui">「これまでの試験を複製」</span>からも始められます。</li>
+            <li><span class="ui">「新しい試験」</span>で試験名を入れ、最初の用紙を選びます。<span class="ui">「番号・氏名欄付きの文書」</span>が最初に選ばれています。<span class="ui">「白紙の文書」</span>、<span class="ui">「共通テスト用マークシート」</span>（22科目）、<span class="ui">「登録したテンプレートから作成」</span>（東大の解答用紙と、数学・理科の練習用解答用紙を含む）、<span class="ui">「これまでの試験を複製」</span>からも始められます。</li>
             <li>紙面をクリックして追加する位置を決め、<span class="ui">「＋ 部品を追加」</span>で解答欄・文字・数式・図などを置きます。欄は、<span class="ui">「追加先」</span>に出ている大問に入ります。自動のままでも、大問を選んでもかまいません。</li>
-            <li>紙面の何もないところをドラッグすると、触れた欄をまとめて選べます（<span class="key">Ctrl</span> + <span class="key">A</span> ですべて）。選んだ欄は、<span class="key">Ctrl</span> + <span class="key">C</span>・<span class="key">X</span>・<span class="key">V</span> でコピー・切り取り・貼り付けできます。</li>
+            <li>文字や数式の部品は、追加するとすぐ横に入力欄が開きます。書きかけの数式も消えません。</li>
+            <li>番号は、置いた大問の中で順に振られます。番号の囲み（(1)・①など）は欄ごとに選べます。大問の下に小問見出しを置くこともできます。</li>
+            <li>紙面の何もないところをドラッグすると、触れた欄をまとめて選べます（<span class="key">Ctrl</span> + <span class="key">A</span> ですべて。Mac では <span class="key">Ctrl</span> の代わりに <span class="key">Command</span>）。選んだ欄は、<span class="key">Ctrl</span> + <span class="key">C</span>・<span class="key">X</span>・<span class="key">V</span> でコピー・切り取り・貼り付けできます。</li>
             <li>文字の書体は、メニューから選べます。このパソコンにある書体は<span class="ui">「その他の書体」</span>に並びます。</li>
             <li>よく使う用紙は、<span class="ui">「テンプレート登録」</span>で保存しておけます。</li>
           </ol>
-          <p class="muted small">紙面は画面でそのまま描き、TeX は裏で仕上がりを確かめます。東大の編集版は配点が0点から始まるので、確定する前に入れてください。</p>
+          <p class="muted small">紙面は画面でそのまま描き、TeX は裏で仕上がりを確かめます。東大の解答用紙は A3 版です（以前に A4 版で作った試験も、そのまま印刷・採点できます）。練習用解答用紙は数学・理科の A4・B5 で、1問分の解答欄と日付・番号・氏名の欄があります。どちらも配点が0点から始まるので、確定する前に入れてください。</p>
         </div>
       </details>
     </div>
@@ -116,24 +130,24 @@
       <h2 id="step2-title">正解と配点</h2>
       <ol class="steps">
         <li>右の欄の<span class="ui">「正解・配点を一覧で入力」</span>を押します。</li>
-        <li>記号問題は、<span class="ui">「連続入力の開始欄」</span>を選び、正解を順に打って<span class="ui">「正解を反映」</span>を押します（例：<code>3142</code>）。Excel の正解表を貼り付けることもできます。記述問題の「正解」に模範解答を書いておくと、採点のときに画面の上に出ます。</li>
-        <li>配点と採点方式を選びます。</li>
-        <li>右上の<span class="ui">「用紙を確定して発行へ」</span>を押します。確かめる点が一覧で出るので、<span class="ui">「保存して確定する」</span>を押します。保存・印刷用PDFの作成・用紙版の確定が続けて進みます。</li>
+        <li>記号問題は、正解の選択肢をクリックします。まとめて入れるときは<span class="ui">「正解を続けて入力」</span>を押し、開始欄を選んで正解を順に打ち、<span class="ui">「正解を反映」</span>を押します（例：<code>3142</code>）。Excel の正解表は<span class="ui">「Excelから貼り付け」</span>で入れられます。記述問題の「正解」に模範解答を書いておくと、採点のときに画面の上に出ます。</li>
+        <li>配点と採点方式を選びます。同じ配点は<span class="ui">「配点をそろえる」</span>でまとめて入れられます。上の<span class="ui">「満点（予定）」</span>に満点を入れておくと、合計と合っているかを横に出します。</li>
+        <li>右上の<span class="ui">「用紙を確定して発行へ」</span>を押します。確かめる点が一覧で出るので、<span class="ui">「保存して確定する」</span>を押します。選択肢から外れた別解や、整数でない配点があるときは、ここで知らせます。保存・印刷用PDFの作成・用紙版の確定が続けて進みます。</li>
       </ol>
       <figure class="shot wide">
-        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に連続入力の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></a>
-        <figcaption><span class="fig-no">図 3</span>正解・配点の一覧</figcaption>
+        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に合計と満点（予定）、「正解を続けて入力」の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></a>
+        <figcaption><span class="fig-no">図 4</span>正解・配点の一覧</figcaption>
       </figure>
       <details class="more">
         <summary>採点方式の一覧</summary>
         <div>
           <table class="table">
-            <tr><th scope="row">手動</th><td>記述問題。画面で先生が採点します</td></tr>
+            <tr><th scope="row">手動採点</th><td>記述問題。画面で先生が採点します</td></tr>
             <tr><th scope="row">単答</th><td>記号1つで正解</td></tr>
             <tr><th scope="row">完答</th><td>複数の欄がすべて合って正解</td></tr>
             <tr><th scope="row">順不同（部分点）</th><td>順番は問わず、合った数だけ点</td></tr>
-            <tr><th scope="row">順不同完答</th><td>順番は問わず、すべて合って正解</td></tr>
-            <tr><th scope="row">全員正解</th><td>出題ミスのとき。全員に満点</td></tr>
+            <tr><th scope="row">順不同・完答</th><td>順番は問わず、すべて合って正解</td></tr>
+            <tr><th scope="row">全員正解（出題ミスなど）</th><td>出題ミスのとき。全員に満点</td></tr>
           </table>
         </div>
       </details>
@@ -161,8 +175,8 @@
           </div>
         </div>
         <figure class="shot tall">
-          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1090" loading="lazy" alt="用紙の発行の欄。新しく発行する人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンが並び、下にスキャンPDFを入れる欄がある"></a>
-          <figcaption><span class="fig-no">図 4</span>用紙の発行</figcaption>
+          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1275" loading="lazy" alt="用紙の発行の欄。新しく発行する人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンと、発行した用紙のダウンロードが並び、下にスキャンPDFを入れる欄がある"></a>
+          <figcaption><span class="fig-no">図 5</span>用紙の発行</figcaption>
         </figure>
       </div>
     </div>
@@ -185,7 +199,7 @@
       </table>
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s09-scan.webp"><img src="assets/img/s09-scan.webp" width="1440" height="900" loading="lazy" alt="発行・取込のタブ。左に用紙の発行とスキャンPDFの取り込み、右に取り込んだ5人分の答案が並ぶ"></a>
-        <figcaption><span class="fig-no">図 5</span>発行・取込のタブ。左で発行し、右で取り込んだ答案を確かめます</figcaption>
+        <figcaption><span class="fig-no">図 6</span>発行・取込のタブ。左で発行し、右で取り込んだ答案を確かめます</figcaption>
       </figure>
     </div>
   </section>
@@ -204,8 +218,8 @@
         <li>必要なら<span class="ui">「コメントを置く」</span>（C キー）で答案に書き込みます。</li>
       </ol>
       <figure class="shot wide">
-        <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答の欄、中央に生徒の答案、下に満点・0点・部分点の3つのボタン、右に採点内容の一覧が出ている"></a>
-        <figcaption><span class="fig-no">図 6</span>1人ずつ採点。上に模範解答（登録したとき）、右に採点の一覧</figcaption>
+        <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答、中央に生徒の答案、下に満点・0点・部分点の3つのボタン、右に採点内容の一覧が出ている"></a>
+        <figcaption><span class="fig-no">図 7</span>1人ずつ採点。上に模範解答（登録したとき）、右に採点の一覧</figcaption>
       </figure>
       <div class="note">
         <span class="note-label">正解を直すとき</span>
@@ -228,7 +242,7 @@
       </div>
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s11-export.webp"><img src="assets/img/s11-export.webp" width="1440" height="900" loading="lazy" alt="出力・バックアップのタブ。左に「返却ZIPを作成」、右に「全試験をバックアップ」と「バックアップから復元」のボタンがある"></a>
-        <figcaption><span class="fig-no">図 7</span>出力・バックアップのタブ</figcaption>
+        <figcaption><span class="fig-no">図 8</span>出力・バックアップのタブ</figcaption>
       </figure>
       <h3>バックアップ</h3>
       <p><span class="ui">「全試験をバックアップ」</span>で、すべての試験を1つのファイル（<code>.scoring64</code>）に保存します。採点が終わるたびに取り、USBメモリなど別の場所にも置いてください。戻すときは<span class="ui">「バックアップから復元」</span>です。</p>
@@ -239,7 +253,7 @@
   <h2 id="free-marks-title">無料のマークシート読み取り・採点</h2>
   <p>最初の画面の<span class="ui">「マークシート読み取り」</span>を押します。期限なし・キー不要で、答案はこのPCで処理します。</p>
   <ol class="steps"><li>未記入の用紙（1ページのPDF）と答案PDF（100ページまで）を選びます。各PDFは20MB以内。同じページサイズ・向きにそろえてください。</li><li>用紙上で最初のマーク欄の左上をクリックし、問題数・選択肢数・横間隔・縦間隔・マーク欄の大きさを入力します。赤い枠をマーク欄に合わせます。等間隔のマーク欄に対応します。</li><li>「読み取る」を押します。選択肢は左から1、2、3…です。「複数マーク」「要確認」は答案と見比べてください。</li><li>正答と配点を問題順に入力して「読み取り・採点」を押すと、正誤・得点・ページごとの合計点を計算します。「結果CSV」で保存できます。要確認があるページも、読み取り候補で採点して合計点と要確認の問数を表示します（複数マークや候補のない問題は0点です）。要確認の答案は用紙と見比べ、合計点をそのまま確定した点にしないでください。記述採点・成績表・返却PDFの作成は有料版の機能です。</li></ol>
-  <figure class="shot"><a class="zoom" href="assets/img/free-marks.png"><img src="assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙・答案PDFと、正答・配点を入力する欄"></a><figcaption>無料のマークシート読み取り</figcaption></figure>
+  <figure class="shot"><a class="zoom" href="assets/img/free-marks.png"><img src="assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙の上で、10問分のマーク欄に赤い枠を合わせ、下に問題数・選択肢数・位置・間隔・大きさと、正答・配点を入れた欄が並ぶ"></a><figcaption>無料のマークシート読み取り</figcaption></figure>
 </div></section>
 </main>
 
