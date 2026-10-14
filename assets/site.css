@@ -502,6 +502,96 @@ details.more > div { padding: 0 18px 10px; }
 .prose > .btn, .prose > .btn-download { justify-self: start; }
 .page-head + .section { padding-top: clamp(16px, 3vw, 28px); }
 
+/* ---------------- wide screens ----------------
+ * From 1080px the pages stop being one 720px column. The container grows to
+ * 1760px and the space is filled side by side instead of with margins:
+ *   - the page head puts the contents beside the title,
+ *   - a plain .prose section hangs its heading in a left rail (sticky),
+ *   - .prose.top keeps the heading on top and sets .pair blocks:
+ *     text on the left, its screenshots on the right,
+ *   - .sec-grid lays short sections out in columns.
+ * Running text stays at about 46 characters a line. */
+
+.specs { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); margin: 0 0 1em; }
+.specs > div { background: var(--paper); border-radius: var(--radius); padding: 18px 20px 16px; }
+.specs dt { font-weight: 700; margin-bottom: 4px; }
+.specs dd { margin: 0; font-size: 15px; color: var(--ink-2); line-height: 1.8; }
+
+.sec-grid > .section:first-of-type { border-top: 1px solid var(--line); }
+main > .sec-grid:first-child > .section:first-of-type,
+.page-head + .sec-grid > .section:first-of-type { border-top: 0; }
+
+@media (min-width: 1080px) {
+  :root { --wrap: 1760px; }
+  .narrow { width: min(100% - 2 * var(--gutter), var(--wrap)); }
+
+  /* page head: title and lead on the left, contents (or the lead) on the right */
+  .page-head {
+    display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    column-gap: clamp(40px, 5vw, 96px); align-items: end;
+  }
+  .page-head > * { grid-column: 1; }
+  .page-head > .toc {
+    grid-column: 2; grid-row: 1 / span 4; align-self: end; margin: 0;
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;
+  }
+  .page-head > .toc a { display: block; padding: 12px 16px; font-size: 14.5px; }
+  .page-head:not(:has(.toc)) > p:not(.eyebrow) { grid-column: 2; grid-row: 2; align-self: end; }
+  .page-head:not(:has(.toc)) > p.muted { grid-row: 3; margin-top: 8px; }
+
+  /* sections: heading in a left rail, content on the right */
+  .prose, .measure {
+    width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
+    column-gap: clamp(40px, 5vw, 96px); align-items: start;
+  }
+  .prose > *, .measure > * { grid-column: 2; min-width: 0; max-width: 46em; }
+  .prose > .eyebrow, .measure > .eyebrow { grid-column: 1; grid-row: 1; }
+  .prose > h2, .measure > h2 {
+    grid-column: 1; grid-row: 2 / span 60; align-self: start;
+    position: sticky; top: 96px;
+  }
+  .prose > h2:first-child, .measure > h2:first-child { grid-row: 1 / span 60; }
+  .prose > .shot.wide { grid-column: 2; justify-self: stretch; width: auto; }
+  .prose > .mail-card, .measure > .routes, .measure > .table, .prose > .table { max-width: none; }
+
+  /* heading on top, then text and figures side by side */
+  .prose.top { display: block; }
+  .prose.top > * { max-width: 46em; }
+  .prose.top > .pair, .prose.top > .specs { max-width: none; }
+  .prose.top > h2 { position: static; }
+  .pair {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    column-gap: clamp(40px, 4.5vw, 88px); align-items: start;
+  }
+  .pair + .pair { margin-top: 2.5em; padding-top: 2.5em; border-top: 1px dashed var(--line); }
+  .pair > .media { position: sticky; top: 96px; }
+  .pair > .media > :first-child { margin-top: 0; }
+  .pair > .flow > :last-child { margin-bottom: 0; }
+  .media.with-tall { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 0 28px; align-items: start; }
+  .media.with-tall > * { margin-top: 0; }
+
+  /* short sections in columns */
+  .sec-grid {
+    width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto;
+    display: grid; grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr));
+    column-gap: clamp(40px, 5vw, 96px);
+  }
+  .sec-grid > .section { border-top: 1px solid var(--line); }
+  .sec-grid > .section { padding-block: clamp(36px, 4vw, 64px); }
+  .sec-grid h2 { font-size: clamp(22px, 2vw, 28px); }
+  .page-head + .sec-grid > .section:nth-child(-n+2) { border-top: 0; padding-top: clamp(16px, 3vw, 28px); }
+  .sec-grid .prose, .sec-grid .measure { display: block; width: auto; }
+  .sec-grid .prose > *, .sec-grid .measure > * { max-width: 46em; }
+  .sec-grid .prose > h2, .sec-grid .measure > h2 { position: static; }
+  .sec-grid .table th { width: 7em; }
+
+  /* questions two by two beside the group heading */
+  .prose.qa-cols { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, 1.2fr); }
+  .prose.qa-cols > .qa { grid-column: auto; max-width: none; padding-right: 8px; }
+  .prose.qa-cols > .qa:nth-of-type(-n+2) { border-top: 0; padding-top: 4px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }

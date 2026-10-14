@@ -50,21 +50,23 @@
   </div>
 
   <section class="section" aria-labelledby="need-title">
-    <div class="prose">
+    <div class="prose top">
       <h2 id="need-title">用意するもの</h2>
-      <table class="table stack">
-        <tr><th scope="row">パソコン</th><td>Windows 10／11（64ビット）、または Apple Silicon（M1 以降）の Mac。採点や読み取りにインターネットは要りません（新しい版の確認と TeX の準備のときだけ使います）</td></tr>
-        <tr><th scope="row">プリンター</th><td>用紙を等倍で印刷できるもの</td></tr>
-        <tr><th scope="row">スキャナー</th><td>塾の複合機で構いません。PDFで保存でき、200〜300dpiで読み取れるもの</td></tr>
-        <tr><th scope="row">生徒の筆記用具</th><td>記号問題は、HBかBの鉛筆で塗りつぶします</td></tr>
-      </table>
+      <dl class="specs">
+        <div><dt>パソコン</dt><dd>Windows 10／11（64ビット）、または Apple Silicon（M1 以降）の Mac。採点や読み取りにインターネットは要りません（新しい版の確認と TeX の準備のときだけ使います）</dd></div>
+        <div><dt>プリンター</dt><dd>用紙を等倍で印刷できるもの</dd></div>
+        <div><dt>スキャナー</dt><dd>塾の複合機で構いません。PDFで保存でき、200〜300dpiで読み取れるもの</dd></div>
+        <div><dt>生徒の筆記用具</dt><dd>記号問題は、HBかBの鉛筆で塗りつぶします</dd></div>
+      </dl>
     </div>
   </section>
 
   <section class="section" id="step1" aria-labelledby="step1-title">
-    <div class="prose">
+    <div class="prose top">
       <p class="eyebrow">Step 01</p>
       <h2 id="step1-title">用紙を用意する</h2>
+      <div class="pair">
+      <div class="flow">
       <p>いつもの Word・Excel のプリントを、そのまま使えます。</p>
       <ol class="steps">
         <li>Word・Excel で<span class="ui">「ファイル」</span>→<span class="ui">「名前を付けて保存」</span>を選び、PDFで保存します。紙しかないときは、300dpiでスキャンしてPDFにします。</li>
@@ -77,6 +79,8 @@
         <span class="note-label">NOTE</span>
         <p>候補は、見落としや間違いが出ることがあります。必ず目で確かめてください。足りない欄は、右の欄の<span class="ui">「欄を手動で追加」</span>で描き足せます（<a href="#manual">下の手順</a>）。</p>
       </div>
+      </div>
+      <div class="media">
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s06-import.webp"><img src="assets/img/s06-import.webp" width="1440" height="900" loading="lazy" alt="数学の小テストのPDFを取り込んだ画面。解答欄が紫の枠で囲まれ、右に「欄を手動で追加」のボタンと解答欄の候補の一覧が出ている"></a>
         <figcaption><span class="fig-no">図 1</span>プリントのPDFを取り込んだところ。枠と空欄を候補として出します</figcaption>
@@ -85,6 +89,10 @@
         <a class="zoom" href="assets/img/s07-crop-check.webp"><img src="assets/img/s07-crop-check.webp" width="1440" height="900" loading="lazy" alt="切り出しの一覧。問題ごとに切り出す範囲が並んでいる"></a>
         <figcaption><span class="fig-no">図 2</span>切り出しの確認</figcaption>
       </figure>
+      </div>
+      </div>
+      <div class="pair">
+      <div class="flow">
       <h3 id="manual">欄を手動で追加する</h3>
       <ol class="steps">
         <li>右の欄の<span class="ui">「欄を手動で追加」</span>を押します。</li>
@@ -93,10 +101,6 @@
         <li><span class="ui">「追加する」</span>を押します。続けて囲むと、次の欄を足せます。終わったら<span class="ui">「追加を終える」</span>を押します。</li>
       </ol>
       <p>追加した範囲は、選んでから <span class="key">Delete</span> で消せます。矢印キーで動かし、<span class="key">Shift</span> + 矢印キーで大きさを変えられます。</p>
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s07-manual.webp"><img src="assets/img/s07-manual.webp" width="1440" height="900" loading="lazy" alt="欄を手動で追加の画面。紙面の得点の欄をドラッグで囲み、右に欄名・種類・採点・所属の設定と「追加する」のボタンが出ている"></a>
-        <figcaption><span class="fig-no">図 3</span>欄を手動で追加。囲んだ範囲を、右の設定で追加します</figcaption>
-      </figure>
       <div class="caution">
         <span class="note-label">TIPS · プリントを作るとき</span>
         <ul class="dots">
@@ -121,23 +125,29 @@
           <p class="muted small">紙面は画面でそのまま描き、TeX は裏で仕上がりを確かめます。東大の解答用紙は A3 版です（以前に A4 版で作った試験も、そのまま印刷・採点できます）。練習用解答用紙は数学・理科の A4・B5 で、1問分の解答欄と日付・番号・氏名の欄があります。どちらも配点が0点から始まるので、確定する前に入れてください。</p>
         </div>
       </details>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="assets/img/s07-manual.webp"><img src="assets/img/s07-manual.webp" width="1440" height="900" loading="lazy" alt="欄を手動で追加の画面。紙面の得点の欄をドラッグで囲み、右に欄名・種類・採点・所属の設定と「追加する」のボタンが出ている"></a>
+        <figcaption><span class="fig-no">図 3</span>欄を手動で追加。囲んだ範囲を、右の設定で追加します</figcaption>
+      </figure>
+      </div>
+      </div>
     </div>
   </section>
 
   <section class="section" id="step2" aria-labelledby="step2-title">
-    <div class="prose">
+    <div class="prose top">
       <p class="eyebrow">Step 02</p>
       <h2 id="step2-title">正解と配点</h2>
+      <div class="pair">
+      <div class="flow">
       <ol class="steps">
         <li>右の欄の<span class="ui">「正解・配点を一覧で入力」</span>を押します。</li>
         <li>記号問題は、正解の選択肢をクリックします。まとめて入れるときは<span class="ui">「正解を続けて入力」</span>を押し、開始欄を選んで正解を順に打ち、<span class="ui">「正解を反映」</span>を押します（例：<code>3142</code>）。Excel の正解表は<span class="ui">「Excelから貼り付け」</span>で入れられます。記述問題の「正解」に模範解答を書いておくと、採点のときに画面の上に出ます。</li>
         <li>配点と採点方式を選びます。同じ配点は<span class="ui">「配点をそろえる」</span>でまとめて入れられます。上の<span class="ui">「満点（予定）」</span>に満点を入れておくと、合計と合っているかを横に出します。</li>
         <li>右上の<span class="ui">「用紙を確定して発行へ」</span>を押します。確かめる点が一覧で出るので、<span class="ui">「保存して確定する」</span>を押します。選択肢から外れた別解や、整数でない配点があるときは、ここで知らせます。保存・印刷用PDFの作成・用紙版の確定が続けて進みます。</li>
       </ol>
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に合計と満点（予定）、「正解を続けて入力」の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></a>
-        <figcaption><span class="fig-no">図 4</span>正解・配点の一覧</figcaption>
-      </figure>
       <details class="more">
         <summary>採点方式の一覧</summary>
         <div>
@@ -151,41 +161,53 @@
           </table>
         </div>
       </details>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に合計と満点（予定）、「正解を続けて入力」の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></a>
+        <figcaption><span class="fig-no">図 4</span>正解・配点の一覧</figcaption>
+      </figure>
+      </div>
+      </div>
     </div>
   </section>
 
   <section class="section" id="step3" aria-labelledby="step3-title">
-    <div class="prose">
+    <div class="prose top">
       <p class="eyebrow">Step 03</p>
       <h2 id="step3-title">用紙を発行して印刷</h2>
-      <div class="side">
-        <div>
+      <div class="pair">
+      <div class="flow">
           <ol class="steps">
             <li><span class="ui">「発行・取込」</span>のタブで、人数を入れます。名簿があるときは<span class="ui">「名簿CSVを選ぶ」</span>で読み込みます（1行目が見出し：<code>番号,氏名</code> か <code>組,番,氏名</code>）。</li>
             <li>名前を印刷しておくときは、<span class="ui">「氏名・生徒番号を事前印字」</span>にチェックを入れます。</li>
             <li><span class="ui">「印刷用PDFを作成」</span>を押し、できたPDFを<b>等倍</b>で印刷します。</li>
           </ol>
           <p>用紙には、右上にQRコード、四隅に黒い四角が入ります。取り込むときに、これで用紙を見分けます。</p>
-          <div class="note">
-            <span class="note-label">生徒への指示</span>
+      </div>
+      <div class="media with-tall">
+      <figure class="shot tall">
+          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1275" loading="lazy" alt="用紙の発行の欄。新しく発行する人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンと、発行した用紙のダウンロードが並び、下にスキャンPDFを入れる欄がある"></a>
+          <figcaption><span class="fig-no">図 5</span>用紙の発行</figcaption>
+        </figure>
+      <div class="note">
+        <span class="note-label">生徒への指示</span>
             <ul class="dots">
               <li>HBかBの鉛筆で、枠の中を濃くはっきり塗りつぶす。丸やチェックは付けない（原則として答えとは読まず、先生の確認に回します）。</li>
               <li>消すときは、消しゴムできれいに消す。</li>
             </ul>
-          </div>
-        </div>
-        <figure class="shot tall">
-          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1275" loading="lazy" alt="用紙の発行の欄。新しく発行する人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンと、発行した用紙のダウンロードが並び、下にスキャンPDFを入れる欄がある"></a>
-          <figcaption><span class="fig-no">図 5</span>用紙の発行</figcaption>
-        </figure>
+      </div>
+      </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="step4" aria-labelledby="step4-title">
-    <div class="prose">
+    <div class="prose top">
       <p class="eyebrow">Step 04</p>
       <h2 id="step4-title">答案をスキャンして取り込む</h2>
+      <div class="pair">
+      <div class="flow">
       <ol class="steps">
         <li>答案を複合機で読み取り、PDFにします。クラス分をまとめて1つのPDFにして構いません。</li>
         <li>左の<span class="ui">「スキャンPDF」</span>に、PDFを選ぶかドラッグして入れます。複数のファイル・両面にも対応します。向きと表裏の順番は、QRコードで自動で整えます。</li>
@@ -197,17 +219,23 @@
         <tr><th scope="row">保存の形式</th><td>PDF</td></tr>
         <tr><th scope="row">用紙サイズ</th><td>印刷したときと同じ</td></tr>
       </table>
+      </div>
+      <div class="media">
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s09-scan.webp"><img src="assets/img/s09-scan.webp" width="1440" height="900" loading="lazy" alt="発行・取込のタブ。左に用紙の発行とスキャンPDFの取り込み、右に取り込んだ5人分の答案が並ぶ"></a>
         <figcaption><span class="fig-no">図 6</span>発行・取込のタブ。左で発行し、右で取り込んだ答案を確かめます</figcaption>
       </figure>
+      </div>
+      </div>
     </div>
   </section>
 
   <section class="section" id="step5" aria-labelledby="step5-title">
-    <div class="prose">
+    <div class="prose top">
       <p class="eyebrow">Step 05</p>
       <h2 id="step5-title">採点する</h2>
+      <div class="pair">
+      <div class="flow">
       <h3>記号問題は自動で</h3>
       <p>取り込むと、記号問題は塗りの濃さで自動で採点されます。はっきり塗った答えはその選択肢、何も書いていない問題は無回答です。塗りが薄い・一部だけの答え、2つ塗った答え、消し跡などが濃く残った答え、丸やチェックなど塗りつぶしではない書き込みがある答えは決めずに<span class="ui">「要確認」</span>に回ります。先生が見て決めてください。</p>
       <h3>記述問題は1問ずつ</h3>
@@ -217,21 +245,27 @@
         <li><span class="ui">「部分点」</span>を押すとテンキーが開きます。0点から配点までの整数を入れ、<span class="ui">「確定」</span>か Enter で決めます（Esc で取り消し）。9点以下の問題は、数字キーを押すだけでその点になります。</li>
         <li>必要なら<span class="ui">「コメントを置く」</span>（C キー）で答案に書き込みます。</li>
       </ol>
+      <div class="note">
+        <span class="note-label">正解を直すとき</span>
+        <p>配った後で正解・配点の誤りに気づいたら、<span class="ui">「正解・配点を訂正」</span>で直します。すべての答案を採点し直し、手で付けた点はそのまま残します。</p>
+      </div>
+      </div>
+      <div class="media">
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答、中央に生徒の答案、下に満点・0点・部分点の3つのボタン、右に採点内容の一覧が出ている"></a>
         <figcaption><span class="fig-no">図 7</span>1人ずつ採点。上に模範解答（登録したとき）、右に採点の一覧</figcaption>
       </figure>
-      <div class="note">
-        <span class="note-label">正解を直すとき</span>
-        <p>配った後で正解・配点の誤りに気づいたら、<span class="ui">「正解・配点を訂正」</span>で直します。すべての答案を採点し直し、手で付けた点はそのまま残します。</p>
+      </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="step6" aria-labelledby="step6-title">
-    <div class="prose">
+    <div class="prose top">
       <p class="eyebrow">Step 06</p>
       <h2 id="step6-title">返す・残す</h2>
+      <div class="pair">
+      <div class="flow">
       <ol class="steps">
         <li><span class="ui">「出力・バックアップ」</span>のタブで、確認が残っていないか見ます。</li>
         <li><span class="ui">「返却ZIPを作成」</span>を押します。生徒ごとの採点済みPDFと、得点のCSV（Excel で開けます）が入ります。</li>
@@ -240,20 +274,27 @@
         <span class="note-label">CAUTION</span>
         <p>ZIPには全員分が入っています。生徒には、<code>students</code> フォルダの<b>本人のPDFだけ</b>を渡してください。</p>
       </div>
+      <h3>バックアップ</h3>
+      <p><span class="ui">「全試験をバックアップ」</span>で、すべての試験を1つのファイル（<code>.scoring64</code>）に保存します。採点が終わるたびに取り、USBメモリなど別の場所にも置いてください。戻すときは<span class="ui">「バックアップから復元」</span>です。</p>
+      </div>
+      <div class="media">
       <figure class="shot wide">
         <a class="zoom" href="assets/img/s11-export.webp"><img src="assets/img/s11-export.webp" width="1440" height="900" loading="lazy" alt="出力・バックアップのタブ。左に「返却ZIPを作成」、右に「全試験をバックアップ」と「バックアップから復元」のボタンがある"></a>
         <figcaption><span class="fig-no">図 8</span>出力・バックアップのタブ</figcaption>
       </figure>
-      <h3>バックアップ</h3>
-      <p><span class="ui">「全試験をバックアップ」</span>で、すべての試験を1つのファイル（<code>.scoring64</code>）に保存します。採点が終わるたびに取り、USBメモリなど別の場所にも置いてください。戻すときは<span class="ui">「バックアップから復元」</span>です。</p>
+      </div>
+      </div>
     </div>
   </section>
 
-<section class="section" id="free-marks" aria-labelledby="free-marks-title"><div class="prose">
+<section class="section" id="free-marks" aria-labelledby="free-marks-title"><div class="prose top">
   <h2 id="free-marks-title">無料のマークシート読み取り・採点</h2>
+  <div class="pair"><div class="flow">
   <p>最初の画面の<span class="ui">「マークシート読み取り」</span>を押します。期限なし・キー不要で、答案はこのPCで処理します。</p>
   <ol class="steps"><li>未記入の用紙（1ページのPDF）と答案PDF（100ページまで）を選びます。各PDFは20MB以内。同じページサイズ・向きにそろえてください。</li><li>用紙上で最初のマーク欄の左上をクリックし、問題数・選択肢数・横間隔・縦間隔・マーク欄の大きさを入力します。赤い枠をマーク欄に合わせます。等間隔のマーク欄に対応します。</li><li>「読み取る」を押します。選択肢は左から1、2、3…です。「複数マーク」「要確認」は答案と見比べてください。</li><li>正答と配点を問題順に入力して「読み取り・採点」を押すと、正誤・得点・ページごとの合計点を計算します。「結果CSV」で保存できます。要確認があるページも、読み取り候補で採点して合計点と要確認の問数を表示します（複数マークや候補のない問題は0点です）。要確認の答案は用紙と見比べ、合計点をそのまま確定した点にしないでください。記述採点・成績表・返却PDFの作成は有料版の機能です。</li></ol>
+  </div><div class="media">
   <figure class="shot"><a class="zoom" href="assets/img/free-marks.png"><img src="assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙の上で、10問分のマーク欄に赤い枠を合わせ、下に問題数・選択肢数・位置・間隔・大きさと、正答・配点を入れた欄が並ぶ"></a><figcaption>無料のマークシート読み取り</figcaption></figure>
+  </div></div>
 </div></section>
 </main>
 
