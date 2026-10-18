@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>デジタル採点システムとは｜塾で選ぶときの確認点とScoring64</title>
+<link rel="canonical" href="https://fermion-company.github.io/scoring64-download/digital-scoring.html">
+<meta name="description" content="デジタル採点システム（電子採点）のしくみ、クラウド型とインストール型の違い、塾で選ぶときの確認点を説明します。毎月2テストまで無料で使える塾向けの電子採点ソフト Scoring64 でできることも紹介します。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap">
+<!-- seo:start -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Scoring64">
+<meta property="og:title" content="デジタル採点システムとは｜塾で選ぶときの確認点とScoring64">
+<meta property="og:description" content="デジタル採点システム（電子採点）のしくみ、クラウド型とインストール型の違い、塾で選ぶときの確認点を説明します。毎月2テストまで無料で使える塾向けの電子採点ソフト Scoring64 でできることも紹介します。">
+<meta property="og:url" content="https://fermion-company.github.io/scoring64-download/digital-scoring.html">
+<meta property="og:image" content="https://fermion-company.github.io/scoring64-download/assets/img/s10-grading.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://fermion-company.github.io/scoring64-download/#org","name":"株式会社Fermion","alternateName":"Fermion Inc.","url":"https://fermion.company/","email":"contact@fermion.company"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://fermion-company.github.io/scoring64-download/"},{"@type":"ListItem","position":2,"name":"デジタル採点システムとは","item":"https://fermion-company.github.io/scoring64-download/digital-scoring.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"デジタル採点と電子採点は違うものですか","acceptedAnswer":{"@type":"Answer","text":"同じものを指すことがほとんどです。紙の答案をスキャンしてパソコンで採点するしくみを、デジタル採点・電子採点・採点支援システムなどと呼びます。"}},{"@type":"Question","name":"無料で使えるデジタル採点ソフトはありますか","acceptedAnswer":{"@type":"Answer","text":"Scoring64 は、毎月2テストまで人数制限なしで、すべての機能を無料で使えます。マークシートの自動採点、記述問題の採点、成績表・返却PDFの出力まで試せます。"}},{"@type":"Question","name":"マークシートの専用読み取り機は要りますか","acceptedAnswer":{"@type":"Answer","text":"Scoring64 では要りません。普通の紙に印刷した用紙を、塾の複合機でPDFにスキャンして読み取ります。"}},{"@type":"Question","name":"生徒の答案がインターネットに送られることはありますか","acceptedAnswer":{"@type":"Answer","text":"Scoring64 では送りません。答案の画像・成績・名簿は塾のパソコンの中だけで処理します。インターネットを使うのは、新しい版の確認と、アプリで用紙を作るための TeX の準備のときだけです。"}}]},{"@type":"Article","headline":"デジタル採点システムとは","description":"デジタル採点システム（電子採点）のしくみ、クラウド型とインストール型の違い、塾で選ぶときの確認点を説明します。毎月2テストまで無料で使える塾向けの電子採点ソフト Scoring64 でできることも紹介します。","url":"https://fermion-company.github.io/scoring64-download/digital-scoring.html","inLanguage":"ja","image":"https://fermion-company.github.io/scoring64-download/assets/img/s10-grading.webp","author":{"@id":"https://fermion-company.github.io/scoring64-download/#org"},"publisher":{"@id":"https://fermion-company.github.io/scoring64-download/#org"},"about":{"@id":"https://fermion-company.github.io/scoring64-download/#app"}}]}</script>
+<!-- seo:end -->
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/analytics.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">
+      <img src="assets/logo.svg" alt="" width="28" height="28">
+      Scoring64<small>電子採点</small>
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="start.html">はじめかた</a></li>
+        <li><a href="guide.html">使い方</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="pricing.html">料金と申し込み</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap narrow page-head">
+    <p class="eyebrow">Digital scoring</p>
+    <h1>デジタル採点システムとは</h1>
+    <p class="lead">紙の答案をスキャンして画像にし、パソコンの画面で採点・集計するしくみです。「電子採点」「採点ソフト」とも呼ばれます。塾で選ぶときに確かめたい点と、Scoring64 でできることをまとめました。</p>
+    <ul class="toc" aria-label="このページの内容">
+      <li><a href="#how">しくみ</a></li>
+      <li><a href="#types">クラウド型とインストール型</a></li>
+      <li><a href="#choose">塾で選ぶときの確認点</a></li>
+      <li><a href="#scoring64">Scoring64 でできること</a></li>
+      <li><a href="#qa">よくある質問</a></li>
+    </ul>
+  </div>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="prose top">
+      <h2 id="how-title">デジタル採点システムのしくみ</h2>
+      <p>いつものように紙でテストをして、答案をスキャナーや複合機でPDFにします。ソフトが答案を1枚ずつ見分け、解答欄ごとに切り出します。</p>
+      <ul>
+        <li><b>記号問題（マークシート）</b>は、塗られた選択肢を読み取って自動で採点します。</li>
+        <li><b>記述問題</b>は、同じ問題の答えを画面に並べ、先生が1問ずつ採点します。答案を何十回もめくらずに済み、採点の基準もそろえやすくなります。</li>
+        <li><b>集計</b>は自動です。合計点・平均点・問題ごとの正答率を出し、成績表や返却用の答案を作ります。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="types" aria-labelledby="types-title">
+    <div class="wrap measure">
+      <h2 id="types-title">クラウド型とインストール型</h2>
+      <table class="table stack">
+        <tr><th scope="row">クラウド型</th><td>答案の画像をインターネット上のサーバーに上げ、ブラウザで採点します。複数の拠点から同じテストを採点しやすい一方で、答案や名簿を外部に預けることになります。</td></tr>
+        <tr><th scope="row">インストール型</th><td>パソコンにソフトを入れ、答案をそのパソコンの中で処理します。答案や名簿を外部に出さずに済み、通信が不安定でも採点できます。Scoring64 はこちらです。</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="choose" aria-labelledby="choose-title">
+    <div class="prose top">
+      <h2 id="choose-title">塾で選ぶときの確認点</h2>
+      <ol>
+        <li><b>費用と無料で試せる範囲</b>　初期費用・月額・人数や枚数の上限を確かめます。本番のテストで試せるかどうかも大切です。</li>
+        <li><b>答案データの置き場所</b>　生徒の氏名や答案を外部のサーバーに預けるかどうか。保護者への説明のしやすさにも関わります。</li>
+        <li><b>いつものプリントを使えるか</b>　専用の解答用紙に作り直す必要があるか、Word・Excel のプリントをそのまま使えるか。</li>
+        <li><b>専用の機器が要るか</b>　マークシートの専用読み取り機や専用スキャナーが要るか、塾の複合機で足りるか。</li>
+        <li><b>記述問題の採点のしやすさ</b>　問題ごとに答案を並べて採点できるか、部分点や別解を扱えるか。</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="scoring64" aria-labelledby="scoring64-title">
+    <div class="wrap measure">
+      <h2 id="scoring64-title">Scoring64 でできること</h2>
+      <p>Scoring64 は、株式会社Fermion が作っている塾の紙のテストのための電子採点ソフトです。</p>
+      <table class="table stack">
+        <tr><th scope="row">費用</th><td>毎月2テストまで、人数制限なしですべての機能を無料で使えます。有料版はテスト数も無制限で、月3,300円・年33,000円・買い切り82,500円（税込）。初期費用は0円です（<a href="pricing.html">料金</a>）</td></tr>
+        <tr><th scope="row">データ</th><td>答案・成績・名簿は塾のパソコンの中だけで処理します。採点や読み取りにインターネットは要りません</td></tr>
+        <tr><th scope="row">用紙</th><td>Word・Excel のプリントをPDFにして取り込むと、解答欄の候補を自動で出します。アプリの中で用紙を作ることもできます（共通テスト用マークシートのひな形もあります）</td></tr>
+        <tr><th scope="row">機器</th><td>PDFで保存でき、200〜300dpiで読み取れるスキャナーなら塾の複合機で構いません。専用の読み取り機は要りません</td></tr>
+        <tr><th scope="row">採点</th><td>記号問題は自動で採点し、薄い塗りや二重の塗りは先生の確認に回します。記述問題は問題ごとに画面で採点します。完答・順不同・部分点にも対応します</td></tr>
+        <tr><th scope="row">出力</th><td>成績表と、採点済みの答案を生徒ごとに返す返却PDFを作ります</td></tr>
+        <tr><th scope="row">動作環境</th><td>Windows 10／11（64ビット）、Apple Silicon（M1 以降）の Mac。管理者の権限は要りません</td></tr>
+      </table>
+      <p>見本の試験を使えば、紙もスキャナーもなしで、取り込みから返却まで5分ほどで試せます（<a href="start.html#sample">見本で試す</a>）。</p>
+      <div class="note">
+        <span class="note-label">合わないかもしれない場合</span>
+        <p>データはパソコンごとに保存します。複数の教室から同じテストを同時に採点したい場合や、Intel の Mac で使いたい場合は、<a href="contact.html">お問い合わせ</a>ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="qa" aria-labelledby="qa-title">
+    <div class="prose qa-cols">
+      <h2 id="qa-title">よくある質問</h2>
+
+      <div class="qa">
+        <h3>デジタル採点と電子採点は違うものですか</h3>
+        <div class="a">
+          <p>同じものを指すことがほとんどです。紙の答案をスキャンしてパソコンで採点するしくみを、デジタル採点・電子採点・採点支援システムなどと呼びます。</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <h3>無料で使えるデジタル採点ソフトはありますか</h3>
+        <div class="a">
+          <p>Scoring64 は、毎月2テストまで人数制限なしで、すべての機能を無料で使えます。マークシートの自動採点、記述問題の採点、成績表・返却PDFの出力まで試せます。</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <h3>マークシートの専用読み取り機は要りますか</h3>
+        <div class="a">
+          <p>Scoring64 では要りません。普通の紙に印刷した用紙を、塾の複合機でPDFにスキャンして読み取ります。</p>
+        </div>
+      </div>
+
+      <div class="qa">
+        <h3>生徒の答案がインターネットに送られることはありますか</h3>
+        <div class="a">
+          <p>Scoring64 では送りません。答案の画像・成績・名簿は塾のパソコンの中だけで処理します。インターネットを使うのは、新しい版の確認と、アプリで用紙を作るための TeX の準備のときだけです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" aria-labelledby="cta-title">
+    <div class="wrap measure">
+      <h2 id="cta-title">まずは無料で試す</h2>
+      <p><a href="index.html">ダウンロード</a>して、<a href="start.html">はじめかた</a>の手順で入れます。Windows・Mac とも無料で始められます。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="company">株式会社Fermion</p>
+      <p><a href="mailto:contact@fermion.company">contact@fermion.company</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="サイトの案内">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="start.html">はじめかた</a></li>
+        <li><a href="guide.html">使い方</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="pricing.html">料金と申し込み</a></li>
+        <li><a href="digital-scoring.html">デジタル採点システムとは</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="contact.html#analytics">アクセス解析について</a></li>
+      </ul>
+    </nav>
+    <p class="copy">Scoring64 の著作権は株式会社Fermionにあります。© 2026 株式会社Fermion</p>
+  </div>
+</footer>
+</body>
+</html>
