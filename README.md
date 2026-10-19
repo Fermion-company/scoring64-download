@@ -2,7 +2,7 @@
 
 紙のテストのための電子採点ソフト「Scoring64」のインストーラーを置いています。ソースコードは、ここにはありません。
 
-**使い方・よくある質問・料金は、こちらのサイトにまとめています：<https://fermion-company.github.io/scoring64-download/>**
+**使い方・よくある質問・料金は、こちらのサイトにまとめています：<https://scoring64.fermion.company/>**
 
 ## ダウンロード
 

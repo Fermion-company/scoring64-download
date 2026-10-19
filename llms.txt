@@ -12,14 +12,16 @@
 
 ## ページ
 
-- [トップとダウンロード](https://fermion-company.github.io/scoring64-download/): Windows／Mac のインストーラー
-- [デジタル採点システムとは](https://fermion-company.github.io/scoring64-download/digital-scoring.html): しくみ、クラウド型とインストール型、塾で選ぶときの確認点
-- [はじめかた](https://fermion-company.github.io/scoring64-download/start.html): インストール、無料枠とキー、見本で試す
-- [使い方](https://fermion-company.github.io/scoring64-download/guide.html): 用紙の用意から返却まで6つの手順
-- [料金と申し込み](https://fermion-company.github.io/scoring64-download/pricing.html)
-- [よくある質問](https://fermion-company.github.io/scoring64-download/faq.html)
+- [トップとダウンロード](https://scoring64.fermion.company/): Windows／Mac のインストーラー
+- [デジタル採点システムとは](https://scoring64.fermion.company/digital-scoring.html): しくみ、クラウド型とインストール型、塾で選ぶときの確認点
+- [マークシートを無料で読み取り・採点する](https://scoring64.fermion.company/marksheet.html): 専用の読み取り機なしで、手元のマークシートを読み取る方法
+- [無料で使えるデジタル採点ソフトの比較](https://scoring64.fermion.company/compare.html): Scoring64・一括採点・採点侍・OGSS・EfficientEX・YouMark Personal を各社公式サイトの記載で比較
+- [はじめかた](https://scoring64.fermion.company/start.html): インストール、無料枠とキー、見本で試す
+- [使い方](https://scoring64.fermion.company/guide.html): 用紙の用意から返却まで6つの手順
+- [料金と申し込み](https://scoring64.fermion.company/pricing.html)
+- [よくある質問](https://scoring64.fermion.company/faq.html)
 
 ## 連絡先
 
 - 株式会社Fermion: contact@fermion.company
-- [お問い合わせ](https://fermion-company.github.io/scoring64-download/contact.html)
+- [お問い合わせ](https://scoring64.fermion.company/contact.html)
