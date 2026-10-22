@@ -561,128 +561,7 @@ h2 {
     transform:none
   }
 }
-@media(min-width:901px) and (min-height:701px) {
-  .scrolly-ready .story {
-    display:grid;
-    grid-template-columns:36% 64%;
-    gap:0;
-    position:relative
-  }
-  .scrolly-ready .story-step {
-    min-height:76vh;
-    display:flex;
-    align-items:center;
-    padding:80px 40px 80px 0
-  }
-  .scrolly-ready .step-copy {
-    border-left:2px solid #cbd5cf;
-    padding-left:28px;
-    transition:border-color .2s
-  }
-  .scrolly-ready .story-step.is-current .step-copy {
-    border-color:var(--teal)
-  }
-  .scrolly-ready .inline-screen {
-    position:absolute;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    clip-path:inset(50%);
-    white-space:nowrap
-  }
-  .scrolly-ready .story-visual {
-    display:block;
-    position:sticky;
-    top:120px;
-    align-self:start;
-    margin-block:36px 110px;
-    width:min(100%,calc((100svh - 290px)*1.88));
-    justify-self:center;
-    min-width:0
-  }
-  .story-stage {
-    border:1px solid #bfc9c3;
-    border-radius:12px;
-    overflow:hidden;
-    background:#fcfcfa;
-    box-shadow:0 22px 44px -32px #17342b55
-  }
-  .stage-top {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    font-size:11px;
-    padding:14px 20px;
-    color:var(--muted);
-    border-bottom:1px solid #cbd2cc
-  }
-  .stage-top>span:first-child {
-    font-weight:700;
-    color:var(--ink)
-  }
-  .stage-state {
-    font-variant-numeric:tabular-nums;
-    letter-spacing:.1em
-  }
-  .stage-images {
-    aspect-ratio:1.88;
-    position:relative;
-    overflow:hidden;
-    background:#161716
-  }
-  .stage-image {
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center top;
-    opacity:0;
-    transform:none;
-    transition:none;
-    pointer-events:none
-  }
-  .stage-image.is-active {
-    opacity:1;
-    transform:none;
-    z-index:2;
-    animation:stage-enter .48s var(--ease) both
-  }
-  .stage-image.is-previous {
-    opacity:1;
-    transform:none;
-    z-index:1
-  }
-  .stage-bottom {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 20px;
-    gap:10px;
-    color:var(--muted);
-    font-size:11px;
-    min-height:55px
-  }
-  .stage-dots {
-    display:flex;
-    gap:6px
-  }
-  .stage-dots span {
-    width:5px;
-    height:5px;
-    border-radius:50%;
-    background:#c4ceca
-  }
-  .stage-dots .is-active {
-    background:var(--teal)
-  }
-  .story-note {
-    text-align:center;
-    margin-top:15px;
-    font-size:10px;
-    color:var(--muted)
-  }
-}
+
 @media(max-width:1200px) {
   .shell {
     width:calc(100% - 80px)
@@ -1209,17 +1088,95 @@ html:not(.scrolly-ready) .story {
     transform:none
   }
 }
-@keyframes stage-enter {
-  from {
-    opacity:0
-  }
-  to {
-    opacity:1
-  }
-}
+
 
 .product-expand{display:block}
 .hero-product figcaption a{margin-left:8px;white-space:nowrap}
 .inline-screen figcaption{display:flex;justify-content:space-between;gap:16px}
 .inline-screen figcaption a{white-space:nowrap;align-self:start}
-@media(min-width:901px) and (min-height:701px){.scrolly-ready .inline-screen figcaption a{display:none}}
+
+
+/* Full-height scenes: the next card rises while the previous one recedes. */
+:root { --header-height:89px; --scene-height:calc(100dvh - var(--header-height) - 24px); }
+html { scroll-padding-top:calc(var(--header-height) + 12px); }
+.scene-anchor { height:0; pointer-events:none; }
+.scene-inner { min-width:0; }
+.scrolly-ready .story { display:block; max-width:none; padding-bottom:16px; }
+.scrolly-ready .story-steps { display:block; }
+.scrolly-ready .story-step {
+  position:sticky;
+  top:calc(var(--header-height) + 12px);
+  z-index:var(--scene-index);
+  display:block;
+  height:var(--scene-height);
+  min-height:0;
+  padding:0;
+  margin-bottom:24vh;
+  border:0;
+}
+.scrolly-ready .story-step:last-child { margin-bottom:0; }
+.scrolly-ready .scene-inner {
+  height:100%;
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);
+  align-items:center;
+  gap:clamp(24px,4vw,64px);
+  padding:clamp(26px,3.5vw,56px);
+  border:1px solid #cdd7d0;
+  border-radius:20px;
+  background:var(--bg);
+  box-shadow:0 20px 60px -40px #183c2c55;
+  transform:translate3d(0,var(--scene-lift,0px),0) scale(var(--scene-scale,1));
+  filter:brightness(var(--scene-brightness,1));
+  transform-origin:center top;
+  will-change:transform;
+}
+.scrolly-ready .step-copy { border:0; padding:0; min-width:0; }
+.scrolly-ready .step-copy h3 { font-size:clamp(28px,3.1vw,46px); line-height:1.6; }
+.scrolly-ready .inline-screen {
+  position:static;
+  width:auto;
+  height:100%;
+  min-height:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  overflow:visible;
+  clip-path:none;
+  white-space:normal;
+}
+.scrolly-ready .inline-screen img {
+  width:100%;
+  height:auto;
+  max-height:calc(100% - 60px);
+  aspect-ratio:auto;
+  object-fit:contain;
+  border-radius:9px;
+}
+.scrolly-ready .inline-screen figcaption { flex:none; margin-top:16px; line-height:1.8; }
+.scrolly-ready .inline-screen figcaption a { display:inline; }
+@media(max-width:900px) {
+  :root { --header-height:77px; }
+  .scrolly-ready .scene-inner { grid-template-columns:1fr; grid-template-rows:auto minmax(0,1fr); gap:24px; padding:32px; }
+  .scrolly-ready .step-copy h3 { font-size:30px; }
+  .scrolly-ready .step-copy h3 br { display:none; }
+  .scrolly-ready .step-copy h3 { margin-top:16px; }
+  .scrolly-ready .step-copy>p { margin-top:14px; }
+  .scrolly-ready .text-link { margin-top:18px; }
+  .scrolly-ready .inline-screen img { max-height:calc(100% - 56px); }
+}
+@media(max-width:540px) {
+  :root { --header-height:69px; }
+  .scrolly-ready .scene-inner { border-radius:14px; padding:24px 20px; gap:20px; }
+  .scrolly-ready .step-copy h3 { font-size:25px; margin-top:12px; }
+  .scrolly-ready .step-copy>p { font-size:13px; line-height:1.85; margin-top:12px; }
+  .scrolly-ready .text-link { margin-top:14px; font-size:12px; }
+  .scrolly-ready .inline-screen figcaption { margin-top:12px; font-size:12px; gap:12px; }
+  .scrolly-ready .inline-screen img { max-height:calc(100% - 64px); }
+}
+
+@media(max-width:540px){
+  .scrolly-ready .inline-screen img{height:320px;object-fit:cover;object-position:48% center}
+  .scrolly-ready .story-step[data-step="2"] .inline-screen img{object-position:27% center}
+}

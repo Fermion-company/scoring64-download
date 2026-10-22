@@ -2,47 +2,57 @@
   'use strict';
   const root = document.documentElement;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const desktop = matchMedia('(min-width: 901px) and (min-height: 701px)');
+  const spacious = matchMedia('(min-width: 901px) and (min-height: 600px), (max-width: 900px) and (min-height: 640px)');
   const steps = [...document.querySelectorAll('.story-step')];
-  const frames = [...document.querySelectorAll('.stage-image')];
-  const dots = [...document.querySelectorAll('.stage-dots span')];
-  const state = document.querySelector('.stage-state');
-  const caption = document.querySelector('.stage-caption');
-  let storyObserver;
+  const anchors = steps.map((step, index) => {
+    const anchor = document.createElement('div');
+    anchor.className = 'scene-anchor';
+    anchor.setAttribute('aria-hidden', 'true');
+    step.before(anchor);
+    step.style.setProperty('--scene-index', index + 1);
+    return anchor;
+  });
+  let stackEnabled = false;
+  let framePending = false;
   let revealObserver;
 
-  function activate(index) {
-    steps.forEach((step, i) => step.classList.toggle('is-current', i === index));
-    const previous = frames.findIndex(frame => frame.classList.contains('is-active'));
-    frames.forEach((frame, i) => {
-      frame.classList.toggle('is-active', i === index);
-      frame.classList.toggle('is-previous', previous !== index && i === previous);
+  function renderStack() {
+    framePending = false;
+    if (!stackEnabled) return;
+    // Read layout together, then write compositor properties once per frame.
+    const progress = steps.map((step, index) => {
+      if (index === steps.length - 1) return 0;
+      const nextTop = anchors[index + 1].getBoundingClientRect().top;
+      return Math.max(0, Math.min(1, (innerHeight - 12 - nextTop) / step.clientHeight));
     });
-    dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
-    state.textContent = `0${index + 1} / 03`;
-    caption.textContent = steps[index].querySelector('figcaption span').textContent;
+    steps.forEach((step, index) => {
+      step.style.setProperty('--scene-scale', (1 - progress[index] * .045).toFixed(4));
+      step.style.setProperty('--scene-lift', `${(-progress[index] * 8).toFixed(2)}px`);
+      step.style.setProperty('--scene-brightness', (1 - progress[index] * .12).toFixed(4));
+    });
+  }
+
+  function queueStackFrame() {
+    if (!stackEnabled || framePending) return;
+    framePending = true;
+    requestAnimationFrame(renderStack);
   }
 
   function configureStory() {
-    storyObserver?.disconnect();
+    stackEnabled = false;
     root.classList.remove('scrolly-ready');
-    if (reduced.matches || !desktop.matches || !('IntersectionObserver' in window)) return;
-    storyObserver = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting);
-      if (visible.length) {
-        const nearest = visible.sort((a, b) => Math.abs(a.boundingClientRect.top - innerHeight * .45) - Math.abs(b.boundingClientRect.top - innerHeight * .45))[0];
-        activate(Number(nearest.target.dataset.step));
-      }
-    }, { rootMargin: `-${Math.round(innerHeight * .42)}px 0px -${Math.round(innerHeight * .42)}px 0px`, threshold: 0 });
-    steps.forEach(step => storyObserver.observe(step));
+    if (reduced.matches || !spacious.matches) return;
     root.classList.add('scrolly-ready');
-    const visual = document.querySelector('.story-visual');
-    visual.style.top = `${Math.max(110, (innerHeight - visual.getBoundingClientRect().height) / 2)}px`;
-    const nearestStep = steps.map((step, index) => {
-      const rect = step.getBoundingClientRect();
-      return { index, distance: Math.abs(rect.top + rect.height / 2 - innerHeight / 2) };
-    }).sort((a, b) => a.distance - b.distance)[0];
-    activate(nearestStep.index);
+    // Text zoom or a shorter viewport must never clip the card's content.
+    if (steps.some(step => {
+      const inner = step.querySelector('.scene-inner');
+      return inner.scrollHeight > inner.clientHeight + 2;
+    })) {
+      root.classList.remove('scrolly-ready');
+      return;
+    }
+    stackEnabled = true;
+    renderStack();
   }
 
   function configureReveals() {
@@ -62,13 +72,25 @@
 
   configureStory();
   configureReveals();
-  desktop.addEventListener('change', configureStory);
+  spacious.addEventListener('change', configureStory);
+  addEventListener('scroll', queueStackFrame, { passive: true });
   let resizeTimer;
   addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(configureStory, 120);
   });
   reduced.addEventListener('change', () => { configureStory(); configureReveals(); });
+  document.fonts.ready.then(configureStory);
+
+  document.querySelector('.story').addEventListener('focusin', event => {
+    if (!stackEnabled || !event.target.matches(':focus-visible')) return;
+    const index = steps.indexOf(event.target.closest('.story-step'));
+    if (index < 0 || index === steps.length - 1) return;
+    const top = parseFloat(getComputedStyle(steps[index]).top);
+    if (anchors[index + 1].getBoundingClientRect().top < innerHeight - 12) {
+      scrollTo({ top: scrollY + anchors[index].getBoundingClientRect().top - top, behavior: 'instant' });
+    }
+  });
 
   const menu = document.querySelector('.mobile-menu');
   menu.addEventListener('click', event => {
