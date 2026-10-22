@@ -49,6 +49,8 @@
 
 変更はworktreeで行います。専用のビルド・テストコマンドはなく、静的HTMLを配信します。`git diff --check`、変更したHTMLの内部リンクと構造化データ、料金・申込先の維持を確認し、`python3 -m http.server 4364 --bind 127.0.0.1` で表示します。PCコードの案内から申込先・提出先・キー登録まで、デスクトップと狭い画面で確認します。実際の申込・決済・メール送信は表示確認に含めません。
 
+表示を変更したページは幅390・768・1080・1512pxで確認します。料金ページ冒頭の説明は `.page-intro` 内にまとめており、1080px以上でも無料枠・申込リンク・PCコード案内が重ならないことを確認してください。FAQの回答を変える場合は、本文とJSON-LDの両方を更新します。インストール時の警告は、表示された場合の文章だけで案内し、実際に確認していない画面写真は掲載しません。
+
 検証済みのコミットを `main` へpushすると、既存の `pages-build-deployment` が配信します。認証は保存済みの `gh`／Git認証を使います。`gh api repos/Fermion-company/scoring64-download/pages` で配信元、`gh run list --repo Fermion-company/scoring64-download --limit 3` と `gh api repos/Fermion-company/scoring64-download/pages/builds/latest` でコミットと成功状態を確認し、本番の変更ページと申込フォームを開いて確認してください。公開リポジトリのPagesは本体リポジトリの有料Actions枠とは状況が異なるため、配信できるかは対象の実行結果で判断します。代替の本番配信経路は未設定です。配信が失敗した場合は成功扱いせず、既存の本番表示と未反映のコミットを報告します。
 
 ## アクセス解析

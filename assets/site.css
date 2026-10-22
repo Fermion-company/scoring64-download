@@ -174,6 +174,10 @@ code, .path {
 .page-head { padding-top: clamp(48px, 8vw, 104px); padding-bottom: clamp(28px, 4vw, 44px); }
 .page-head h1 { margin-bottom: .5em; }
 .page-head .lead { margin: 0; max-width: 40em; }
+.page-intro { min-width: 0; }
+.page-intro > .lead { margin-bottom: 1em; }
+.page-intro > :last-child { margin-bottom: 0; }
+.page-actions { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; }
 
 .toc {
   list-style: none; padding: 0; margin: 28px 0 0;
@@ -538,6 +542,8 @@ main > .sec-grid:first-child > .section:first-of-type,
   .page-head > .toc a { display: block; padding: 12px 16px; font-size: 14.5px; }
   .page-head:not(:has(.toc)) > p:not(.eyebrow) { grid-column: 2; grid-row: 2; align-self: end; }
   .page-head:not(:has(.toc)) > p.muted { grid-row: 3; margin-top: 8px; }
+  .page-head-intro { align-items: start; grid-template-rows: auto 1fr; }
+  .page-head-intro > .page-intro { grid-column: 2; grid-row: 1 / span 2; }
 
   /* sections: heading in a left rail, content on the right */
   .prose, .measure {
