@@ -73,7 +73,7 @@ a, button {
               box-shadow 240ms var(--ease-out), transform 240ms var(--ease-out);
 }
 
-:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
+:focus-visible { outline: none; text-decoration: underline; text-underline-offset: .2em; }
 
 h1, h2, h3 { margin: 0; font-family: var(--sans); text-wrap: balance; }
 h1 { font-size: clamp(32px, 5vw, 60px); font-weight: 700; line-height: 1.25; letter-spacing: -.015em; }

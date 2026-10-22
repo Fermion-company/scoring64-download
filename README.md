@@ -37,6 +37,20 @@
 
 このソフトウェアの著作権は株式会社Fermionにあります。使用には、当社との使用許諾契約への同意が必要です。
 
+## 申込とキーの案内
+
+申込方法とPCコードの提出・キー登録は `pricing.html#apply` と `pricing.html#license` を正本とし、`start.html#key`・`contact.html`・`faq.html#q-buy` から案内します。キー発行は本体リポジトリ `Fermion-company/Scoring64` の `docs/licensing.md` にある販売元の手順で行います。このサイトにキー発行・自動メール送信の処理はありません。
+
+請求書は既存のGoogleフォームを使います。現在の選択肢は年払い・買い切り・保守の更新・複数教室の見積もりで、PCコードは「ご質問・ご要望」欄へ記入する案内です。月払いの請求書の相談と、申込後のPCコード提出は `contact@fermion.company` で受けます。フォームを編集する場合は、編集権限と公開側の表示を確認し、販売条件は会社サイトの `https://fermion.company/tokushoho#scoring64` と照合してください。
+
+## サイトの検証と配信
+
+公開サイトの正本はこのリポジトリの `main` 直下です。GitHub Pagesの設定は `build_type: legacy`、sourceは `main` の `/`、独自ドメインは `CNAME` の `scoring64.fermion.company` です。アプリ本体のCI・Release公開とは別の配信です。Vercelは使いません。
+
+変更はworktreeで行います。専用のビルド・テストコマンドはなく、静的HTMLを配信します。`git diff --check`、変更したHTMLの内部リンクと構造化データ、料金・申込先の維持を確認し、`python3 -m http.server 4364 --bind 127.0.0.1` で表示します。PCコードの案内から申込先・提出先・キー登録まで、デスクトップと狭い画面で確認します。実際の申込・決済・メール送信は表示確認に含めません。
+
+検証済みのコミットを `main` へpushすると、既存の `pages-build-deployment` が配信します。認証は保存済みの `gh`／Git認証を使います。`gh api repos/Fermion-company/scoring64-download/pages` で配信元、`gh run list --repo Fermion-company/scoring64-download --limit 3` と `gh api repos/Fermion-company/scoring64-download/pages/builds/latest` でコミットと成功状態を確認し、本番の変更ページと申込フォームを開いて確認してください。公開リポジトリのPagesは本体リポジトリの有料Actions枠とは状況が異なるため、配信できるかは対象の実行結果で判断します。代替の本番配信経路は未設定です。配信が失敗した場合は成功扱いせず、既存の本番表示と未反映のコミットを報告します。
+
 ## アクセス解析
 
 各案内ページは `assets/analytics.js` から GA4 を読み込みます。測定 ID は同ファイルの `measurementId` に設定します。GA4 の拡張計測を有効にし、閲覧を `page_view`、インストーラーへのクリックを `file_download` で確認します。クリック数はダウンロード完了数ではありません。実際のリリース資産の取得数は GitHub Releases で確認します。広告向け設定は無効です。解析についての案内は `contact.html#analytics` にあります。
