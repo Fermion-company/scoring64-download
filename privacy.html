@@ -34,6 +34,7 @@
     </a>
     <nav class="site-nav" aria-label="サイト内">
       <ul>
+        <li><a href="ai-grading.html">AI採点</a></li>
         <li><a href="start.html">はじめかた</a></li>
         <li><a href="guide.html">使い方</a></li>
         <li><a href="videos.html">動画</a></li>
@@ -50,7 +51,7 @@
     <p class="eyebrow">Privacy</p>
     <h1>プライバシーポリシー</h1>
     <p class="lead">Scoring64 のアプリは、答案や生徒のデータを使っている端末の中だけで扱います。販売元へ送ることはありません。</p>
-    <p class="muted small">制定日 2026年10月13日 ／ 改定日 2026年10月22日</p>
+    <p class="muted small">制定日 2026年10月13日 ／ 改定日 2026年10月23日</p>
   </div>
 
   <div class="sec-grid">
@@ -72,12 +73,13 @@
   <section class="section" id="collection" aria-labelledby="collection-title">
     <div class="prose">
       <h2 id="collection-title">収集と送信</h2>
-      <p>アプリから販売元や第三者へ、答案、名簿、採点結果、端末ID、利用履歴を送りません。アカウント登録、広告、アクセス解析、クラッシュ報告、追跡の機能はありません。外部の AI サービスも使いません。</p>
+      <p>アプリから販売元や第三者へ、答案、名簿、採点結果、端末ID、利用履歴を送りません。アカウント登録、広告、アクセス解析、クラッシュ報告、追跡の機能はありません。アプリ本体に外部のAIサービスを呼び出す処理はありません。利用者が別途AI連携を選ぶ場合は、下記の扱いが加わります。</p>
       <p>採点処理は端末の中で <code>127.0.0.1</code> だけに接続を受け付け、アプリの画面とのやり取りにだけ使います。ほかのコンピュータからは接続できません。</p>
-      <p>ファイルを外に出すのは、利用者が書き出しや保存を選んだときだけです。返却 ZIP、CSV、バックアップの保存先と、その後の共有は利用者が決めます。</p>
+      <p>アプリ本体からファイルを書き出すのは、利用者が書き出しや保存を選んだときだけです。AI連携による画面・答案の送信は下記のとおりです。返却 ZIP、CSV、バックアップの保存先と、その後の共有は利用者が決めます。</p>
     </div>
   </section>
 
+  <section class="section" id="ai-integration" aria-labelledby="ai-integration-title"><div class="prose"><h2 id="ai-integration-title">利用者がAI連携を使う場合</h2><p>Windows／Macのダウンロード版をCodex・Claude Codeの採点プラグインと連携すると、AIエージェントが答案を読み、アプリの画面を操作します。この際、答案の画像・文字・氏名や採点基準が利用中のAIサービスに送られる場合があります。通常の画面採点・マーク読取のローカル処理とは異なり、完全オフラインのAI採点ではありません。</p><p>プラグインの起動補助は同じPCのループバックアドレスに接続し、販売元のプラグインサーバーへ答案を送る機能はありません。AI提供元での保存・学習利用・削除は、そのサービスの規約と利用者の設定に従います。</p><p>本番の答案は事前に匿名化し、所属先の方針を確認してください。13歳未満の児童の個人情報をAIサービスへ送らないでください。<a href="ai-grading.html#data">AI採点のデータの扱い</a>・<a href="https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md">採点プラグインの説明</a></p></div></section>
   <section class="section" id="network" aria-labelledby="network-title">
     <div class="prose">
       <h2 id="network-title">アプリがインターネットにつなぐとき</h2>
@@ -157,6 +159,8 @@
         <li><a href="pricing.html">料金と申し込み</a></li>
         <li><a href="contact.html">お問い合わせ</a></li>
         <li><a href="privacy.html" aria-current="page">プライバシーポリシー</a></li>
+        <li><a href="ai-grading.html">AI採点ツールとして使う</a></li>
+        <li><a href="ai-grading-demo.html">AI採点デモ</a></li>
         <li><a href="digital-scoring.html">デジタル採点システムとは</a></li>
         <li><a href="marksheet.html">マークシートの無料採点</a></li>
         <li><a href="compare.html">無料のデジタル採点ソフト比較</a></li>

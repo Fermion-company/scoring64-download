@@ -13,12 +13,16 @@
 
 版ごとのファイルと SHA-256 は、[最新版のページ](https://github.com/Fermion-company/scoring64-download/releases/latest)の「Assets」にあります。
 
+## AI採点
+
+[AI採点の導入手順](https://scoring64.fermion.company/ai-grading.html)と[見本デモ](https://scoring64.fermion.company/ai-grading-demo.html)を公開しています。Codex・Claude Code、同じPCのローカルコマンド実行・ブラウザ操作、Node.js 18以上、採点プラグインが必要です。AIサービスの利用料・上限は別で、AIが読む答案は利用先AIサービスへ送られる場合があります。
+
 ## 動作環境
 
 - Windows 10／11（64ビット）
 - Apple Silicon の Mac（M1 以降）
 - Scoring64 の専用ウィンドウで動きます（ブラウザは開きません）。
-- 管理者の権限は要りません。採点や読み取りにインターネットへの接続は要りません（新しい版の確認と、アプリで用紙を作るための TeX の準備のときだけ使います）。答案と成績は、このパソコンの中だけで処理します。
+- 管理者の権限は要りません。採点や読み取りにインターネットへの接続は要りません（新しい版の確認と、アプリで用紙を作るための TeX の準備のときだけ使います）。通常の画面採点・マーク読取は、このパソコンの中だけで処理します。AI連携時の送信条件は上記の案内を確認してください。
 
 ## インストールのときの表示
 
