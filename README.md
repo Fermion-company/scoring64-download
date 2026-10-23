@@ -62,3 +62,5 @@
 ## アクセス解析
 
 各案内ページは `assets/analytics.js` から GA4 を読み込みます。測定 ID は同ファイルの `measurementId` に設定します。GA4 の拡張計測を有効にし、閲覧を `page_view`、インストーラーへのクリックを `file_download` で確認します。クリック数はダウンロード完了数ではありません。実際のリリース資産の取得数は GitHub Releases で確認します。広告向け設定は無効です。解析についての案内は `contact.html#analytics` にあります。
+
+共通ヘッダー・フッターと色・余白の定義は `assets/brand.css` で管理します。案内13ページは `assets/site.css` の基本構造に `assets/pages.css` を重ね、メニュー操作は `assets/ui.js` を使います。詳細説明は通常の縦スクロールです。案内ページを変更したときもトップと同じ4幅で確認し、料金・外部リンク・FAQ構造化データの整合を維持してください。
