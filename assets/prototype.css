@@ -1180,3 +1180,69 @@ html { scroll-padding-top:calc(var(--header-height) + 12px); }
   .scrolly-ready .inline-screen img{height:320px;object-fit:cover;object-position:48% center}
   .scrolly-ready .story-step[data-step="2"] .inline-screen img{object-position:27% center}
 }
+
+/* Fit the complete laptop into the opening viewport, including its base. */
+@media (min-width:901px) and (min-height:640px), (max-width:900px) and (min-height:720px) {
+  .hero {
+    height:calc(100dvh - var(--header-height));
+    min-height:0;
+    grid-template-rows:minmax(0,1fr) auto;
+    padding-top:clamp(24px,5vh,56px);
+  }
+  .hero-product {
+    container-type:size;
+    align-self:stretch;
+    height:100%;
+    min-height:0;
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:0 0 0 16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .device-screen {
+    width:min(calc(100% - 12px),calc((100cqh - 80px)*1.884615));
+    flex:none;
+  }
+  .device-screen img {
+    aspect-ratio:1470/780;
+    object-fit:contain;
+  }
+  .device-foot {
+    width:min(100%,calc((100cqh - 80px)*1.884615 + 12px));
+    margin-inline:0;
+    flex:none;
+  }
+  .hero-product figcaption { flex:none; }
+  .hero-bottom { margin-top:0; padding-block:18px; }
+}
+@media (min-width:541px) and (max-width:900px) and (min-height:720px) {
+  .hero {
+    grid-template-rows:auto minmax(0,1fr);
+    padding-block:24px 16px;
+    row-gap:16px;
+  }
+  .hero .eyebrow { margin-bottom:14px; }
+  .hero h1 { font-size:clamp(34px,5.9vw,42px); line-height:1.45; }
+  .hero-lead { font-size:15px; line-height:1.85; margin-block:14px 18px; }
+  .hero-actions .button { min-height:48px; }
+  .hero-terms { margin-top:14px; }
+  .hero-product { padding:0; }
+  .hero-bottom { display:none; }
+}
+@media (max-width:540px) and (min-height:720px) {
+  .hero {
+    grid-template-rows:auto minmax(0,1fr);
+    padding-block:24px 16px;
+    row-gap:16px;
+  }
+  .hero .eyebrow { margin-bottom:14px; }
+  .hero h1 { font-size:30px; }
+  .hero-lead { margin-block:14px 18px; }
+  .hero-terms { margin-top:12px; }
+  .hero-product { padding:0; }
+  .hero-bottom { display:none; }
+}
