@@ -57,6 +57,8 @@
 
 検証済みのコミットを `main` へpushすると、既存の `pages-build-deployment` が配信します。認証は保存済みの `gh`／Git認証を使います。`gh api repos/Fermion-company/scoring64-download/pages` で配信元、`gh run list --repo Fermion-company/scoring64-download --limit 3` と `gh api repos/Fermion-company/scoring64-download/pages/builds/latest` でコミットと成功状態を確認し、本番の変更ページと申込フォームを開いて確認してください。公開リポジトリのPagesは本体リポジトリの有料Actions枠とは状況が異なるため、配信できるかは対象の実行結果で判断します。代替の本番配信経路は未設定です。配信が失敗した場合は成功扱いせず、既存の本番表示と未反映のコミットを報告します。
 
+トップページは `index.html` と `assets/home.css`・`assets/home.js` で構成します。ヒーローのPC画像は初期表示の高さに合わせて全体を表示し、工程カードはヘッダー下の表示領域に収めます。動きを減らす設定や内容が収まらない画面では通常の縦並びになります。`prototype.html` は検索対象外の確認用ページです。トップの更新時も検索向けのメタデータ・構造化データと解析タグを維持してください。
+
 ## アクセス解析
 
 各案内ページは `assets/analytics.js` から GA4 を読み込みます。測定 ID は同ファイルの `measurementId` に設定します。GA4 の拡張計測を有効にし、閲覧を `page_view`、インストーラーへのクリックを `file_download` で確認します。クリック数はダウンロード完了数ではありません。実際のリリース資産の取得数は GitHub Releases で確認します。広告向け設定は無効です。解析についての案内は `contact.html#analytics` にあります。

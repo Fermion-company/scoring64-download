@@ -1246,3 +1246,11 @@ html { scroll-padding-top:calc(var(--header-height) + 12px); }
   .hero-product { padding:0; }
   .hero-bottom { display:none; }
 }
+
+/* Secondary resources stay available without crowding the main footer. */
+.footer-more{margin-top:28px;font-size:12px;color:var(--muted)}
+.footer-more summary{cursor:pointer;width:fit-content;padding-block:8px}
+.footer-more nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px;margin-top:18px}
+.footer-more nav a{width:fit-content;text-decoration:none}
+.footer-more nav a:hover{text-decoration:underline}
+@media(max-width:540px){.footer-more nav{grid-template-columns:1fr 1fr;gap:14px 20px}}
