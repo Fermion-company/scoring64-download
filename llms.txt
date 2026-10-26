@@ -27,7 +27,7 @@
 
 ## English
 
-Scoring64 is desktop software for grading paper tests (Windows / Apple silicon Mac) by Fermion Inc., Tokyo. The English interface arrives in version 1.2.0; version 1.1.0 is Japanese only. Free for 2 tests a month per computer; pricing outside Japan is quoted by email.
+Scoring64 is desktop software for grading paper tests (Windows / Apple silicon Mac) by Fermion Inc., Tokyo. The Windows version is in English from version 1.2.0; the Mac download is still version 1.1.0, in Japanese only. Free for 2 tests a month per computer; pricing outside Japan is quoted by email.
 
 - [Scoring64 in English](https://scoring64.fermion.company/en/)
 - [Getting started](https://scoring64.fermion.company/en/start.html)
