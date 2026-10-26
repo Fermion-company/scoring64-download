@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title>AI採点ツール Scoring64｜手書き答案・PDFをCodex・Claudeと採点</title>
 <link rel="canonical" href="https://scoring64.fermion.company/ai-grading.html">
+<link rel="alternate" hreflang="ja" href="https://scoring64.fermion.company/ai-grading.html">
+<link rel="alternate" hreflang="en" href="https://scoring64.fermion.company/en/ai-grading.html">
+<link rel="alternate" hreflang="x-default" href="https://scoring64.fermion.company/en/ai-grading.html">
 <meta name="description" content="Scoring64をCodex・Claude Codeと連携して、手書き答案やPDFをAI採点する方法。本体は毎月2テストまで無料。必要環境、AIサービスの料金、部分点、答案データの扱い、見本デモを紹介。">
 <meta name="msvalidate.01" content="3D1E2963517F5441264842D7DCAC7656">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,11 +22,12 @@
 <meta property="og:url" content="https://scoring64.fermion.company/ai-grading.html">
 <meta property="og:image" content="https://scoring64.fermion.company/assets/ai/ai-grading-review.jpg">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"株式会社Fermion","url":"https://fermion.company/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/"},{"@type":"ListItem","position":2,"name":"AI採点ツール Scoring64","item":"https://scoring64.fermion.company/ai-grading.html"}]},{"@type":"WebPage","@id":"https://scoring64.fermion.company/ai-grading.html","url":"https://scoring64.fermion.company/ai-grading.html","name":"AI採点ツール Scoring64｜手書き答案・PDFをCodex・Claudeと採点","description":"Scoring64をCodex・Claude Codeと連携して、手書き答案やPDFをAI採点する方法。本体は毎月2テストまで無料。必要環境、AIサービスの料金、部分点、答案データの扱い、見本デモを紹介。","inLanguage":"ja","dateModified":"2026-10-24","about":{"@id":"https://scoring64.fermion.company/#app"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Scoring64はAI採点ツールとして使えますか。","acceptedAnswer":{"@type":"Answer","text":"Windows／Macのダウンロード版を、同じPCで動くCodex・Claude Codeと採点プラグインに連携して使えます。AIが答案画像と正解・部分点基準を照合し、画面を操作して点数を保存します。本体にAIモデルは内蔵しておらず、最終確認は教員が行います。"}},{"@type":"Question","name":"AI採点を無料で試せますか。","acceptedAnswer":{"@type":"Answer","text":"Scoring64本体は毎月2テストまで全機能無料で、採点プラグインも無料です。AIサービスの利用料・利用上限は別です。利用中の契約でローカル操作ができるかを確認してください。無料の見本で操作を確認できます。"}},{"@type":"Question","name":"ブラウザ版ChatGPTだけで採点できますか。","acceptedAnswer":{"@type":"Answer","text":"この連携には同じPCのローカルコマンド実行とブラウザ操作が必要です。通常のブラウザ版ChatGPTにPDFを添付するだけではScoring64を操作できません。対応するCodexまたはClaude Codeの環境を用意してください。"}},{"@type":"Question","name":"答案が外部に送られますか。","acceptedAnswer":{"@type":"Answer","text":"通常の画面採点とマーク読取はPC内で処理します。AI連携時は、AIが読む答案画像や文字、採点基準が利用中のAIサービスに送られる場合があります。匿名化し、送信先の規約と所属先の方針を確認してください。"}},{"@type":"Question","name":"手書きや部分点にも対応しますか。","acceptedAnswer":{"@type":"Answer","text":"手書きの答案画像をAIが読み、指定された正解と部分点基準を照合します。判読できない字や基準が不足した答案は未採点として残すよう指示できます。全教科・全筆跡の精度を保証するものではなく、教員による見直しが必要です。"}}]}]}</script>
 <!-- seo:end -->
 <link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/brand.css?v=20261024-1">
+<link rel="stylesheet" href="assets/brand.css?v=20261026-1">
 <link rel="stylesheet" href="assets/pages.css?v=20261024-1">
 <script defer src="assets/ui.js?v=20261024-1"></script>
 <script defer src="assets/analytics.js"></script>
@@ -36,10 +40,11 @@
       <nav class="desktop-nav" aria-label="メインナビゲーション">
         <a href="index.html#workflow">できること</a><a href="ai-grading.html" aria-current="page">AI採点</a><a href="guide.html">使い方</a><a href="pricing.html">料金</a>
       </nav>
+      <a class="lang-switch" href="en/ai-grading.html" hreflang="en" lang="en">English</a>
       <a class="header-download" href="index.html#download">無料でダウンロード</a>
       <details class="mobile-menu">
         <summary aria-label="メニュー"><span></span><span></span></summary>
-        <nav aria-label="モバイルナビゲーション"><a href="index.html#workflow">できること</a><a href="ai-grading.html" aria-current="page">AI採点</a><a href="guide.html">使い方</a><a href="pricing.html">料金</a><a href="faq.html">よくある質問</a><a href="index.html#download">PC版をダウンロード</a></nav>
+        <nav aria-label="モバイルナビゲーション"><a href="index.html#workflow">できること</a><a href="ai-grading.html" aria-current="page">AI採点</a><a href="guide.html">使い方</a><a href="pricing.html">料金</a><a href="faq.html">よくある質問</a><a href="index.html#download">PC版をダウンロード</a><a href="en/ai-grading.html" hreflang="en" lang="en">English</a></nav>
       </details>
     </div>
   </header>
