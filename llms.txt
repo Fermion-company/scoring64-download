@@ -25,6 +25,17 @@
 - [料金と申し込み](https://scoring64.fermion.company/pricing.html)
 - [よくある質問](https://scoring64.fermion.company/faq.html)
 
+## English
+
+Scoring64 is desktop software for grading paper tests (Windows / Apple silicon Mac) by Fermion Inc., Tokyo. The English interface arrives in version 1.2.0; version 1.1.0 is Japanese only. Free for 2 tests a month per computer; pricing outside Japan is quoted by email.
+
+- [Scoring64 in English](https://scoring64.fermion.company/en/)
+- [Getting started](https://scoring64.fermion.company/en/start.html)
+- [How to use](https://scoring64.fermion.company/en/guide.html)
+- [AI grading with Codex or Claude Code](https://scoring64.fermion.company/en/ai-grading.html)
+- [FAQ](https://scoring64.fermion.company/en/faq.html)
+- [Pricing](https://scoring64.fermion.company/en/pricing.html)
+
 ## 連絡先
 
 - 株式会社Fermion: contact@fermion.company

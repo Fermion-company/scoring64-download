@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to use Scoring64 | From answer sheet to returned PDFs</title>
+<link rel="canonical" href="https://scoring64.fermion.company/en/guide.html">
+<link rel="alternate" hreflang="ja" href="https://scoring64.fermion.company/guide.html">
+<link rel="alternate" hreflang="en" href="https://scoring64.fermion.company/en/guide.html">
+<link rel="alternate" hreflang="x-default" href="https://scoring64.fermion.company/en/guide.html">
+<meta name="description" content="Six steps in Scoring64: prepare the answer sheet from Word or Excel, enter the answer key and points, print, scan and import, grade, and hand back marked PDFs.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap">
+<!-- seo:start -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Scoring64">
+<meta property="og:title" content="How to use Scoring64 | From answer sheet to returned PDFs">
+<meta property="og:description" content="Six steps in Scoring64: prepare the answer sheet from Word or Excel, enter the answer key and points, print, scan and import, grade, and hand back marked PDFs.">
+<meta property="og:url" content="https://scoring64.fermion.company/en/guide.html">
+<meta property="og:image" content="https://scoring64.fermion.company/assets/img/s10-grading.webp">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"Fermion Inc.","alternateName":"株式会社Fermion","url":"https://fermion.company/","email":"contact@fermion.company","address":{"@type":"PostalAddress","streetAddress":"MIEUX Shibuya Bldg. 8F, 5-3 Maruyama-cho","addressLocality":"Shibuya-ku","addressRegion":"Tokyo","postalCode":"150-0044","addressCountry":"JP"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/en/"},{"@type":"ListItem","position":2,"name":"How to use","item":"https://scoring64.fermion.company/en/guide.html"}]}]}</script>
+<!-- seo:end -->
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/brand.css?v=20261026-1">
+<link rel="stylesheet" href="../assets/pages.css?v=20261024-1">
+<script defer src="../assets/ui.js?v=20261024-1"></script>
+<script defer src="../assets/analytics.js"></script>
+</head>
+<body class="content-page">
+<a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="shell header-row">
+      <a class="brand" href="./" aria-label="Scoring64 home"><img src="../assets/logo.svg" alt="" width="30" height="30"><span>Scoring<span class="brand-accent">64</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="./#workflow">Features</a><a href="ai-grading.html">AI grading</a><a href="guide.html">Guide</a><a href="pricing.html">Pricing</a>
+      </nav>
+      <a class="lang-switch" href="../guide.html" hreflang="ja" lang="ja" aria-label="日本語のページへ">日本語</a>
+      <a class="header-download" href="./#download">Download free</a>
+      <details class="mobile-menu">
+        <summary aria-label="Menu"><span></span><span></span></summary>
+        <nav aria-label="Mobile navigation"><a href="./#workflow">Features</a><a href="ai-grading.html">AI grading</a><a href="guide.html">Guide</a><a href="pricing.html">Pricing</a><a href="faq.html">FAQ</a><a href="./#download">Download</a><a href="../guide.html" hreflang="ja" lang="ja">日本語</a></nav>
+      </details>
+    </div>
+  </header>
+
+<main id="main">
+  <div class="wrap narrow page-head">
+    <p class="eyebrow">How to use</p>
+    <h1>How to use Scoring64</h1>
+    <p class="lead">Six steps, from preparing the sheet to handing back results. Each computer can grade 2 tests a month with every feature, written-answer grading and returned PDFs included. Work through the tabs at the top of the window from left to right.</p>
+    <p class="small muted">The screenshots show the Japanese interface. Button names in the text are those of the English interface in version 1.2.0.</p>
+    <ol class="toc" aria-label="Steps">
+      <li><a href="#step1">1 Prepare the sheet</a></li>
+      <li><a href="#step2">2 Answer key and points</a></li>
+      <li><a href="#step3">3 Print the sheets</a></li>
+      <li><a href="#step4">4 Scan and import</a></li>
+      <li><a href="#step5">5 Grade</a></li>
+      <li><a href="#step6">6 Hand back and keep</a></li>
+    </ol>
+  </div>
+
+  <section class="section" aria-labelledby="need-title">
+    <div class="prose top">
+      <h2 id="need-title">What you need</h2>
+      <dl class="specs">
+        <div><dt>Computer</dt><dd>Windows 10 / 11 (64-bit), or a Mac with Apple silicon (M1 or later). Grading needs no internet connection (it is used only to check for updates and to set up TeX)</dd></div>
+        <div><dt>Printer</dt><dd>One that prints at actual size (100%)</dd></div>
+        <div><dt>Scanner</dt><dd>Your school's copier is fine, as long as it saves PDFs at 200–300 dpi</dd></div>
+        <div><dt>Students' pencils</dt><dd>Bubbles are filled in with a soft pencil (HB / No. 2, or B)</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="step1" aria-labelledby="step1-title">
+    <div class="prose top">
+      <p class="eyebrow">Step 01</p>
+      <h2 id="step1-title">Prepare the sheet</h2>
+      <div class="pair">
+      <div class="flow">
+      <p>Use the Word or Excel worksheets you already have.</p>
+      <ol class="steps">
+        <li>In Word or Excel, choose <span class="ui">File</span> → <span class="ui">Save As</span> and save as PDF. If you only have paper, scan it to PDF at 300 dpi.</li>
+        <li>Click <span class="ui">Open PDF or material</span> at the top and choose the PDF.</li>
+        <li>Suggested answer boxes appear: purple for written answers, orange for choices.</li>
+        <li>Check each suggestion. If one is wrong, click it and fix its type, number or area.</li>
+        <li>Click <span class="ui">Add accepted boxes</span>, then <span class="ui">Check all cut-outs</span> to confirm each area.</li>
+      </ol>
+      <div class="note">
+        <span class="note-label">NOTE</span>
+        <p>Suggestions can miss a box or get one wrong, so always check them by eye. Draw any missing box with <span class="ui">Add a box by hand</span> in the right-hand panel (<a href="#manual">steps below</a>).</p>
+      </div>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s06-import.webp"><img src="../assets/img/s06-import.webp" width="1440" height="900" loading="lazy" alt="A maths quiz PDF after import. The answer boxes are outlined in purple, with the Add a box by hand button and the list of suggested boxes on the right."></a>
+        <figcaption><span class="fig-no">Fig. 1</span>A worksheet PDF after import. Frames and blanks are suggested as answer boxes</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s07-crop-check.webp"><img src="../assets/img/s07-crop-check.webp" width="1440" height="900" loading="lazy" alt="The list of cut-outs, one area per question."></a>
+        <figcaption><span class="fig-no">Fig. 2</span>Checking the cut-outs</figcaption>
+      </figure>
+      </div>
+      </div>
+      <div class="pair">
+      <div class="flow">
+      <h3 id="manual">Add a box by hand</h3>
+      <ol class="steps">
+        <li>Click <span class="ui">Add a box by hand</span> in the right-hand panel.</li>
+        <li>Drag over the page to draw the area. Drawing again replaces it.</li>
+        <li>In the settings on the right, choose the <span class="ui">Box name</span>, <span class="ui">Type</span> (<span class="ui">Name</span>, <span class="ui">No.</span>, <span class="ui">Answer box</span> or <span class="ui">Other</span>), whether to grade it, and what it <span class="ui">Belongs to</span>. For an answer that runs across pages or frames, choose <span class="ui">Continues a box</span> so it is graded as one question.</li>
+        <li>Click <span class="ui">Add</span>. Draw again to add the next box, and click <span class="ui">Done adding</span> when you are finished.</li>
+      </ol>
+      <p>Select a box and press <span class="key">Delete</span> to remove it. Arrow keys move it; <span class="key">Shift</span> + arrow keys resize it.</p>
+      <div class="caution">
+        <span class="note-label">TIPS · When you make the worksheet</span>
+        <ul class="dots">
+          <li>Make choice boxes at least <b>7 mm (¼ in) square</b>.</li>
+          <li>Keep <b>a 30 mm (1¼ in) square at the top right</b> clear. A QR code is printed there.</li>
+          <li>Make fill-in blanks at least 15 mm long.</li>
+        </ul>
+      </div>
+      <p class="muted small">You can also design sheets in the app (<span class="ui">New exam</span>). Sheet design uses TeX, which is free. If TeX is not installed, Scoring64 can set up a light or full version from <span class="ui">New exam</span> or the <span class="ui">?</span> menu (this needs the internet the first time). Importing Word or Excel PDFs does not need TeX.</p>
+      <details class="more">
+        <summary>Designing a sheet in the app</summary>
+        <div>
+          <ol class="steps">
+            <li>Click <span class="ui">New exam</span>, type a name and choose a starting sheet: <span class="ui">Sheet with No. and Name boxes</span> (selected first), <span class="ui">Blank sheet</span>, <span class="ui">Start from a saved template</span> or <span class="ui">Copy an earlier exam</span>. Sheets come in A4 and US Letter. Sheets for Japanese exams are listed last, under <span class="ui">Japan-specific sheets</span>.</li>
+            <li>Click the page where you want something, then use <span class="ui">+ Add part</span> to place answer boxes, text, maths, figures and more. Boxes go into the section shown under <span class="ui">Add to</span>; leave it on automatic or pick a section.</li>
+            <li>Text and maths parts open an editing field right beside them. Half-written maths is kept.</li>
+            <li>Numbers count on within each section. You can choose the <span class="ui">Number enclosure</span>, such as (1), for each box, and put part headings under a section.</li>
+            <li>Drag across an empty part of the page to select every box it touches (<span class="key">Ctrl</span> + <span class="key">A</span> selects all; on a Mac use <span class="key">Command</span> instead of <span class="key">Ctrl</span>). Copy, cut and paste with <span class="key">Ctrl</span> + <span class="key">C</span> / <span class="key">X</span> / <span class="key">V</span>.</li>
+            <li>Pick a font from the menu. Fonts installed on the computer are under <span class="ui">More fonts</span>.</li>
+            <li>Keep a sheet you use often with <span class="ui">Save as template</span>.</li>
+          </ol>
+          <p class="muted small">You draw the page directly on screen; TeX checks the finished result in the background.</p>
+        </div>
+      </details>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s07-manual.webp"><img src="../assets/img/s07-manual.webp" width="1440" height="900" loading="lazy" alt="Adding a box by hand: the score area on the page is outlined by dragging, with the box settings and the Add button on the right."></a>
+        <figcaption><span class="fig-no">Fig. 3</span>Adding a box by hand. Set up the outlined area on the right, then add it</figcaption>
+      </figure>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step2" aria-labelledby="step2-title">
+    <div class="prose top">
+      <p class="eyebrow">Step 02</p>
+      <h2 id="step2-title">Answer key and points</h2>
+      <div class="pair">
+      <div class="flow">
+      <ol class="steps">
+        <li>Click <span class="ui">Enter answer key and points as a list</span> in the right-hand panel.</li>
+        <li>For choice questions, click the correct choice. To enter many at once, click <span class="ui">Type answers in a row</span>, choose the first box, type the answers in order and click <span class="ui">Fill in answers</span>. An answer key in Excel can go in with <span class="ui">Paste from Excel</span>. For written questions, a model answer entered as the correct answer is shown above each student's answer while you grade.</li>
+        <li>Choose the points and the grading method. <span class="ui">Set the same points</span> fills in equal points in one go. Enter <span class="ui">Planned full marks</span> at the top and Scoring64 shows whether the total matches.</li>
+        <li>Click <span class="ui">Confirm the sheet and go to printing</span> at the top right. A checklist appears; click <span class="ui">Save and confirm</span>. Answers outside the choices and points that are not whole numbers are flagged here. Saving, making the print PDF and fixing the sheet version then run in turn.</li>
+      </ol>
+      <details class="more">
+        <summary>Grading methods</summary>
+        <div>
+          <table class="table">
+            <tr><th scope="row">Grade by hand</th><td>Written answers. You grade them on screen</td></tr>
+            <tr><th scope="row">Single answer</th><td>One correct choice</td></tr>
+            <tr><th scope="row">All or nothing</th><td>Correct only if every box is right</td></tr>
+            <tr><th scope="row">Any order (partial credit)</th><td>Order does not matter; points for each one right</td></tr>
+            <tr><th scope="row">Any order, all or nothing</th><td>Order does not matter; all must be right</td></tr>
+            <tr><th scope="row">Everyone correct (e.g. a faulty question)</th><td>Full marks for everyone</td></tr>
+          </table>
+        </div>
+      </details>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s08-answer-key.webp"><img src="../assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="Entering the answer key and points: the total and planned full marks at the top, the field for typing answers in a row, and a row for each question with its answer, points and grading method."></a>
+        <figcaption><span class="fig-no">Fig. 4</span>The answer key and points list</figcaption>
+      </figure>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step3" aria-labelledby="step3-title">
+    <div class="prose top">
+      <p class="eyebrow">Step 03</p>
+      <h2 id="step3-title">Print the sheets</h2>
+      <div class="pair">
+      <div class="flow">
+          <ol class="steps">
+            <li>On the <span class="ui">Print &amp; scan</span> tab, enter the number of students. If you have a class list, load it with <span class="ui">Choose roster CSV</span> (the first row holds the headings <code>number,name</code>).</li>
+            <li>To print each student's name on their sheet, tick <span class="ui">Preprint names and student numbers</span>.</li>
+            <li>Click <span class="ui">Make the print PDF</span> and print it <b>at actual size</b>.</li>
+          </ol>
+          <p>Each sheet gets a QR code at the top right and black squares in the corners. Scoring64 uses them to recognize the sheet when you import it.</p>
+      </div>
+      <div class="media with-tall">
+      <figure class="shot tall">
+          <a class="zoom" href="../assets/img/s09-issue.webp"><img src="../assets/img/s09-issue.webp" width="420" height="1275" loading="lazy" alt="The print panel: number of sheets to print, Choose roster CSV, Preprint names and student numbers, Make the print PDF, downloads of printed sheets, and the scanned PDF drop area below."></a>
+          <figcaption><span class="fig-no">Fig. 5</span>Printing the sheets</figcaption>
+        </figure>
+      <div class="note">
+        <span class="note-label">Tell your students</span>
+            <ul class="dots">
+              <li>Fill the box in firmly with an HB or B pencil. Do not circle or tick (these are not read as answers and go to you for review).</li>
+              <li>Erase changes cleanly.</li>
+            </ul>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step4" aria-labelledby="step4-title">
+    <div class="prose top">
+      <p class="eyebrow">Step 04</p>
+      <h2 id="step4-title">Scan and import the answer sheets</h2>
+      <div class="pair">
+      <div class="flow">
+      <ol class="steps">
+        <li>Scan the answer sheets to PDF on your copier. A whole class in one PDF is fine.</li>
+        <li>Choose or drop the PDFs into <span class="ui">Scanned PDFs</span> on the left. Several files and double-sided scans work; the QR codes put pages the right way up and in order.</li>
+        <li>If anything is left to sort out, <span class="ui">Pages to fix</span> (unidentified pages, alignment failures, duplicates), <span class="ui">See sheets with no answers yet</span> or <span class="ui">Check names</span> appear above <span class="ui">Imported answer sheets</span>. Click them to check.</li>
+      </ol>
+      <table class="table stack" aria-label="Scanner settings">
+        <tr><th scope="row">Resolution</th><td>200–300 dpi</td></tr>
+        <tr><th scope="row">Color</th><td>Color (or grayscale). Not black and white, which drops light pencil marks</td></tr>
+        <tr><th scope="row">Format</th><td>PDF</td></tr>
+        <tr><th scope="row">Paper size</th><td>The same as when printed</td></tr>
+      </table>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s09-scan.webp"><img src="../assets/img/s09-scan.webp" width="1440" height="1100" loading="lazy" alt="The print and scan tab: printing and the scanned PDF drop area on the left, five imported answer sheets on the right."></a>
+        <figcaption><span class="fig-no">Fig. 6</span>The print and scan tab. Print on the left; check the imported sheets on the right</figcaption>
+      </figure>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step5" aria-labelledby="step5-title">
+    <div class="prose top">
+      <p class="eyebrow">Step 05</p>
+      <h2 id="step5-title">Grade</h2><p class="note">To grade written answers with AI through Codex or Claude Code, see <a href="ai-grading.html">AI grading</a>. It covers what you need and when answers are sent outside your computer.</p>
+      <div class="pair">
+      <div class="flow">
+      <h3>Choice questions are graded automatically</h3>
+      <p>On import, choice questions are graded by how dark the marks are. A clearly filled bubble counts as that choice; a question left blank counts as no answer. Faint or partial fills, two filled bubbles, heavy erasure marks, and circles or ticks instead of a fill are not decided automatically: they go to <span class="ui">Needs review</span> for you to decide.</p>
+      <h3>Written questions, one at a time</h3>
+      <ol class="steps">
+        <li>On the <span class="ui">Grading</span> tab, choose a question.</li>
+        <li>Answers appear large, one student at a time. Click full marks (○), zero (✓) or <span class="ui">Partial</span> (△) at the bottom, and the next student comes up. On the keyboard: Space (or Enter) for full marks, X or 0 for zero, P for partial credit.</li>
+        <li><span class="ui">Partial</span> opens a keypad. Type a whole number from 0 to the question's points and press <span class="ui">Confirm</span> or Enter (Esc cancels). For questions worth 9 points or less, pressing a number key gives that score directly.</li>
+        <li>To write on an answer, use <span class="ui">Add a comment</span> (C key).</li>
+      </ol>
+      <div class="note">
+        <span class="note-label">Fixing the answer key</span>
+        <p>If you find a mistake in the key or the points after handing out the test, fix it with <span class="ui">Correct answer key and points</span>. Every answer sheet is regraded, and scores you gave by hand are kept.</p>
+      </div>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s10-grading.webp"><img src="../assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="Grading a written question: the model answer at the top, the student's answer in the middle, full marks, zero and partial buttons below, and the list of grades on the right."></a>
+        <figcaption><span class="fig-no">Fig. 7</span>Grading one student at a time, with the model answer (if entered) above and the grades on the right</figcaption>
+      </figure>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step6" aria-labelledby="step6-title">
+    <div class="prose top">
+      <p class="eyebrow">Step 06</p>
+      <h2 id="step6-title">Hand back and keep</h2>
+      <div class="pair">
+      <div class="flow">
+      <ol class="steps">
+        <li>On the <span class="ui">Export &amp; backup</span> tab, check that nothing is left to review.</li>
+        <li>Click <span class="ui">Make the return ZIP</span>. It holds a marked PDF for each student and a scores CSV that opens in Excel.</li>
+      </ol>
+      <div class="caution">
+        <span class="note-label">CAUTION</span>
+        <p>The ZIP holds every student's paper. Give each student <b>only their own PDF</b> from the <code>students</code> folder.</p>
+      </div>
+      <h3>Backup</h3>
+      <p><span class="ui">Back up all exams</span> saves every exam in one file (<code>.scoring64</code>). Make one each time you finish grading, and keep a copy somewhere else, such as a USB stick. To bring it back, use <span class="ui">Restore from backup</span>.</p>
+      </div>
+      <div class="media">
+      <figure class="shot wide">
+        <a class="zoom" href="../assets/img/s11-export.webp"><img src="../assets/img/s11-export.webp" width="1440" height="900" loading="lazy" alt="The export and backup tab: Make the return ZIP on the left, Back up all exams and Restore from backup on the right."></a>
+        <figcaption><span class="fig-no">Fig. 8</span>The export and backup tab</figcaption>
+      </figure>
+      </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="free-marks" aria-labelledby="free-marks-title"><div class="prose top">
+  <h2 id="free-marks-title">Free bubble sheet reading and grading</h2>
+  <div class="pair"><div class="flow">
+  <p>Click <span class="ui">Bubble sheet reader</span> on the first screen. Every feature is free for 2 tests a month. First choose a test or type a name for a new one; to add answer sheets to the same test, choose it again. The answer sheets are processed on this computer.</p>
+  <ol class="steps"><li>Choose the blank sheet (a one-page PDF) and the PDF of answer sheets (up to 100 pages). Each PDF can be up to 20 MB, and all pages should have the same size and orientation.</li><li>Click the top-left corner of the first bubble on the sheet, then enter the number of questions and choices, the horizontal and vertical spacing, and the bubble size, so the red frames sit on the bubbles. Evenly spaced bubbles are supported.</li><li>Click <span class="ui">Read</span>. Choices are numbered 1, 2, 3… from the left. Compare answers marked as more than one bubble or <span class="ui">Needs review</span> with the sheets.</li><li>Enter the answers and points in question order and click <span class="ui">Read and grade</span> to get right and wrong, scores and the total for each page. Save them with <span class="ui">Results CSV</span>. Pages that need review are still graded on the best reading, with the number of questions to review shown (questions with more than one mark, or no reading, get zero). Check those pages against the sheets, and do not treat their totals as final. Written-answer grading, gradebooks and returned PDFs follow the six steps above (and count toward the 2 free tests).</li></ol>
+  </div><div class="media">
+  <figure class="shot"><a class="zoom" href="../assets/img/free-marks.png"><img src="../assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="The free bubble sheet reader: red frames lined up on ten questions of a blank sheet, with fields for questions, choices, position, spacing and size, and the answer key and points below."></a><figcaption>The free bubble sheet reader</figcaption></figure>
+  </div></div>
+</div></section>
+</main>
+
+<footer class="footer shell"><div class="footer-top"><a class="brand" href="./"><img src="../assets/logo.svg" width="28" height="28" alt=""><span>Scoring<span class="brand-accent">64</span></span></a><nav aria-label="Site"><a href="guide.html">Guide</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a></nav></div><details class="footer-more"><summary>More guides and policies</summary><nav aria-label="More guides and policies"><a href="start.html">Getting started</a><a href="ai-grading.html">AI grading</a><a href="pricing.html">Pricing</a><a href="privacy.html">Privacy policy</a><a href="contact.html#analytics">Site analytics</a><a href="https://fermion.company/en/">About Fermion Inc.</a><a href="../guide.html" hreflang="ja" lang="ja">日本語のサイト</a></nav></details><div class="footer-bottom"><p>© 2026 Fermion Inc. · Shibuya, Tokyo, Japan</p><a href="mailto:contact@fermion.company">contact@fermion.company</a></div></footer>
+</body>
+</html>

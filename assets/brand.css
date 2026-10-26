@@ -316,3 +316,11 @@ html{scroll-padding-top:calc(var(--header-height) + 16px)}
 @media(max-width:1200px){:root{--gutter:40px}}
 @media(max-width:900px){:root{--gutter:28px}}
 @media(max-width:540px){:root{--gutter:20px}}
+.lang-switch{flex-shrink:0;margin-left:-12px;padding:8px 11px;border:1px solid var(--line);border-radius:7px;color:var(--ink);font-size:13px;font-weight:600;line-height:1;text-decoration:none;white-space:nowrap}
+.lang-switch:hover{border-color:var(--teal);color:var(--teal)}
+.header .lang-switch:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+@media(max-width:1200px){.lang-switch{margin-left:-4px}}
+@media(max-width:900px){.lang-switch{margin-left:auto;padding:7px 9px;font-size:12px}.lang-switch+.header-download{margin-left:0}}
+@media(max-width:540px){.lang-switch~.mobile-menu{margin-left:0}}
+.download-section .release-note,.download-section .maker-note{max-width:760px;margin:28px auto 0;color:var(--muted);font-size:14px;line-height:1.7;text-align:center}
+.download-section .maker-note{margin-top:36px}

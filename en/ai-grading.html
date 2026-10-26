@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI grading for handwritten paper tests with Codex or Claude Code | Scoring64</title>
+<link rel="canonical" href="https://scoring64.fermion.company/en/ai-grading.html">
+<link rel="alternate" hreflang="ja" href="https://scoring64.fermion.company/ai-grading.html">
+<link rel="alternate" hreflang="en" href="https://scoring64.fermion.company/en/ai-grading.html">
+<link rel="alternate" hreflang="x-default" href="https://scoring64.fermion.company/en/ai-grading.html">
+<meta name="description" content="Use Scoring64 with Codex or Claude Code to grade scanned paper tests, handwriting included. Requirements, AI service costs, partial credit, how answer data is handled, and a sample walkthrough.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap">
+<!-- seo:start -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Scoring64">
+<meta property="og:title" content="AI grading for handwritten paper tests with Codex or Claude Code | Scoring64">
+<meta property="og:description" content="Use Scoring64 with Codex or Claude Code to grade scanned paper tests, handwriting included. Requirements, AI service costs, partial credit, how answer data is handled, and a sample walkthrough.">
+<meta property="og:url" content="https://scoring64.fermion.company/en/ai-grading.html">
+<meta property="og:image" content="https://scoring64.fermion.company/assets/ai/ai-grading-review.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"Fermion Inc.","alternateName":"株式会社Fermion","url":"https://fermion.company/","email":"contact@fermion.company","address":{"@type":"PostalAddress","streetAddress":"MIEUX Shibuya Bldg. 8F, 5-3 Maruyama-cho","addressLocality":"Shibuya-ku","addressRegion":"Tokyo","postalCode":"150-0044","addressCountry":"JP"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/en/"},{"@type":"ListItem","position":2,"name":"AI grading","item":"https://scoring64.fermion.company/en/ai-grading.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can Scoring64 be used as an AI grading tool?","acceptedAnswer":{"@type":"Answer","text":"Yes. Connect the Windows or Mac download to Codex or Claude Code running on the same computer, with the grading plugin. The AI compares each answer image with your answer key and partial-credit rubric, and enters the scores through Scoring64's screen. Scoring64 itself contains no AI model, and the teacher makes the final check."}},{"@type":"Question","name":"Can I try AI grading for free?","acceptedAnswer":{"@type":"Answer","text":"Scoring64 is free for 2 tests a month with every feature, and the grading plugin is free. The AI service's fees and usage limits are separate, so check that your plan allows local commands and browser control. You can try the steps with the free sample."}},{"@type":"Question","name":"Can I grade with ChatGPT in a browser alone?","acceptedAnswer":{"@type":"Answer","text":"No. The integration needs local commands and browser control on the same computer. Attaching a PDF to ChatGPT in a browser cannot operate Scoring64. Set up Codex or Claude Code instead."}},{"@type":"Question","name":"Are answer sheets sent outside my computer?","acceptedAnswer":{"@type":"Answer","text":"Regular on-screen grading and bubble reading happen on your computer. With AI grading, the answer images and text the AI reads, and your rubric, may be sent to the AI service you use. Remove names first, and check that service's terms and your school's policy."}},{"@type":"Question","name":"Does it handle handwriting and partial credit?","acceptedAnswer":{"@type":"Answer","text":"The AI reads images of handwritten answers and checks them against the answer key and partial-credit rubric you give it. You can tell it to leave unreadable answers, or answers your rubric does not cover, ungraded. Accuracy is not guaranteed for every subject or handwriting, so the teacher must review the results."}}]}]}</script>
+<!-- seo:end -->
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/brand.css?v=20261026-1">
+<link rel="stylesheet" href="../assets/pages.css?v=20261024-1">
+<script defer src="../assets/ui.js?v=20261024-1"></script>
+<script defer src="../assets/analytics.js"></script>
+</head>
+<body class="content-page">
+<a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="shell header-row">
+      <a class="brand" href="./" aria-label="Scoring64 home"><img src="../assets/logo.svg" alt="" width="30" height="30"><span>Scoring<span class="brand-accent">64</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="./#workflow">Features</a><a href="ai-grading.html">AI grading</a><a href="guide.html">Guide</a><a href="pricing.html">Pricing</a>
+      </nav>
+      <a class="lang-switch" href="../ai-grading.html" hreflang="ja" lang="ja" aria-label="日本語のページへ">日本語</a>
+      <a class="header-download" href="./#download">Download free</a>
+      <details class="mobile-menu">
+        <summary aria-label="Menu"><span></span><span></span></summary>
+        <nav aria-label="Mobile navigation"><a href="./#workflow">Features</a><a href="ai-grading.html">AI grading</a><a href="guide.html">Guide</a><a href="pricing.html">Pricing</a><a href="faq.html">FAQ</a><a href="./#download">Download</a><a href="../ai-grading.html" hreflang="ja" lang="ja">日本語</a></nav>
+      </details>
+    </div>
+  </header>
+
+<main id="main">
+<div class="wrap page-head ai-head has-preview">
+<p class="eyebrow">Scoring64 / AI grading</p>
+<h1>Grade handwritten answers<br>with AI in Scoring64</h1>
+<figure class="page-preview"><a href="../ai-grading-demo.html" hreflang="ja"><img src="../assets/ai/ai-grading-review.jpg" width="1470" height="780" fetchpriority="high" alt="Scoring64 grading screen: fictional sample answers marked full marks, partial credit or zero."></a><figcaption>Real screen with fictional sample answers.</figcaption></figure>
+<p class="lead">Scoring64 works with Codex and Claude Code to grade scanned paper tests, handwriting included. Give the AI your answer key and partial-credit rubric: it reads each answer and enters the scores in Scoring64. You review them, then make the gradebook and the returned PDFs.</p>
+<div class="page-actions"><a class="btn btn-primary" href="#setup">Set up AI grading</a><a class="btn" href="../ai-grading-demo.html" hreflang="ja">Watch the demo (Japanese)</a></div>
+<p class="small muted">For the Windows / Mac download. Scoring64 is free for 2 tests a month; AI service fees and limits are separate.</p>
+<ul class="toc" aria-label="On this page"><li><a href="#how">What it does</a></li><li><a href="#cost">What is free</a></li><li><a href="#requirements">Requirements</a></li><li><a href="#setup">Setup</a></li><li><a href="#data">Answer data</a></li><li><a href="#questions">Questions</a></li></ul>
+</div><section class="section" id="how" aria-labelledby="how-title"><div class="prose top"><h2 id="how-title">AI grading for written answers, automatic grading for bubbles</h2>
+<p>Scoring64 is desktop software for grading paper tests. With AI grading, Codex or Claude Code does the reading; Scoring64 keeps the answer sheets, stores and totals the scores, and makes the returns.</p>
+<table class="table stack"><caption>Ways to grade, and who does what</caption><tr><th scope="row">AI grading of written answers</th><td>The AI compares each answer image with your rubric and saves full marks, zero or partial credit through Scoring64's screen. Unreadable answers, and answers your rubric does not cover, stay ungraded for you to check.</td></tr><tr><th scope="row">Automatic bubble grading</th><td>Scoring64 reads the bubbles and scores them against the key. No generative AI is involved. Faint or double marks go to review.</td></tr><tr><th scope="row">Grading on screen yourself</th><td>You grade the answers to one question, one after another. No AI service needed. This is also how you review the AI's scores.</td></tr></table>
+<p>Entering a model answer does not grade written answers by itself. AI grading needs the setup and plugin below.</p>
+<p><a href="../ai-grading-demo.html" hreflang="ja">See five sample answer sheets graded against an answer key and partial-credit rubric (Japanese)</a></p>
+</div></section><section class="section" id="cost" aria-labelledby="cost-title"><div class="prose top"><h2 id="cost-title">Trying AI grading for free</h2>
+<p>Each computer can grade 2 tests a month in Scoring64 with every feature and no limit on students. A test counts once, the first time you grade it; adding answer sheets, regrading and exporting the same test do not use another. The grading plugin is free too.</p>
+<div class="note"><p class="note-label">AI service fees are separate</p><p>What Codex or Claude Code costs, the model's usage limits and whether browser control is available depend on the service and your plan. Scoring64's free tests do not include AI usage. Check first whether your current plan covers it. The plugin never sets up pay-as-you-go API billing on its own.</p></div>
+<p>With the built-in sample you can try the steps without paper or a scanner. For unlimited tests, see <a href="pricing.html">Pricing</a>.</p>
+</div></section><section class="section" id="requirements" aria-labelledby="requirements-title"><div class="prose top"><h2 id="requirements-title">Requirements</h2>
+<ul><li><a href="start.html#install">The Scoring64 download</a>: Windows 10 / 11 (64-bit) or a Mac with Apple silicon.</li><li>Codex or Claude Code running on the same computer, able to run local commands and control that computer's browser.</li><li>Node.js 18 or later and the <a href="https://github.com/Fermion-company/scoring64-plugins">Scoring64 grading plugin</a>.</li><li>A connection to the AI service. Scoring64, the AI model and the browser control tool are not bundled with the plugin.</li></ul>
+<p>Attaching a PDF to ChatGPT in a browser is not enough for this integration, and a different computer or an isolated cloud environment cannot reach the Scoring64 on your computer. This page covers the Windows and Mac download.</p>
+</div></section><section class="section" id="setup" aria-labelledby="setup-title"><div class="prose top"><h2 id="setup-title">Setting up AI grading</h2>
+<h3>1. Open “Try the sample” in Scoring64</h3><p>Install and open Scoring64, then click <span class="ui">Try the sample</span> on the home screen. With five fictional students you can see importing, the grading screen and exporting.</p>
+<h3>2. Add the grading plugin</h3><p>In Codex or Claude Code's plugin manager, add the public repository below as a marketplace and install <code>scoring64@fermion-scoring64</code>. Check each service for its settings screen and terms.</p><p><a href="https://github.com/Fermion-company/scoring64-plugins">Fermion-company/scoring64-plugins</a></p><p>The Codex plugin is in <code>plugins/codex</code> and the Claude Code plugin in <code>plugins/claude</code>. The repository's README also explains how to add them and what they support.</p>
+<h3>3. Ask, with the answer key and partial-credit rubric</h3><p>Start by asking to see the sample.</p><blockquote class="ai-prompt">Open the Scoring64 sample and show me the grading and export screens. Don't change any scores yet.</blockquote>
+<p>When grading, name the exam, the question, the answer, the points, the partial-credit rubric and what to save. For example:</p><blockquote class="ai-prompt">Grade question 2-(1) in the Scoring64 sample. The answer is 2H₂ + O₂ → 2H₂O, worth 10 points. Give 10 points if the formulas and coefficients are right; 5 points if H₂, O₂, H₂O and the direction of the reaction are right but only the coefficients are wrong; 0 points otherwise or if blank. Leave unreadable answers ungraded. Don't change other questions, and report the scores and reasons for all five students.</blockquote>
+<p>This rubric is for the sample. For a real test, the teacher sets the rubric and prepares answer sheets with names and other personal details removed. Prepare, print and scan a new test as in the <a href="guide.html">guide</a>.</p>
+<h3>4. Review before exporting</h3><p>Check the right, wrong and partial-credit answers, and clear anything ungraded or marked for review. Save the returned PDFs and scores CSV from <span class="ui">Export &amp; backup</span>. If the AI misread your rubric, correct the scores; if you change anything after exporting, export again.</p>
+<p><a href="../ai-grading-demo.html" hreflang="ja">See the screens and results graded with the same rubric (Japanese)</a></p>
+</div></section><section class="section" id="data" aria-labelledby="data-title"><div class="prose top"><h2 id="data-title">How answer data is handled when an AI reads it</h2>
+<p>In regular on-screen grading and bubble reading, answer sheets, grades and class lists stay on your computer. With AI grading, the answer images and text the AI reads, and your rubric, may be sent to the AI service you use. AI grading is not fully offline.</p><p>Before using real answer sheets, remove names, contact details and other personal information, and check your school's policy and the AI provider's terms on retention, training use and deletion. Do not send personal information of children under 13 to AI services. The integration is meant for adult teachers and graders.</p><p><a href="privacy.html#ai-integration">Privacy for Scoring64 and the AI integration</a> · <a href="https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md">Privacy for the grading plugin</a></p>
+</div></section><section class="section" id="questions" aria-labelledby="questions-title"><div class="prose top"><h2 id="questions-title">Questions about AI grading</h2>
+      <div class="qa" id="q-ai-tool">
+        <h3>Can Scoring64 be used as an AI grading tool?</h3>
+        <div class="a"><p>Yes. Connect the Windows or Mac download to Codex or Claude Code running on the same computer, with the grading plugin. The AI compares each answer image with your answer key and partial-credit rubric, and enters the scores through Scoring64's screen. Scoring64 itself contains no AI model, and the teacher makes the final check.</p></div>
+      </div>
+      <div class="qa" id="q-ai-free">
+        <h3>Can I try AI grading for free?</h3>
+        <div class="a"><p>Scoring64 is free for 2 tests a month with every feature, and the grading plugin is free. The AI service's fees and usage limits are separate, so check that your plan allows local commands and browser control. You can try the steps with the free sample.</p></div>
+      </div>
+      <div class="qa" id="q-ai-chatgpt">
+        <h3>Can I grade with ChatGPT in a browser alone?</h3>
+        <div class="a"><p>No. The integration needs local commands and browser control on the same computer. Attaching a PDF to ChatGPT in a browser cannot operate Scoring64. Set up Codex or Claude Code instead.</p></div>
+      </div>
+      <div class="qa" id="q-ai-data">
+        <h3>Are answer sheets sent outside my computer?</h3>
+        <div class="a"><p>Regular on-screen grading and bubble reading happen on your computer. With AI grading, the answer images and text the AI reads, and your rubric, may be sent to the AI service you use. Remove names first, and check that service's terms and your school's policy.</p></div>
+      </div>
+      <div class="qa" id="q-ai-handwriting">
+        <h3>Does it handle handwriting and partial credit?</h3>
+        <div class="a"><p>The AI reads images of handwritten answers and checks them against the answer key and partial-credit rubric you give it. You can tell it to leave unreadable answers, or answers your rubric does not cover, ungraded. Accuracy is not guaranteed for every subject or handwriting, so the teacher must review the results.</p></div>
+      </div>
+</div></section>
+</main>
+
+<footer class="footer shell"><div class="footer-top"><a class="brand" href="./"><img src="../assets/logo.svg" width="28" height="28" alt=""><span>Scoring<span class="brand-accent">64</span></span></a><nav aria-label="Site"><a href="guide.html">Guide</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a></nav></div><details class="footer-more"><summary>More guides and policies</summary><nav aria-label="More guides and policies"><a href="start.html">Getting started</a><a href="ai-grading.html">AI grading</a><a href="pricing.html">Pricing</a><a href="privacy.html">Privacy policy</a><a href="contact.html#analytics">Site analytics</a><a href="https://fermion.company/en/">About Fermion Inc.</a><a href="../ai-grading.html" hreflang="ja" lang="ja">日本語のサイト</a></nav></details><div class="footer-bottom"><p>© 2026 Fermion Inc. · Shibuya, Tokyo, Japan</p><a href="mailto:contact@fermion.company">contact@fermion.company</a></div></footer>
+</body>
+</html>
