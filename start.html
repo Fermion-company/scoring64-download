@@ -69,7 +69,7 @@
     <div class="prose top">
       <p class="eyebrow">01 · Install</p>
       <h2 id="install-title">ダウンロードとインストール</h2>
-      <p>Windows と Mac（Apple Silicon）で使えます。Mac のときは<a href="#install-mac">Mac に入れる</a>へ進んでください。</p>
+      <p>Windows 10／11（Intel・AMD、64ビット）、または macOS 14 以降の Apple Silicon（M1 以降）の Mac で使えます。Mac のときは<a href="#install-mac">Mac に入れる</a>へ進んでください。このPC版は Intel Mac・スマートフォン・タブレットでは動きません。<a href="#troubleshooting">ダウンロード・起動ができないとき</a>はこちらをご確認ください。</p>
       <div class="flow">
       <h3>Windows に入れる</h3>
       <ol class="steps">
@@ -80,7 +80,7 @@
       </ol>
 
       <h3>Windows の警告が出たとき</h3>
-      <p>新しいアプリのため、警告が出ることがあります。次の順に押して進めてください。</p>
+      <p>Windows のインストーラーはコード署名がないため、Edge や Windows が警告することがあります。上のボタンから取得したファイルでは、次の操作で進める場合があります。所属先の設定で禁止されている場合や、続行するボタンがない場合は、管理者または<a href="#troubleshooting">当社へご相談ください</a>。</p>
 
       <p><b>Edge に「一般的にダウンロードされていません」と出たら</b></p>
       <ol class="seq" aria-label="押す順番">
@@ -102,24 +102,14 @@
       <ol class="steps">
         <li>下のボタンから、Mac 版（Scoring64-mac-arm64.zip）をダウンロードします。<br>
           <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">ダウンロード</a>
-          <span class="muted small nowrap">　Mac（Apple Silicon・M1 以降）</span></li>
+          <span class="muted small">Mac（Apple Silicon・M1 以降）、macOS 14 以降。Intel Mac 非対応。</span></li>
         <li>ダウンロードした zip を開くと、<span class="ui">「Scoring64.app」</span>ができます。これを<span class="ui">「アプリケーション」</span>フォルダに移します。</li>
-        <li><span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>を開きます。管理者の権限は要りません。</li>
+        <li><span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>を開きます。コピーする権限がない場合は、Mac の管理者へご相談ください。</li>
       </ol>
 
-      <h3>Mac の警告が出たとき</h3>
-      <p>新しいアプリのため、確認の表示が出ることがあります。次の順に進めてください。</p>
-
-      <p><b>初めて開くときに「開発元を確認できないため開けません」と出たら</b></p>
-      <p>表示を閉じてから、<span class="ui">「システム設定」</span>を開きます。<span class="ui">「プライバシーとセキュリティ」</span>の下のほうにある<span class="ui">「このまま開く」</span>を押し、Mac のパスワードを入れてから<span class="ui">「開く」</span>を押します。</p>
-      <ol class="seq" aria-label="押す順番">
-        <li><span class="key">システム設定</span></li>
-        <li><span class="key">プライバシーとセキュリティ</span></li>
-        <li><span class="key">このまま開く</span></li>
-        <li><span class="key">Mac のパスワード</span></li>
-        <li><span class="key">開く</span></li>
-      </ol>
-      <p>次からは、そのまま開けます。</p>
+      <h3>Mac で開けないとき</h3>
+      <p>現在のダウンロード版は Developer ID 署名と Apple の公証を取得しています。古いファイルをお持ちの場合は、上のボタンから再ダウンロードし、アプリケーション内のアプリを置き換えてください。Scoring64 のデータフォルダは消さないでください。</p>
+      <p>「壊れている」「開発元を確認できない」「この Mac では使えない」などと表示されたら、<span class="ui">Apple メニュー → この Mac について</span>で、Mシリーズのチップと macOS 14 以降であることを確認してください。条件を満たしても開けない場合は、<a href="#troubleshooting">表示された文面を当社へお知らせください</a>。Gatekeeper の無効化や隔離属性の削除は必要ありません。</p>
 
       <p><b>アプリの中で更新したあとに「キーチェーンへのアクセス」と出たら</b></p>
       <ol class="seq" aria-label="押す順番">
@@ -129,6 +119,18 @@
       <p>更新のあとに一度だけ出ることがあります。ライセンスはそのまま使えます。</p>
 
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="troubleshooting" aria-labelledby="troubleshooting-title">
+    <div class="prose top">
+      <h2 id="troubleshooting-title">ダウンロード・起動ができないとき</h2>
+      <ul>
+        <li><b>ダウンロードが終わらない：</b>ブラウザのダウンロード一覧を確認してください。Windows は <code>Scoring64-Setup.exe</code>、Mac は <code>Scoring64-mac-arm64.zip</code> を使います。末尾が <code>.html</code> の保存したページはアプリではありません。<a href="https://github.com/Fermion-company/scoring64-download/releases/latest">リリースページ</a>の Assets にも同じファイルがあります。学校のネットワークで GitHub が制限されている場合は、管理者または当社へご相談ください。</li>
+        <li><b>ファイルが開けない：</b>OS に合うファイルと上の動作条件を確認し、取得が終わってから開いてください。Windows はインストーラーを実行し、Mac は ZIP を展開します。Windows の警告については<a href="#install">インストール手順</a>をご確認ください。</li>
+        <li><b>それでも起動しない：</b>OS とそのバージョン、取得したファイル名、エラーの文面または画面写真を <a href="mailto:contact@fermion.company?subject=Scoring64%20installation%20help">contact@fermion.company</a> へお送りください。Mac は「この Mac について」のチップ名もお知らせください。ダウンロード・インストール・起動のどこで止まるかも添えてください。</li>
+      </ul>
+      <p>Scoring64 の起動と見本の操作は、AIサービスやプラグインを設定する前に確認できます。AI連携はその後に設定します。</p>
     </div>
   </section>
 

@@ -57,6 +57,7 @@
     <ul class="toc" aria-label="On this page">
       <li><a href="#install">Install on Windows</a></li>
       <li><a href="#install-mac">Install on a Mac</a></li>
+      <li><a href="#troubleshooting">Download or app won't open?</a></li>
       <li><a href="#first">First launch</a></li>
       <li><a href="#key">Free tests and license keys</a></li>
       <li><a href="#sample">Try the sample</a></li>
@@ -70,7 +71,7 @@
     <div class="prose top">
       <p class="eyebrow">01 · Install</p>
       <h2 id="install-title">Download and install</h2>
-      <p>Scoring64 runs on Windows and on Macs with Apple silicon. On a Mac, go to <a href="#install-mac">Install on a Mac</a>.</p>
+      <p>Use a Windows 10 / 11 computer (Intel or AMD, 64-bit), or a Mac with Apple silicon (M1 or later) and macOS 14 or later. On a Mac, go to <a href="#install-mac">Install on a Mac</a>. This desktop download does not run on Intel Macs, phones or tablets.</p>
       <div class="flow">
       <h3>Install on Windows</h3>
       <ol class="steps">
@@ -81,7 +82,7 @@
       </ol>
 
       <h3>If Windows shows a warning</h3>
-      <p>Because Scoring64 is a new app, Windows may warn you about it. Click through in this order.</p>
+      <p>The Windows installer is not code-signed, so Edge or Windows may warn you about it. For a file downloaded using the button above, the following options may be available. If your organisation blocks it or there is no option to continue, ask your IT administrator or <a href="#troubleshooting">contact us</a>.</p>
 
       <p><b>If Edge says the file “isn't commonly downloaded”</b></p>
       <ol class="seq" aria-label="Click in this order">
@@ -103,26 +104,16 @@
       <ol class="steps">
         <li>Download the Mac version (Scoring64-mac-arm64.zip).<br>
           <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">Download</a>
-          <span class="muted small nowrap">  Mac with Apple silicon (M1 or later)</span></li>
+          <span class="muted small">Mac with Apple silicon (M1 or later), macOS 14 or later. Not for Intel Macs.</span></li>
         <li>Open the zip to get <span class="ui">Scoring64.app</span>, and move it to your <span class="ui">Applications</span> folder.</li>
-        <li>Open <span class="ui">Scoring64</span> from <span class="ui">Applications</span>. You do not need administrator rights.</li>
+        <li>Open <span class="ui">Scoring64</span> from <span class="ui">Applications</span>. If you cannot copy it there, ask your Mac administrator for help.</li>
       </ol>
 
-      <p class="muted small">Scoring64 is also on the <a href="https://apps.apple.com/app/id6819722556">Mac App Store</a>, as a separate edition with in-app purchases. The steps on this page are for the download version.</p>
+      <p class="muted small">A separate edition with in-app purchases is listed on the <a href="https://apps.apple.com/jp/app/id6819722556">Japan Mac App Store</a>. It may not be available in your region. The direct download above is the edition used by this guide and the <a href="ai-grading.html">AI grading setup</a>.</p>
 
-      <h3>If the Mac shows a warning</h3>
-      <p>Because Scoring64 is a new app, macOS may ask you to confirm it. Go through these steps.</p>
-
-      <p><b>If the first launch says Scoring64 can't be opened because the developer can't be verified</b></p>
-      <p>Close the message and open <span class="ui">System Settings</span>. Under <span class="ui">Privacy &amp; Security</span>, scroll down, click <span class="ui">Open Anyway</span>, enter your Mac password, then click <span class="ui">Open</span>.</p>
-      <ol class="seq" aria-label="Click in this order">
-        <li><span class="key">System Settings</span></li>
-        <li><span class="key">Privacy &amp; Security</span></li>
-        <li><span class="key">Open Anyway</span></li>
-        <li><span class="key">Mac password</span></li>
-        <li><span class="key">Open</span></li>
-      </ol>
-      <p>After that it opens normally.</p>
+      <h3>If the Mac cannot open the app</h3>
+      <p>The current direct download is Developer ID signed and notarized by Apple. If you have an older download, download it again using the button above and replace the app in Applications. Keep your Scoring64 data folder.</p>
+      <p>If macOS says the app is damaged, the developer cannot be verified, or the app is not supported on this Mac, check <span class="ui">Apple menu → About This Mac</span> for an Apple M-series chip and macOS 14 or later. If those requirements are met, <a href="#troubleshooting">send us the exact message</a>. You should not need to disable Gatekeeper or remove quarantine attributes.</p>
 
       <p><b>If you are asked for keychain access after an in-app update</b></p>
       <ol class="seq" aria-label="Click in this order">
@@ -132,6 +123,18 @@
       <p>This can appear once after an update. Your license keeps working.</p>
 
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="troubleshooting" aria-labelledby="troubleshooting-title">
+    <div class="prose top">
+      <h2 id="troubleshooting-title">Download or app won't open?</h2>
+      <ul>
+        <li><b>The download does not finish:</b> check your browser's Downloads list. Windows needs the complete <code>Scoring64-Setup.exe</code>; Mac needs <code>Scoring64-mac-arm64.zip</code>. A saved web page ending in <code>.html</code> is not the app. You can also find the files under Assets on the <a href="https://github.com/Fermion-company/scoring64-download/releases/latest">release page</a>. If GitHub is blocked on your school network, ask your IT administrator or contact us.</li>
+        <li><b>The file will not open:</b> use the file for your OS and check the requirements above. Wait for the download to finish, then run the Windows installer or extract the Mac ZIP before opening the app. For Windows warnings, see <a href="#install">Install on Windows</a>.</li>
+        <li><b>The app still fails to start:</b> email <a href="mailto:contact@fermion.company?subject=Scoring64%20installation%20help">contact@fermion.company</a> with your OS and version, the downloaded filename, and the exact error message or a screenshot. On Mac, also include the chip shown in About This Mac. Tell us whether it stops during download, installation or launch.</li>
+      </ul>
+      <p>You can open Scoring64 and try its sample before setting up any AI service or plugin. AI setup is a separate step.</p>
     </div>
   </section>
 

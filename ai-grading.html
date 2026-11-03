@@ -67,10 +67,14 @@
 <div class="note"><p class="note-label">AIサービスの料金は別です</p><p>Codex・Claude Codeの利用料、モデルの利用上限、ブラウザ操作機能の提供条件は、利用中のサービスと契約によって異なります。Scoring64の無料枠にAI利用料は含まれません。まず既存の契約で使えるか確認してください。プラグインが有料APIの従量課金を自動で設定することはありません。</p></div>
 <p>同梱の見本なら、紙やスキャナーを用意せずに操作を確認できます。テスト数を無制限にするScoring64有料版の条件は、<a href="pricing.html">料金ページ</a>にあります。</p>
 </div></section><section class="section" id="requirements" aria-labelledby="requirements-title"><div class="prose top"><h2 id="requirements-title">必要な環境</h2>
-<ul><li><a href="start.html#install">Scoring64のダウンロード版</a>：Windows 10／11（64ビット）、またはApple SiliconのMac。</li><li>同じPCで動くCodexまたはClaude Code。ローカルコマンドを実行し、そのPCのブラウザを操作できる環境。</li><li>Node.js 18以上と、<a href="https://github.com/Fermion-company/scoring64-plugins">Scoring64採点プラグイン</a>。</li><li>AIサービスへの接続。Scoring64本体・AIモデル・ブラウザ操作ツールは、プラグインに同梱されていません。</li></ul>
+<ul><li><a href="start.html#install">Scoring64のダウンロード版</a>：Windows 10／11（64ビット）、またはmacOS 14以降のApple Silicon（M1以降）のMac。Intel Mac・スマートフォン・タブレットでは、このPC版は動きません。</li><li>同じPCで動くCodexまたはClaude Code。ローカルコマンドを実行し、そのPCのブラウザを操作できる環境。</li><li>Node.js 18以上と、<a href="https://github.com/Fermion-company/scoring64-plugins">Scoring64採点プラグイン</a>。</li><li>AIサービスへの接続。Scoring64本体・AIモデル・ブラウザ操作ツールは、プラグインに同梱されていません。</li></ul>
 <p>通常のブラウザ版ChatGPTにPDFを添付するだけでは、この連携は動きません。別PCや隔離されたクラウド環境からも、手元のScoring64へは接続できません。ここではWindows／Macのダウンロード版での手順を案内しています。</p>
 </div></section><section class="section" id="setup" aria-labelledby="setup-title"><div class="prose top"><h2 id="setup-title">AI採点の導入手順</h2>
-<h3>1. 本体で「見本で試す」を開く</h3><p>Scoring64をインストールして起動し、ホームの「見本で試す」を開きます。架空の5人分のデータで、答案の取り込み・採点画面・出力を確認できます。</p>
+<h3>1. Scoring64をダウンロードして開く</h3>
+<p>このページは導入ガイドです。まず、採点するPCに合うアプリをダウンロードしてください。</p>
+<div class="page-actions"><a class="btn btn-primary" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">Windows版（.exe）</a><a class="btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">Mac版（.zip）</a></div>
+<p><a href="start.html#install">Windowsに入れる</a> · <a href="start.html#install-mac">Macに入れる</a> · <a href="start.html#troubleshooting">ダウンロード・起動ができないとき</a></p>
+<p>Scoring64をインストールして起動し、ホームの「見本で試す」を開きます。架空の5人分のデータで、答案の取り込み・採点画面・出力を確認できます。</p>
 <h3>2. 採点プラグインを追加する</h3><p>CodexまたはClaude Codeのプラグイン管理から、下記の公開リポジトリをマーケットプレイスとして追加し、<code>scoring64@fermion-scoring64</code>をインストールします。設定画面や利用条件は各サービスで確認してください。</p><p><a href="https://github.com/Fermion-company/scoring64-plugins">Fermion-company/scoring64-plugins</a></p><p>Codex用は<code>plugins/codex</code>、Claude Code用は<code>plugins/claude</code>です。追加方法・対応条件は同リポジトリのREADMEにも記載しています。</p>
 <h3>3. 正解と部分点の基準を渡して依頼する</h3><p>まずは見本の画面を確認する依頼から始めます。</p><blockquote class="ai-prompt">Scoring64の見本を開いて、採点画面と出力画面を見せてください。まだ点数は変更しないでください。</blockquote>
 <p>採点するときは、試験・対象問題・正解・配点・部分点基準・保存する結果を指定します。例：</p><blockquote class="ai-prompt">Scoring64の見本の2-(1)を採点してください。正解は2H₂ + O₂ → 2H₂O、配点10点。化学式と係数が正しければ10点、H₂・O₂・H₂Oと反応の向きが正しく係数だけが誤りなら5点、それ以外と無回答は0点。判読できない答案は未採点に残してください。他の問題は変更せず、5人分の結果と理由を報告してください。</blockquote>
