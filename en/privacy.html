@@ -53,7 +53,7 @@
     <p class="eyebrow">Privacy</p>
     <h1>Privacy policy</h1>
     <p class="lead">The Scoring64 app handles answer sheets and student data only on the device you use. It never sends them to us.</p>
-    <p class="muted small">Established 13 October 2026 · Revised 23 October 2026</p>
+    <p class="muted small">Established 13 October 2026 · Revised 8 November 2026</p>
     <p class="muted small">This is an English translation of the Japanese privacy policy. If the two differ, <a href="../privacy.html" hreflang="ja">the Japanese version</a> prevails.</p>
   </div>
 
@@ -61,14 +61,14 @@
   <section class="section" id="scope" aria-labelledby="scope-title">
     <div class="prose">
       <h2 id="scope-title">Scope</h2>
-      <p>This policy applies to the Scoring64 app provided by Fermion Inc. (“we”, “the seller”): the Mac App Store version, the iPad version, and the download version for Windows and Mac offered on this site. Details for the iPad version are also in the <a href="../ipad-privacy.html" hreflang="ja">iPad privacy policy (Japanese)</a>.</p>
+      <p>This policy applies to the Scoring64 app provided by Fermion Inc. (“we”, “the seller”): the Microsoft Store version for Windows, the Mac App Store version, the iPad version, and the download version for Windows and Mac offered on this site. Details for the iPad version are also in the <a href="../ipad-privacy.html" hreflang="ja">iPad privacy policy (Japanese)</a>.</p>
     </div>
   </section>
 
   <section class="section" id="local" aria-labelledby="local-title">
     <div class="prose">
       <h2 id="local-title">Data the app handles</h2>
-      <p>An exam may contain students’ numbers and names, images of their answer sheets, questions, answer keys and points, grades and comments. The app handles these on the device to design sheets, read and grade answer sheets, and make returned PDFs and gradebooks. Reading and grading also happen on the device.</p><p>Data is saved in the data folder on the device; for the Mac App Store version, inside the app’s container (<code>~/Library/Containers/company.fermion.scoring64.pad/</code>). We do not hold a copy of this data.</p>
+      <p>An exam may contain students’ numbers and names, images of their answer sheets, questions, answer keys and points, grades and comments. The app handles these on the device to design sheets, read and grade answer sheets, and make returned PDFs and gradebooks. Reading and grading also happen on the device.</p><p>Data is saved in the data folder on the device; for the Mac App Store version, inside the app’s container (<code>~/Library/Containers/company.fermion.scoring64.pad/</code>). We do not hold a copy of this data.</p><p>The Microsoft Store and download versions for Windows save exams, answer sheets, grading results and application logs in <code>%LOCALAPPDATA%\Scoring64\data</code>. To maintain continuity of the free allowance and licenses, a record protected by Windows DPAPI is also saved in the per-user registry at <code>HKEY_CURRENT_USER\Software\Scoring64\LicenceAnchor</code>. These records are not automatically sent to us.</p>
     </div>
   </section>
 
@@ -79,11 +79,11 @@
     </div>
   </section>
 
-  <section class="section" id="ai-integration" aria-labelledby="ai-integration-title"><div class="prose"><h2 id="ai-integration-title">If you use AI grading</h2><p>When you connect the Windows or Mac download to the grading plugin for Codex or Claude Code, an AI agent reads answer sheets and operates the app’s screen. Images and text of answer sheets, students’ names and your rubric may then be sent to the AI service you use. Unlike regular on-screen grading and bubble reading, which run locally, AI grading is not fully offline.</p><p>The plugin’s launcher connects only to the loopback address on the same computer; there is no feature that sends answer sheets to a plugin server of ours. Storage, training use and deletion at the AI provider follow that service’s terms and your settings.</p><p>Remove personal details from real answer sheets beforehand and check your school’s policy. Do not send personal information of children under 13 to AI services. <a href="ai-grading.html#data">Answer data in AI grading</a> · <a href="https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md">About the grading plugin</a></p></div></section>
+  <section class="section" id="ai-integration" aria-labelledby="ai-integration-title"><div class="prose"><h2 id="ai-integration-title">If you use AI grading</h2><p>When you separately connect Scoring64 to an AI tool such as Codex or Claude Code and permit it to access screens or files, an AI agent reads answer sheets and operates the app’s screen. Images and text of answer sheets, students’ names and your rubric may then be sent to the AI service you use. Unlike regular on-screen grading and bubble reading, which run locally, AI grading is not fully offline.</p><p>If you use the grading plugin, its launcher connects only to the loopback address on the same computer; there is no feature that sends answer sheets to a plugin server of ours. Storage, training use and deletion at the AI provider follow that service’s terms and your settings.</p><p>Remove personal details from real answer sheets beforehand and check your school’s policy. Do not send personal information of children under 13 to AI services. <a href="ai-grading.html#data">Answer data in AI grading</a> · <a href="https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md">About the grading plugin</a></p></div></section>
   <section class="section" id="network" aria-labelledby="network-title">
     <div class="prose">
       <h2 id="network-title">When the app goes online</h2>
-      <ul class="dots"><li>Mac App Store and iPad versions: they connect to the App Store to show, buy and restore in-app purchases. Purchases are verified on the device by checking Apple’s signature, without contacting our servers. TeX, used to typeset sheets in the Mac App Store version, is bundled with the app and is not downloaded.</li><li>Mac App Store versions that support notices: at launch, at most once every 24 hours, they fetch a signed public configuration published in a public GitHub repository. It is used only for notices, planned prices and news of the latest version, and never changes the app’s features or purchase prices. Grading works without it. No answer sheets, class lists, device IDs or usage history are sent, and no cookies or credentials are attached. The delivery provider receives your IP address, the time and standard request headers, and may log them. This fetch does not run this website’s analytics script.</li><li>Download version: it connects to update information published on GitHub to check for and download new versions. If you choose to set up TeX, it downloads from the official TeX Live distribution sites.</li><li>Links to help, contact and the feedback form open in your default browser only when you click them. The site you open has its own policy.</li></ul>
+      <ul class="dots"><li>Mac App Store and iPad versions: they connect to the App Store to show, buy and restore in-app purchases. Purchases are verified on the device by checking Apple’s signature, without contacting our servers. TeX, used to typeset sheets in the Mac App Store version, is bundled with the app and is not downloaded.</li><li>Mac App Store versions that support notices: at launch, at most once every 24 hours, they fetch a signed public configuration published in a public GitHub repository. It is used only for notices, planned prices and news of the latest version, and never changes the app’s features or purchase prices. Grading works without it. No answer sheets, class lists, device IDs or usage history are sent, and no cookies or credentials are attached. The delivery provider receives your IP address, the time and standard request headers, and may log them. This fetch does not run this website’s analytics script.</li><li>Download version: it connects to update information published on GitHub to check for and download new versions. If you choose to set up TeX, it downloads from the TinyTeX distribution on GitHub or TeX Live distribution sites.</li><li>Microsoft Store version for Windows: Microsoft Store handles app distribution and updates. The app’s standalone updater does not fetch GitHub update information or EXE files. If you choose to set up TeX, the app connects to the TinyTeX distribution on GitHub or TeX Live distribution sites. Delivery providers may receive ordinary connection information such as your IP address and request time. License keys are registered and verified on the device.</li><li>Links to help, pricing, contact and the feedback form open in your default browser only when you click them. The site you open has its own policy.</li></ul>
     </div>
   </section>
 
@@ -111,7 +111,7 @@
   <section class="section" id="delete" aria-labelledby="delete-title">
     <div class="prose">
       <h2 id="delete-title">Retention and deletion</h2>
-      <p>You can delete exams from the app’s list of exams. The data folder may remain after you delete the app. For the Mac App Store version, deleting the container folder above removes all exams, grades and license records. Delete exported files and backups where you saved them.</p>
+      <p>You can delete exams from the app’s list of exams. The data folder may remain after you delete the app. For the Mac App Store version, deleting the container folder above removes all exams, grades and license records. On Windows, uninstalling the app alone may not remove all exams, answer sheets, grades, free-allowance records or license records. Deleting the data folder can erase exams and grades. Contact us if you need help locating or deleting these records. Delete exported files and backups where you saved them.</p>
     </div>
   </section>
 
@@ -125,7 +125,7 @@
   <section class="section" id="changes" aria-labelledby="changes-title">
     <div class="prose">
       <h2 id="changes-title">Changes</h2>
-      <p>When we change features or how data is handled, we update this page and show the date of the change.</p><p class="muted small">Established 13 October 2026. 22 October 2026: added the public configuration fetch in the Mac App Store version.</p>
+      <p>When we change features or how data is handled, we update this page and show the date of the change.</p><p class="muted small">Established 13 October 2026. 22 October 2026: added the public configuration fetch in the Mac App Store version. 8 November 2026: added the Microsoft Store version for Windows and its local storage and update handling.</p>
     </div>
   </section>
 

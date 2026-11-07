@@ -53,14 +53,14 @@
     <p class="eyebrow">Privacy</p>
     <h1>プライバシーポリシー</h1>
     <p class="lead">Scoring64 のアプリは、答案や生徒のデータを使っている端末の中だけで扱います。販売元へ送ることはありません。</p>
-    <p class="muted small">制定日 2026年10月13日 ／ 改定日 2026年10月23日</p>
+    <p class="muted small">制定日 2026年10月13日 ／ 改定日 2026年11月8日</p>
   </div>
 
   <div class="sec-grid">
   <section class="section" id="scope" aria-labelledby="scope-title">
     <div class="prose">
       <h2 id="scope-title">対象</h2>
-      <p>このポリシーは、株式会社Fermion（以下「販売元」）が提供する Scoring64 のアプリに適用します。対象は、Mac App Store 版、iPad 版、この案内サイトから入れるダウンロード版（Windows と Mac）です。iPad 版の詳しい扱いは <a href="ipad-privacy.html">iPad版のプライバシーポリシー</a>にも書いています。</p>
+      <p>このポリシーは、株式会社Fermion（以下「販売元」）が提供する Scoring64 のアプリに適用します。対象は、Microsoft Store 版（Windows）、Mac App Store 版、iPad 版、この案内サイトから入れるダウンロード版（Windows と Mac）です。iPad 版の詳しい扱いは <a href="ipad-privacy.html">iPad版のプライバシーポリシー</a>にも書いています。</p>
     </div>
   </section>
 
@@ -69,6 +69,7 @@
       <h2 id="local-title">アプリが扱うデータ</h2>
       <p>試験には、生徒の番号と氏名、答案の画像、問題、正解と配点、採点結果、コメントが含まれることがあります。アプリはこれらを、用紙の作成、答案の読み取りと採点、返却用の PDF と成績表の作成のために、端末の中で扱います。読み取りと採点も端末の中で行います。</p>
       <p>データは端末のデータフォルダに保存します。Mac App Store 版では、アプリのコンテナ（<code>~/Library/Containers/company.fermion.scoring64.pad/</code>）の中です。販売元はこのデータのコピーを持ちません。</p>
+      <p>Windows の Microsoft Store 版とダウンロード版では、試験・答案・採点結果とアプリの動作ログを <code>%LOCALAPPDATA%\Scoring64\data</code> に保存します。無料枠とライセンスの継続確認のため、Windows のユーザーごとのレジストリ <code>HKEY_CURRENT_USER\Software\Scoring64\LicenceAnchor</code> にも、Windows の DPAPI で保護した記録を保存します。これらの記録を販売元へ自動送信しません。</p>
     </div>
   </section>
 
@@ -81,15 +82,16 @@
     </div>
   </section>
 
-  <section class="section" id="ai-integration" aria-labelledby="ai-integration-title"><div class="prose"><h2 id="ai-integration-title">利用者がAI連携を使う場合</h2><p>Windows／Macのダウンロード版をCodex・Claude Codeの採点プラグインと連携すると、AIエージェントが答案を読み、アプリの画面を操作します。この際、答案の画像・文字・氏名や採点基準が利用中のAIサービスに送られる場合があります。通常の画面採点・マーク読取のローカル処理とは異なり、完全オフラインのAI採点ではありません。</p><p>プラグインの起動補助は同じPCのループバックアドレスに接続し、販売元のプラグインサーバーへ答案を送る機能はありません。AI提供元での保存・学習利用・削除は、そのサービスの規約と利用者の設定に従います。</p><p>本番の答案は事前に匿名化し、所属先の方針を確認してください。13歳未満の児童の個人情報をAIサービスへ送らないでください。<a href="ai-grading.html#data">AI採点のデータの扱い</a>・<a href="https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md">採点プラグインの説明</a></p></div></section>
+  <section class="section" id="ai-integration" aria-labelledby="ai-integration-title"><div class="prose"><h2 id="ai-integration-title">利用者がAI連携を使う場合</h2><p>Scoring64 を別途 Codex・Claude Code などの AI ツールと連携し、AI に画面やファイルへのアクセスを許可すると、AIエージェントが答案を読み、アプリの画面を操作します。この際、答案の画像・文字・氏名や採点基準が利用中のAIサービスに送られる場合があります。通常の画面採点・マーク読取のローカル処理とは異なり、完全オフラインのAI採点ではありません。</p><p>採点プラグインを使う場合、その起動補助は同じPCのループバックアドレスに接続し、販売元のプラグインサーバーへ答案を送る機能はありません。AI提供元での保存・学習利用・削除は、そのサービスの規約と利用者の設定に従います。</p><p>本番の答案は事前に匿名化し、所属先の方針を確認してください。13歳未満の児童の個人情報をAIサービスへ送らないでください。<a href="ai-grading.html#data">AI採点のデータの扱い</a>・<a href="https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md">採点プラグインの説明</a></p></div></section>
   <section class="section" id="network" aria-labelledby="network-title">
     <div class="prose">
       <h2 id="network-title">アプリがインターネットにつなぐとき</h2>
       <ul class="dots">
         <li>Mac App Store 版と iPad 版：アプリ内課金の商品の表示、購入、復元のとき、App Store に接続します。購入の確認は端末の中で Apple の署名を確かめて行い、販売元のサーバーには接続しません。Mac App Store 版の用紙の組版に使う TeX はアプリに同梱しており、ダウンロードしません。</li>
         <li>Mac App Store 版のお知らせ更新対応バージョン：起動時に最大24時間に1回、GitHubの公開リポジトリで配信する署名付きの公開設定を取得します。お知らせ、予定価格、最新版の案内だけに使い、アプリの機能や購入価格を変更しません。通信がなくても採点できます。答案・名簿・端末ID・利用履歴は送信せず、Cookieや認証情報も付けません。通信先の配信事業者にはIPアドレス、通信日時、共通の通信ヘッダーが伝わり、事業者側で記録される場合があります。この取得では、案内サイトのアクセス解析スクリプトを実行しません。</li>
-        <li>ダウンロード版：新しい版の確認と更新ファイルの取得のため、GitHub で公開している更新情報に接続します。利用者が TeX の準備を選んだときは、TeX Live の公式の配布元からダウンロードします。</li>
-        <li>ヘルプ、お問い合わせ、改善点フォームのリンクは、利用者が押したときに既定のブラウザで開きます。開いた先のサイトでは、そのサイトのポリシーが適用されます。</li>
+        <li>ダウンロード版：新しい版の確認と更新ファイルの取得のため、GitHub で公開している更新情報に接続します。利用者が TeX の準備を選んだときは、GitHub の TinyTeX 配布元や TeX Live の配布元からダウンロードします。</li>
+        <li>Microsoft Store 版（Windows）：アプリの配布と更新は Microsoft Store が行います。アプリ内の独自アップデーターは GitHub の更新情報や EXE を取得しません。利用者が TeX の準備を選んだ場合は GitHub の TinyTeX 配布元や TeX Live の配布元へ接続します。配信事業者には IP アドレスや通信日時など通常の通信情報が伝わる場合があります。ライセンスキーの登録と確認は端末内で行います。</li>
+        <li>ヘルプ、料金、お問い合わせ、改善点フォームのリンクは、利用者が押したときに既定のブラウザで開きます。開いた先のサイトでは、そのサイトのポリシーが適用されます。</li>
       </ul>
     </div>
   </section>
@@ -124,7 +126,7 @@
   <section class="section" id="delete" aria-labelledby="delete-title">
     <div class="prose">
       <h2 id="delete-title">保存と削除</h2>
-      <p>試験はアプリの試験一覧から削除できます。アプリを削除しても、データフォルダが残る場合があります。Mac App Store 版では、上のコンテナのフォルダを削除すると、試験、採点、ライセンスの記録がすべて消えます。書き出したファイルとバックアップは、保存した場所で削除してください。</p>
+      <p>試験はアプリの試験一覧から削除できます。アプリを削除しても、データフォルダが残る場合があります。Mac App Store 版では、上のコンテナのフォルダを削除すると、試験、採点、ライセンスの記録がすべて消えます。Windows 版では、アプリのアンインストールだけで、試験・答案・採点結果と無料枠・ライセンスの記録がすべて削除されるとは限りません。データフォルダの削除は試験や採点結果の消失につながります。保存場所の確認や削除に不明点がある場合は販売元へお問い合わせください。書き出したファイルとバックアップは、保存した場所で削除してください。</p>
     </div>
   </section>
 
@@ -139,7 +141,7 @@
     <div class="prose">
       <h2 id="changes-title">改定</h2>
       <p>機能やデータの扱いを変えるときは、このページを更新し、更新した日を書きます。</p>
-      <p class="muted small">2026年10月13日 制定。2026年10月22日 Mac App Store版の公開設定の取得について追記。</p>
+      <p class="muted small">2026年10月13日 制定。2026年10月22日 Mac App Store版の公開設定の取得について追記。2026年11月8日 Windows の Microsoft Store 版と、その保存先・更新方法について追記。</p>
     </div>
   </section>
   </div>
