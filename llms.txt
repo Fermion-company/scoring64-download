@@ -1,6 +1,6 @@
 # Scoring64
 
-> Scoring64 は、学習塾の紙のテストのためのデジタル採点システム（電子採点ソフト）です。株式会社Fermion が開発しています。答案をスキャンしてパソコンに取り込み、マークシート（記号問題）は自動で、記述問題は問題ごとに画面で採点し、Codex・Claude Code連携によるAI採点にも対応します。成績表と返却PDFを作ります。毎月2テストまで、人数制限なしですべての機能を無料で使えます。
+> Scoring64 は、学習塾の紙のテストのためのデジタル採点システム（電子採点ソフト）です。単独の著作者・著作権者は Kosei Kawaguchi、運営・販売元は株式会社Fermionです。答案をスキャンしてパソコンに取り込み、マークシート（記号問題）は自動で、記述問題は問題ごとに画面で採点し、Codex・Claude Code連携によるAI採点にも対応します。成績表と返却PDFを作ります。毎月2テストまで、人数制限なしですべての機能を無料で使えます。
 
 - 種類: インストール型（Windows 10／11 64ビット、Apple Silicon の Mac）。管理者の権限は不要
 - データ: 通常の画面採点・マーク読取はPC内で処理する。AI連携時はAIが読む答案画像・文字・採点基準が利用先AIサービスに送られる場合がある。完全オフラインのAI採点ではない
@@ -27,7 +27,7 @@
 
 ## English
 
-Scoring64 is desktop software for grading paper tests (Windows / Apple silicon Mac) by Fermion Inc., Tokyo. The Windows and Mac versions are in English from version 1.2.0. Free for 2 tests a month per computer; pricing outside Japan is quoted by email.
+Scoring64 is desktop software for grading paper tests (Windows / Apple silicon Mac) authored and copyrighted by Kosei Kawaguchi and published by Fermion Inc., Tokyo. The Windows and Mac versions are in English from version 1.2.0. Free for 2 tests a month per computer; pricing outside Japan is quoted by email.
 
 - [Scoring64 in English](https://scoring64.fermion.company/en/)
 - [Getting started](https://scoring64.fermion.company/en/start.html)
