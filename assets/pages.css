@@ -119,3 +119,154 @@ details.more summary::after{margin-left:auto}
 @media(min-width:1080px){
  .page-head>.toc a{display:inline-block;padding:4px 0;font-size:15px}
 }
+
+/* ---------------------------------------------------------------
+ * 2026-11-28: more room, larger type, real screens.
+ * Page heads, the plan cards and the question rows follow the Paste
+ * pricing page (pasteapp.io/pricing): a centred title with one lead,
+ * the plans as the main content, then everything else in rows that
+ * open. Screens sit on a tinted stage like the Paste product shots.
+ * Colours are the existing tokens only.
+ * ------------------------------------------------------------- */
+.content-page main{padding-bottom:0}
+.content-page h2{font-size:clamp(28px,3vw,40px);line-height:1.4}
+.content-page h3{font-size:21px}
+.page-head{text-align:center;padding-block:120px 72px}
+.page-head h1{max-width:18em;margin:0 auto;font-size:clamp(36px,4.4vw,56px);line-height:1.35}
+.page-head .lead{max-width:34em;margin:24px auto 0;font-size:20px}
+.page-head>p.muted{max-width:40em;margin:16px auto 0}
+.page-head .page-actions{justify-content:center;margin-top:40px}
+.page-head>.toc{justify-content:center;gap:12px;margin:40px auto 0;padding-top:0;border-top:0;max-width:920px}
+.page-head>.toc a,.content-page .toc a{
+  display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border:1px solid var(--line);border-radius:999px;
+  background:#fff;color:var(--ink);font-size:16px;text-decoration:none;box-shadow:none;outline:none;
+  transition:background-color 180ms var(--ease),border-color 180ms var(--ease),color 180ms var(--ease)
+}
+.page-head>.toc a:hover,.page-head>.toc a:focus-visible,.content-page .toc a:hover,.content-page .toc a:focus-visible{background:var(--wash);border-color:var(--teal);color:var(--teal);box-shadow:none}
+.section{padding-block:112px;border-top:0}
+.page-head + .section{padding-top:24px}
+.band-soft{background:linear-gradient(180deg,var(--soft) 0%,var(--bg) 100%)}
+
+/* A centred block with its own heading. */
+.block{width:min(1120px,100% - 2 * var(--gutter));margin-inline:auto}
+.block-head{max-width:820px;margin:0 auto 56px;text-align:center}
+.block-head h2{margin:0}
+.block-head p{max-width:34em;margin:20px auto 0;font-size:19px;color:var(--muted)}
+.block-head .btn{margin-top:32px}
+.narrow-block{width:min(880px,100% - 2 * var(--gutter));margin-inline:auto}
+
+/* Screens on a stage. */
+.stage-shot{margin:0;padding:40px 40px 0;border-radius:28px 28px 0 0;overflow:hidden;
+  background:linear-gradient(180deg,var(--soft) 0%,color-mix(in srgb,var(--soft) 40%,var(--bg)) 100%);border:1px solid var(--line);border-bottom:0}
+.stage-shot img,.stage-shot video{width:100%;border-radius:12px 12px 0 0;background:#111;
+  box-shadow:0 30px 70px -30px rgba(21,33,37,.45),0 10px 22px -12px rgba(21,33,37,.22)}
+.stage-shot.full{padding:40px;border-radius:28px;border-bottom:1px solid var(--line)}
+.stage-shot.full img,.stage-shot.full video{border-radius:12px}
+
+/* Rows that open (Paste FAQ). */
+.folds{width:min(880px,100% - 2 * var(--gutter));margin-inline:auto;border-top:1px solid var(--line)}
+details.fold{border-bottom:1px solid var(--line)}
+details.fold>summary{
+  display:flex;align-items:center;gap:20px;padding:26px 8px;list-style:none;cursor:pointer;outline:none;
+  font-size:20px;font-weight:600;line-height:1.5;border-radius:8px;
+  transition:background-color 180ms var(--ease),color 180ms var(--ease)
+}
+details.fold>summary::-webkit-details-marker{display:none}
+details.fold>summary::after{
+  content:"";flex:none;width:9px;height:9px;margin-left:auto;margin-top:-5px;
+  border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);
+  transition:transform 180ms var(--ease),margin 180ms var(--ease)
+}
+details.fold[open]>summary::after{transform:rotate(225deg);margin-top:5px}
+details.fold>summary:hover,details.fold>summary:focus-visible{background:var(--wash);color:var(--teal)}
+details.fold>.fold-body{padding:4px 8px 36px}
+details.fold>.fold-body>:last-child{margin-bottom:0}
+details.fold h3{margin:1.6em 0 .5em;font-size:19px}
+details.fold h3:first-child{margin-top:0}
+
+/* Two large cards side by side (Paste trial cards). */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.duo>.card{display:flex;flex-direction:column;padding:40px;border-radius:24px;background:#fff;border:1px solid var(--line);
+  box-shadow:0 24px 48px -32px rgba(21,33,37,.3)}
+.duo>.card h3{margin:0 0 8px;font-size:26px}
+.duo>.card .os{margin:0 0 24px;color:var(--muted)}
+.duo>.card ol{margin:0 0 28px}
+.duo>.card .btn{margin-top:auto;width:100%}
+
+/* Plans */
+.plans{gap:24px}
+.plan{padding:40px 36px;border-radius:24px;background:#fff;box-shadow:0 24px 48px -32px rgba(21,33,37,.3)}
+.plan:nth-child(2){background:linear-gradient(180deg,#f0f5f1 0%,#fff 100%);border-color:#87aba4}
+.plan-name{font-size:24px}
+.price{font-size:clamp(44px,4.2vw,56px);margin-top:20px}
+.price .yen{font-size:20px}.price .per{font-size:17px}
+.tax{font-size:15px;margin:8px 0 24px}
+.plan .desc{font-size:17px;border-top:0;padding-top:0}
+.plan .desc p{margin:0 0 .6em}
+.plan .btn{margin-top:28px}
+.plans-note{margin:40px auto 0;text-align:center;font-size:17px;color:var(--muted)}
+
+/* Larger small print everywhere outside the legal pages. */
+.small,.muted.small{font-size:15px}
+figcaption,.page-preview figcaption,.ai-preview figcaption,.ai-video figcaption{font-size:15px}
+.key{font-size:15px}
+code,.path{font-size:.9em}
+.table{font-size:16px}
+.table caption{font-size:15px}
+.video-slot h2{font-size:21px}
+.video-slot p{font-size:16px}
+.ai-prompt{font-size:16px}
+.note,.caution{padding:24px 28px;border-radius:16px}
+.btn,.button{font-size:16px}
+
+@media(max-width:900px){
+  .page-head{padding-block:80px 48px}
+  .section{padding-block:80px}
+  .duo{grid-template-columns:1fr}
+  .stage-shot{padding:24px 24px 0;border-radius:20px 20px 0 0}
+  .stage-shot.full{padding:24px;border-radius:20px}
+}
+@media(max-width:540px){
+  .page-head{padding-block:56px 40px}
+  .content-page h1,.page-head h1{font-size:32px}
+  .content-page h2{font-size:26px}
+  .page-head .lead{font-size:18px}
+  .page-head>.toc{gap:8px}
+  .page-head>.toc a{min-height:40px;padding:6px 14px;font-size:15px}
+  .section{padding-block:64px}
+  .block-head{margin-bottom:36px}
+  .block-head p{font-size:17px}
+  details.fold>summary{font-size:18px;padding:22px 4px}
+  details.fold>.fold-body{padding:0 4px 28px}
+  .duo>.card{padding:28px 24px;border-radius:18px}
+  .duo>.card h3{font-size:23px}
+  .plan{padding:32px 24px}
+  .stage-shot{padding:14px 14px 0;border-radius:16px 16px 0 0}
+  .stage-shot.full{padding:14px;border-radius:16px}
+  .stage-shot img,.stage-shot video{border-radius:8px 8px 0 0}
+  .stage-shot.full img,.stage-shot.full video{border-radius:8px}
+}
+.duo>.card .card-note{margin:-8px 0 28px;font-size:15px;color:var(--muted)}
+.folds-after{margin-top:80px}
+.flow-after{margin-top:56px}
+.page-head .release-note{max-width:40em;margin:28px auto 0;text-align:left}
+@media(max-width:540px){.folds-after{margin-top:56px}.flow-after{margin-top:36px}}
+.stage-after-head{margin-bottom:24px}
+.stage-shot video{display:block;width:100%;height:auto}
+.demo-notes{margin-top:32px;color:var(--muted)}
+.page-head>.small{max-width:40em;margin:16px auto 0;text-align:center}
+.ai-video{max-width:none}
+/* Videos page: two large films a row. */
+.videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:72px 32px;max-width:1120px;margin-inline:auto}
+.video-slot .frame{border-radius:18px;box-shadow:0 30px 60px -34px rgba(21,33,37,.5)}
+.video-slot figcaption{margin-top:20px;color:var(--ink)}
+.video-slot figcaption p{margin-top:6px}
+@media(max-width:700px){.videos{grid-template-columns:1fr;gap:48px}}
+@media(max-width:540px){
+  .page-head{text-align:left}
+  .page-head h1,.page-head .lead,.page-head>p.muted,.page-head>.small{margin-left:0}
+  .page-head>.toc,.page-head .page-actions{justify-content:flex-start;margin-left:0}
+}
+.page-head .note{max-width:820px;margin:32px auto 0;text-align:left}
+.narrow-block .page-actions{margin:24px 0 16px}
+.page-head .lead,.block-head p,.head p,.hero-lead{text-wrap:pretty}

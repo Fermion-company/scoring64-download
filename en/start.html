@@ -25,10 +25,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"Fermion Inc.","alternateName":"株式会社Fermion","url":"https://fermion.company/","email":"contact@fermion.company","address":{"@type":"PostalAddress","streetAddress":"MIEUX Shibuya Bldg. 8F, 5-3 Maruyama-cho","addressLocality":"Shibuya-ku","addressRegion":"Tokyo","postalCode":"150-0044","addressCountry":"JP"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/en/"},{"@type":"ListItem","position":2,"name":"Getting started","item":"https://scoring64.fermion.company/en/start.html"}]}]}</script>
 <!-- seo:end -->
-<link rel="stylesheet" href="../assets/site.css?v=20261128-1">
-<link rel="stylesheet" href="../assets/brand.css?v=20261128-1">
-<link rel="stylesheet" href="../assets/pages.css?v=20261128-1">
-<script defer src="../assets/ui.js?v=20261128-1"></script>
+<link rel="stylesheet" href="../assets/site.css?v=20261128-2">
+<link rel="stylesheet" href="../assets/brand.css?v=20261128-2">
+<link rel="stylesheet" href="../assets/pages.css?v=20261128-2">
+<script defer src="../assets/ui.js?v=20261128-2"></script>
 <script defer src="../assets/analytics.js"></script>
 </head>
 <body class="content-page">
@@ -49,38 +49,37 @@
   </header>
 
 <main id="main">
-  <div class="wrap narrow page-head">
+  <div class="wrap page-head">
     <h1>Getting started</h1>
     <p class="lead">From the download to grading the sample exam that comes with the app.</p>
     <div class="note release-note"><p>Scoring64 is in English on Windows and Mac from version 1.2.0. The button names on this page are the English ones from 1.2.0.</p></div>
-    <ul class="toc" aria-label="On this page">
-      <li><a href="#install">Install on Windows</a></li>
-      <li><a href="#install-mac">Install on a Mac</a></li>
-      <li><a href="#troubleshooting">Download or app won't open?</a></li>
-      <li><a href="#first">First launch</a></li>
-      <li><a href="#key">Free tests and license keys</a></li>
-      <li><a href="#sample">Try the sample</a></li>
-      <li><a href="#data">Where your data is kept</a></li>
-      <li><a href="#uninstall">Uninstall</a></li>
-      <li><a href="#move">Move to another computer</a></li>
-    </ul>
+    <ul class="toc" aria-label="On this page"><li><a href="#install">Install</a></li><li><a href="#first">First launch</a></li><li><a href="#sample">Try the sample</a></li><li><a href="#more">Keys and data</a></li></ul>
   </div>
 
   <section class="section" id="install" aria-labelledby="install-title">
-    <div class="prose top">
-      <h2 id="install-title">Download and install</h2>
-      <p>Use a Windows 10 / 11 computer (Intel or AMD, 64-bit), or a Mac with Apple silicon (M1 or later) and macOS 14 or later. On a Mac, go to <a href="#install-mac">Install on a Mac</a>. This desktop download does not run on Intel Macs, phones or tablets.</p>
-      <div class="flow">
-      <h3>Install on Windows</h3>
-      <ol class="steps">
-        <li>Download the installer (Scoring64-Setup.exe).<br>
-          <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">Download</a>
-          <span class="muted small nowrap">  Windows 10 / 11 (64-bit)</span></li>
+    <div class="block">
+      <div class="block-head"><h2 id="install-title">Download and install</h2><p>Use a Windows 10 / 11 computer (Intel or AMD, 64-bit), or a Mac with Apple silicon (M1 or later) and macOS 14 or later. This desktop download does not run on Intel Macs, phones or tablets.</p></div>
+      <div class="duo">
+        <div class="card"><h3>Install on Windows</h3><p class="os">Windows 10 / 11 (64-bit)</p>
+        <ol class="steps">
+        <li>Download the installer (Scoring64-Setup.exe).</li>
         <li>Open the file and follow the prompts. You do not need administrator rights.</li>
       </ol>
-
-      <h3>If Windows shows a warning</h3>
-      <p>The Windows installer is not code-signed, so Edge or Windows may warn you about it. For a file downloaded using the button above, the following options may be available. If your organisation blocks it or there is no option to continue, ask your IT administrator or <a href="#troubleshooting">contact us</a>.</p>
+        
+        <a class="btn btn-primary" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">Download</a></div>
+        <div class="card" id="install-mac"><h3>Install on a Mac</h3><p class="os">Mac with Apple silicon (M1 or later), macOS 14 or later. Not for Intel Macs.</p>
+        <ol class="steps">
+        <li>Download the Mac version (Scoring64-mac-arm64.zip).</li>
+        <li>Open the zip to get <span class="ui">Scoring64.app</span>, and move it to your <span class="ui">Applications</span> folder.</li>
+        <li>Open <span class="ui">Scoring64</span> from <span class="ui">Applications</span>. If you cannot copy it there, ask your Mac administrator for help.</li>
+      </ol>
+        <p class="card-note">A separate edition with in-app purchases is listed on the <a href="https://apps.apple.com/jp/app/id6819722556">Japan Mac App Store</a>. It may not be available in your region. The direct download on this page is the edition used by this guide and the <a href="ai-grading.html">AI grading setup</a>.</p>
+        <a class="btn btn-primary" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">Download</a></div>
+      </div>
+    </div>
+    <div class="folds folds-after">
+      <details class="fold"><summary>If Windows shows a warning</summary><div class="fold-body">
+        <p>The Windows installer is not code-signed, so Edge or Windows may warn you about it. For a file downloaded using the button above, the following options may be available. If your organisation blocks it or there is no option to continue, ask your IT administrator or <a href="#troubleshooting">contact us</a>.</p>
 
       <p><b>If Edge says the file “isn't commonly downloaded”</b></p>
       <ol class="seq" aria-label="Click in this order">
@@ -95,28 +94,15 @@
         <li><span class="key">More info</span></li>
         <li><span class="key">Run anyway</span></li>
       </ol>
-
-      </div>
-      <div class="flow">
-      <h3 id="install-mac">Install on a Mac</h3>
-      <ol class="steps">
-        <li>Download the Mac version (Scoring64-mac-arm64.zip).<br>
-          <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">Download</a>
-          <span class="muted small">Mac with Apple silicon (M1 or later), macOS 14 or later. Not for Intel Macs.</span></li>
-        <li>Open the zip to get <span class="ui">Scoring64.app</span>, and move it to your <span class="ui">Applications</span> folder.</li>
-        <li>Open <span class="ui">Scoring64</span> from <span class="ui">Applications</span>. If you cannot copy it there, ask your Mac administrator for help.</li>
-      </ol>
-
-      <p class="muted small">A separate edition with in-app purchases is listed on the <a href="https://apps.apple.com/jp/app/id6819722556">Japan Mac App Store</a>. It may not be available in your region. The direct download above is the edition used by this guide and the <a href="ai-grading.html">AI grading setup</a>.</p>
-
-      <h3 id="mac-update">Updating an older Mac download</h3>
-      <p>Version 1.3.1 is now available for Windows and Mac. Mac downloads through version 1.2.0 need a one-time manual update (1.2.1 updates automatically). If the app cannot find compatible update information, check the <a href="https://github.com/Fermion-company/scoring64-download/releases/latest">latest release</a>. On an Apple silicon Mac with macOS 14 or later, save your work, back up your exams, quit Scoring64, then replace the app in Applications using the Mac ZIP above. Keep your Scoring64 data folder.</p>
+      </div></details>
+      <details class="fold" id="mac-update"><summary>Updating an older Mac download</summary><div class="fold-body">
+        <p>Version 1.3.1 is now available for Windows and Mac. Mac downloads through version 1.2.0 need a one-time manual update (1.2.1 updates automatically). If the app cannot find compatible update information, check the <a href="https://github.com/Fermion-company/scoring64-download/releases/latest">latest release</a>. On an Apple silicon Mac with macOS 14 or later, save your work, back up your exams, quit Scoring64, then replace the app in Applications using the Mac ZIP above. Keep your Scoring64 data folder.</p>
       <p>Version 1.2.1 and later check the required macOS version before downloading an update. If your Mac is too old for an update, your existing app stays in place.</p>
 
       <p>macOS 13 and earlier are not supported. Keep your existing app and data, and ask your Mac administrator whether you can update macOS. Back up your data before an OS update. We have not verified an older compatible release or data compatibility when downgrading, so we do not recommend downgrading. <a href="contact.html">Contact us for help</a>.</p>
-
-      <h3>If the Mac cannot open the app</h3>
-      <p>The current direct download is Developer ID signed and notarized by Apple. If you have an older download, download it again using the button above and replace the app in Applications. Keep your Scoring64 data folder.</p>
+      </div></details>
+      <details class="fold"><summary>If the Mac cannot open the app</summary><div class="fold-body">
+        <p>The current direct download is Developer ID signed and notarized by Apple. If you have an older download, download it again using the button above and replace the app in Applications. Keep your Scoring64 data folder.</p>
       <p>If macOS says the app is damaged, the developer cannot be verified, or the app is not supported on this Mac, check <span class="ui">Apple menu → About This Mac</span> for an Apple M-series chip and macOS 14 or later. If those requirements are met, <a href="#troubleshooting">send us the exact message</a>. You should not need to disable Gatekeeper or remove quarantine attributes.</p>
 
       <p><b>If you are asked for keychain access after an in-app update</b></p>
@@ -125,68 +111,37 @@
         <li><span class="key">Always Allow</span></li>
       </ol>
       <p>This can appear once after an update. Your license keeps working.</p>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="troubleshooting" aria-labelledby="troubleshooting-title">
-    <div class="prose top">
-      <h2 id="troubleshooting-title">Download or app won't open?</h2>
-      <ul>
+      </div></details>
+      <details class="fold" id="troubleshooting"><summary id="troubleshooting-title">Download or app won't open?</summary><div class="fold-body">
+        <ul>
         <li><b>The download does not finish:</b> check your browser's Downloads list. Windows needs the complete <code>Scoring64-Setup.exe</code>; Mac needs <code>Scoring64-mac-arm64.zip</code>. A saved web page ending in <code>.html</code> is not the app. You can also find the files under Assets on the <a href="https://github.com/Fermion-company/scoring64-download/releases/latest">release page</a>. If GitHub is blocked on your school network, ask your IT administrator or contact us.</li>
         <li><b>The file will not open:</b> use the file for your OS and check the requirements above. Wait for the download to finish, then run the Windows installer or extract the Mac ZIP before opening the app. For Windows warnings, see <a href="#install">Install on Windows</a>.</li>
         <li><b>The app still fails to start:</b> email <a href="mailto:contact@fermion.company?subject=Scoring64%20installation%20help">contact@fermion.company</a> with your OS and version, the downloaded filename, and the exact error message or a screenshot. On Mac, also include the chip shown in About This Mac. Tell us whether it stops during download, installation or launch.</li>
       </ul>
       <p>You can open Scoring64 and try its sample before setting up any AI service or plugin. AI setup is a separate step.</p>
+      </div></details>
     </div>
   </section>
 
-  <section class="section" id="first" aria-labelledby="first-title">
-    <div class="prose top">
-      <h2 id="first-title">First launch</h2>
-      <div class="pair">
-      <div class="flow">
-      <ol class="steps">
+  <section class="section band-soft" id="first" aria-labelledby="first-title">
+    <div class="block">
+      <div class="block-head"><h2 id="first-title">First launch</h2></div>
+      <figure class="stage-shot full"><img src="../assets/img/s01-welcome.webp" width="1440" height="900" loading="lazy" alt="Scoring64's first screen in Japanese, with buttons for Open PDF or material and Restore from backup at the top, and Try the sample and Create your first exam in the middle."></figure>
+      <div class="narrow-block flow-after">
+        <ol class="steps">
         <li>Scoring64 opens when the installation finishes. After that, open it from the Start menu or the desktop shortcut; on a Mac, from <span class="ui">Applications</span>.</li>
         <li>On both Windows and Mac, Scoring64 opens in its own window, not in a browser. <b>The first launch can take about 30 seconds.</b> On a Mac, the initial macOS security check can take a few minutes.</li>
       </ol>
-      <div class="note">
+        <div class="note">
         <p>Grading and reading answer sheets work offline, entirely on this computer, and stop when you close the window. Scoring64 goes online only to check for new versions and to set up TeX if you design sheets in the app.</p>
       </div>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="../assets/img/s01-welcome.webp"><img src="../assets/img/s01-welcome.webp" width="1440" height="900" loading="lazy" alt="Scoring64's first screen in Japanese, with buttons for Open PDF or material and Restore from backup at the top, and Try the sample and Create your first exam in the middle."></a>
-        <figcaption>The first screen (Japanese interface)</figcaption>
-      </figure>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="sec-grid">
-  <section class="section" id="key" aria-labelledby="key-title">
-    <div class="prose">
-      <h2 id="key-title">Free tests and license keys</h2>
-      <p>Each computer can grade 2 tests a month with every feature and no limit on students. When the free tests are used up, only grading a new test stops: you can still continue, correct and export tests you have started, design sheets, and view, back up and restore your data. The free tests reset on the 1st of each month, Japan time (JST).</p>
-      <p>To grade more tests, <a href="pricing.html">contact us for a paid license</a>. Click the counter at the top right (<span class="ui">2 free tests left this month</span>, for example) or <span class="ui">License</span>, then click the <span class="ui">This computer's code</span> field and copy all of it.</p>
-      <p>Send the code to <a href="mailto:contact@fermion.company?subject=Scoring64%20license">contact@fermion.company</a> with your school or center name. When your key (a long string starting with <code>S64-1.</code>) arrives by email:</p>
-      <ol class="steps">
-        <li>Click the free-tests counter at the top right.</li>
-        <li>Copy the whole key from the email and paste it. Line breaks in the middle are fine.</li>
-        <li>Click <span class="ui">Register</span>. Your exams and grading carry on where you left them.</li>
-      </ol>
-      <div class="note">
-        <p>The counter at the top right shows how many free tests are left this month. A paid key removes the limit. Running out of free tests never deletes your exams or grades.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="sample" aria-labelledby="sample-title">
-    <div class="prose">
-      <h2 id="sample-title">Try the sample</h2>
-      <p>The app comes with a sample exam you can grade from start to finish. No paper, scanner or key needed; it takes about five minutes. The sample is a Japanese science quiz, but the steps are the same for your own tests.</p>
+    <div class="block-head"><h2 id="sample-title">Try the sample</h2><p>The app comes with a sample exam you can grade from start to finish. No paper, scanner or key needed; it takes about five minutes. The sample is a Japanese science quiz, but the steps are the same for your own tests.</p></div>
+    <div class="narrow-block">
       <ol class="steps">
         <li>Click <span class="ui">Try the sample</span>.</li>
         <li>Import the sample answer sheets.</li>
@@ -199,34 +154,37 @@
     </div>
   </section>
 
-  </div>
-
-  <div class="sec-grid" style="--cols: 3">
-  <section class="section" id="data" aria-labelledby="data-title">
-    <div class="prose">
-      <h2 id="data-title">Where your data is kept</h2>
-      <p>Exams, scanned answer sheets and grades are saved in this folder on your computer. They are never sent to an outside server.</p>
+  <section class="section band-soft" id="more" aria-labelledby="more-title">
+    <div class="block-head"><h2 id="more-title">More about keys and data</h2></div>
+    <div class="folds">
+      <details class="fold" id="key"><summary id="key-title">Free tests and license keys</summary><div class="fold-body">
+        <p>Each computer can grade 2 tests a month with every feature and no limit on students. When the free tests are used up, only grading a new test stops: you can still continue, correct and export tests you have started, design sheets, and view, back up and restore your data. The free tests reset on the 1st of each month, Japan time (JST).</p>
+      <p>To grade more tests, <a href="pricing.html">contact us for a paid license</a>. Click the counter at the top right (<span class="ui">2 free tests left this month</span>, for example) or <span class="ui">License</span>, then click the <span class="ui">This computer's code</span> field and copy all of it.</p>
+      <p>Send the code to <a href="mailto:contact@fermion.company?subject=Scoring64%20license">contact@fermion.company</a> with your school or center name. When your key (a long string starting with <code>S64-1.</code>) arrives by email:</p>
+      <ol class="steps">
+        <li>Click the free-tests counter at the top right.</li>
+        <li>Copy the whole key from the email and paste it. Line breaks in the middle are fine.</li>
+        <li>Click <span class="ui">Register</span>. Your exams and grading carry on where you left them.</li>
+      </ol>
+      <div class="note">
+        <p>The counter at the top right shows how many free tests are left this month. A paid key removes the limit. Running out of free tests never deletes your exams or grades.</p>
+      </div>
+      </div></details>
+      <details class="fold" id="data"><summary id="data-title">Where your data is kept</summary><div class="fold-body">
+        <p>Exams, scanned answer sheets and grades are saved in this folder on your computer. They are never sent to an outside server.</p>
       <p><code>%LOCALAPPDATA%\Scoring64\data</code></p>
       <p>The Start menu has a shortcut to the data folder.</p>
       <p>On a Mac, they are saved here:</p>
       <p><code>~/Library/Application Support/Scoring64</code></p>
       <p>In Finder, choose <span class="ui">Go</span> → <span class="ui">Go to Folder</span> and paste this path.</p>
-    </div>
-  </section>
-
-  <section class="section" id="uninstall" aria-labelledby="uninstall-title">
-    <div class="prose">
-      <h2 id="uninstall-title">Uninstall</h2>
-      <p>Use the uninstall shortcut in the Start menu, or remove Scoring64 under Windows <span class="ui">Settings</span> → <span class="ui">Apps</span>.</p>
+      </div></details>
+      <details class="fold" id="uninstall"><summary id="uninstall-title">Uninstall</summary><div class="fold-body">
+        <p>Use the uninstall shortcut in the Start menu, or remove Scoring64 under Windows <span class="ui">Settings</span> → <span class="ui">Apps</span>.</p>
       <p>On a Mac, move <span class="ui">Scoring64.app</span> from <span class="ui">Applications</span> to the Bin. Your data stays in <code>~/Library/Application Support/Scoring64</code>.</p>
       <p>Uninstalling does not delete the data folder. If you reinstall, you carry on where you left off.</p>
-    </div>
-  </section>
-
-  <section class="section" id="move" aria-labelledby="move-title">
-    <div class="prose">
-      <h2 id="move-title">Move to another computer</h2>
-      <ol class="steps">
+      </div></details>
+      <details class="fold" id="move"><summary id="move-title">Move to another computer</summary><div class="fold-body">
+        <ol class="steps">
         <li>On the old computer, click <span class="ui">Back up all exams</span> on the <span class="ui">Export &amp; backup</span> tab. Every exam goes into one file (<code>.scoring64</code>).</li>
         <li>Copy that file to the new computer, for example on a USB stick.</li>
         <li>Install Scoring64 on the new computer, send us its <span class="ui">This computer's code</span>, and register the key we send for that computer.</li>
@@ -235,9 +193,9 @@
       <div class="note">
         <p>A paid license covers up to five computers in one classroom. For several sites, <a href="contact.html">contact us</a> for a quote. If a computer's code changes because you replaced the computer or reinstalled the system, contact us as well.</p>
       </div>
+      </div></details>
     </div>
   </section>
-  </div>
 </main>
 
 <footer class="footer shell"><div class="footer-top"><a class="brand" href="./"><img src="../assets/logo.svg" width="28" height="28" alt=""><span>Scoring<span class="brand-accent">64</span></span></a><nav aria-label="Site"><a href="guide.html">Guide</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a></nav></div><details class="footer-more"><summary>More guides and policies</summary><nav aria-label="More guides and policies"><a href="start.html">Getting started</a><a href="ai-grading.html">AI grading</a><a href="pricing.html">Pricing</a><a href="privacy.html">Privacy policy</a><a href="contact.html#analytics">Site analytics</a><a href="https://fermion.company/en/">About Fermion Inc.</a><a href="../start.html" hreflang="ja" lang="ja">日本語のサイト</a></nav></details><div class="footer-bottom"><p>© 2026 Fermion Inc. · Shibuya, Tokyo, Japan</p><a href="mailto:contact@fermion.company">contact@fermion.company</a></div></footer>

@@ -25,10 +25,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"株式会社Fermion","alternateName":"Fermion Inc.","url":"https://fermion.company/","email":"contact@fermion.company"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/"},{"@type":"ListItem","position":2,"name":"使い方","item":"https://scoring64.fermion.company/guide.html"}]}]}</script>
 <!-- seo:end -->
-<link rel="stylesheet" href="assets/site.css?v=20261128-1">
-<link rel="stylesheet" href="assets/brand.css?v=20261128-1">
-<link rel="stylesheet" href="assets/pages.css?v=20261128-1">
-<script defer src="assets/ui.js?v=20261128-1"></script>
+<link rel="stylesheet" href="assets/site.css?v=20261128-2">
+<link rel="stylesheet" href="assets/brand.css?v=20261128-2">
+<link rel="stylesheet" href="assets/pages.css?v=20261128-2">
+<script defer src="assets/ui.js?v=20261128-2"></script>
 <script defer src="assets/analytics.js"></script>
 </head>
 <body class="content-page">
@@ -49,7 +49,7 @@
   </header>
 
 <main id="main">
-  <div class="wrap narrow page-head">
+  <div class="wrap page-head">
     <h1>使い方</h1>
     <p class="lead">用紙の用意から返却までを6つの手順で案内します。PC1台ごとに毎月2テストまで、記述採点・返却PDFを含む全機能を無料で使えます。画面の上のタブを左から順に進めます。</p>
     <p class="small">印刷して読める<a href="https://drive.google.com/file/d/1mZh7lj-D9M4APHP33fBHUB0pqebZ1JJK/view?usp=sharing" target="_blank" rel="noopener">PDFの使い方マニュアル（Google ドライブ・28ページ）</a>もあります。</p>
@@ -64,8 +64,8 @@
   </div>
 
   <section class="section" aria-labelledby="need-title">
-    <div class="prose top">
-      <h2 id="need-title">用意するもの</h2>
+    <div class="block">
+      <div class="block-head"><h2 id="need-title">用意するもの</h2></div>
       <dl class="specs">
         <div><dt>パソコン</dt><dd>Windows 10／11（64ビット）、または Apple Silicon（M1 以降）の Mac。採点や読み取りにインターネットは要りません（新しい版の確認と TeX の準備のときだけ使います）</dd></div>
         <div><dt>プリンター</dt><dd>用紙を等倍で印刷できるもの</dd></div>
@@ -76,11 +76,12 @@
   </section>
 
   <section class="section" id="step1" aria-labelledby="step1-title">
-    <div class="prose top">
-      <h2 id="step1-title">1. 用紙を用意する</h2>
-      <div class="pair">
-      <div class="flow">
-      <p>いつもの Word・Excel のプリントを、そのまま使えます。</p>
+    <div class="block">
+      <div class="block-head"><h2 id="step1-title">1. 用紙を用意する</h2></div>
+      <figure class="stage-shot full"><video controls playsinline preload="none" poster="assets/videos/import.jpg" src="assets/videos/import.mp4" aria-label="操作の動画"></video></figure>
+      <div class="narrow-block flow-after">
+        
+        <p>いつもの Word・Excel のプリントを、そのまま使えます。</p>
       <ol class="steps">
         <li>Word・Excel で<span class="ui">「ファイル」</span>→<span class="ui">「名前を付けて保存」</span>を選び、PDFで保存します。紙しかないときは、300dpiでスキャンしてPDFにします。</li>
         <li>画面の上の<span class="ui">「PDF・教材を開く」</span>から、そのPDFを選びます。</li>
@@ -91,22 +92,12 @@
       <div class="note">
         <p>候補は、見落としや間違いが出ることがあります。必ず目で確かめてください。足りない欄は、右の欄の<span class="ui">「欄を手動で追加」</span>で描き足せます（<a href="#manual">下の手順</a>）。</p>
       </div>
+        
       </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s06-import.webp"><img src="assets/img/s06-import.webp" width="1440" height="900" loading="lazy" alt="数学の小テストのPDFを取り込んだ画面。解答欄が紫の枠で囲まれ、右に「欄を手動で追加」のボタンと解答欄の候補の一覧が出ている"></a>
-        <figcaption>プリントのPDFを取り込んだところ。枠と空欄を候補として出します</figcaption>
-      </figure>
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s07-crop-check.webp"><img src="assets/img/s07-crop-check.webp" width="1440" height="900" loading="lazy" alt="切り出しの一覧。問題ごとに切り出す範囲が並んでいる"></a>
-        <figcaption>切り出しの確認</figcaption>
-      </figure>
-      </div>
-      </div>
-      <div class="pair">
-      <div class="flow">
-      <h3 id="manual">欄を手動で追加する</h3>
-      <ol class="steps">
+    </div>
+    <div class="folds folds-after">
+<details class="fold" id="manual"><summary>欄を手動で追加する</summary><div class="fold-body"><figure class="stage-shot full"><img src="assets/img/s07-manual.webp" width="1440" height="900" loading="lazy" alt="欄を手動で追加の画面。紙面の得点の欄をドラッグで囲み、右に欄名・種類・採点・所属の設定と「追加する」のボタンが出ている"></figure>
+<ol class="steps">
         <li>右の欄の<span class="ui">「欄を手動で追加」</span>を押します。</li>
         <li>紙面をドラッグして、足したい範囲を囲みます。囲み直すと範囲を置きかえます。</li>
         <li>右に出る設定で、欄名・種類（氏名・番号・解答欄・その他）・採点するかどうか・所属を選びます。ページや枠をまたぐ解答は、所属を<span class="ui">「既存の欄の続き」</span>にすると同じ問題として採点します。</li>
@@ -121,10 +112,8 @@
           <li>下線の空欄は15mm以上にします。</li>
         </ul>
       </div>
-      <p class="muted small">アプリの中で用紙を作ることもできます（<span class="ui">「新しい試験」</span>から）。用紙の組版に TeX（無料）を使います。パソコンに TeX がなければ、<span class="ui">「新しい試験」</span>や<span class="ui">「？」</span>の<span class="ui">「TeX の状態」</span>から、軽量版かフル版を選んで準備できます（初回はインターネットに接続します）。Word・Excel のPDFを取り込むだけなら、TeX は要りません。</p>
-      <details class="more">
-        <summary>アプリで用紙を作るときの操作</summary>
-        <div>
+      <p class="muted small">アプリの中で用紙を作ることもできます（<span class="ui">「新しい試験」</span>から）。用紙の組版に TeX（無料）を使います。パソコンに TeX がなければ、<span class="ui">「新しい試験」</span>や<span class="ui">「？」</span>の<span class="ui">「TeX の状態」</span>から、軽量版かフル版を選んで準備できます（初回はインターネットに接続します）。Word・Excel のPDFを取り込むだけなら、TeX は要りません。</p></div></details>
+<details class="fold"><summary>アプリで用紙を作るときの操作</summary><div class="fold-body">
           <ol class="steps">
             <li><span class="ui">「新しい試験」</span>で試験名を入れ、最初の用紙を選びます。<span class="ui">「番号・氏名欄付きの文書」</span>が最初に選ばれています。<span class="ui">「白紙の文書」</span>、<span class="ui">「共通テスト用マークシート」</span>（22科目）、<span class="ui">「登録したテンプレートから作成」</span>（東大の解答用紙と、数学・理科の練習用解答用紙を含む）、<span class="ui">「これまでの試験を複製」</span>からも始められます。</li>
             <li>紙面をクリックして追加する位置を決め、<span class="ui">「＋ 部品を追加」</span>で解答欄・文字・数式・図などを置きます。欄は、<span class="ui">「追加先」</span>に出ている大問に入ります。自動のままでも、大問を選んでもかまいません。</li>
@@ -135,33 +124,28 @@
             <li>よく使う用紙は、<span class="ui">「テンプレート登録」</span>で保存しておけます。</li>
           </ol>
           <p class="muted small">紙面は画面でそのまま描き、TeX は裏で仕上がりを確かめます。東大の解答用紙は A3 版です（以前に A4 版で作った試験も、そのまま印刷・採点できます）。練習用解答用紙は数学・理科の A4・B5 で、1問分の解答欄と日付・番号・氏名の欄があります。どちらも配点が0点から始まるので、確定する前に入れてください。</p>
-        </div>
-      </details>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s07-manual.webp"><img src="assets/img/s07-manual.webp" width="1440" height="900" loading="lazy" alt="欄を手動で追加の画面。紙面の得点の欄をドラッグで囲み、右に欄名・種類・採点・所属の設定と「追加する」のボタンが出ている"></a>
-        <figcaption>欄を手動で追加。囲んだ範囲を、右の設定で追加します</figcaption>
-      </figure>
-      </div>
-      </div>
+        </div></details>
     </div>
   </section>
 
-  <section class="section" id="step2" aria-labelledby="step2-title">
-    <div class="prose top">
-      <h2 id="step2-title">2. 正解と配点</h2>
-      <div class="pair">
-      <div class="flow">
-      <ol class="steps">
+  <section class="section band-soft" id="step2" aria-labelledby="step2-title">
+    <div class="block">
+      <div class="block-head"><h2 id="step2-title">2. 正解と配点</h2></div>
+      <figure class="stage-shot full"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に合計と満点（予定）、「正解を続けて入力」の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></figure>
+      <div class="narrow-block flow-after">
+        
+        <ol class="steps">
         <li>右の欄の<span class="ui">「正解・配点を一覧で入力」</span>を押します。</li>
         <li>記号問題は、正解の選択肢をクリックします。まとめて入れるときは<span class="ui">「正解を続けて入力」</span>を押し、開始欄を選んで正解を順に打ち、<span class="ui">「正解を反映」</span>を押します（例：<code>3142</code>）。Excel の正解表は<span class="ui">「Excelから貼り付け」</span>で入れられます。記述問題の「正解」に模範解答を書いておくと、採点のときに画面の上に出ます。</li>
         <li>配点と採点方式を選びます。同じ配点は<span class="ui">「配点をそろえる」</span>でまとめて入れられます。上の<span class="ui">「満点（予定）」</span>に満点を入れておくと、合計と合っているかを横に出します。</li>
         <li>右上の<span class="ui">「用紙を確定して発行へ」</span>を押します。確かめる点が一覧で出るので、<span class="ui">「保存して確定する」</span>を押します。選択肢から外れた別解や、整数でない配点があるときは、ここで知らせます。保存・印刷用PDFの作成・用紙版の確定が続けて進みます。</li>
       </ol>
-      <details class="more">
-        <summary>採点方式の一覧</summary>
-        <div>
+      
+        
+      </div>
+    </div>
+    <div class="folds folds-after">
+<details class="fold"><summary>採点方式の一覧</summary><div class="fold-body">
           <table class="table">
             <tr><th scope="row">手動採点</th><td>記述問題。画面で先生が採点します</td></tr>
             <tr><th scope="row">単答</th><td>記号1つで正解</td></tr>
@@ -170,37 +154,23 @@
             <tr><th scope="row">順不同・完答</th><td>順番は問わず、すべて合って正解</td></tr>
             <tr><th scope="row">全員正解（出題ミスなど）</th><td>出題ミスのとき。全員に満点</td></tr>
           </table>
-        </div>
-      </details>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s08-answer-key.webp"><img src="assets/img/s08-answer-key.webp" width="1440" height="900" loading="lazy" alt="正解・配点の入力の画面。上に合計と満点（予定）、「正解を続けて入力」の開始欄と正解を入れる欄、下に問題ごとの正解、配点、採点方式の行が並ぶ"></a>
-        <figcaption>正解・配点の一覧</figcaption>
-      </figure>
-      </div>
-      </div>
+        </div></details>
     </div>
   </section>
 
   <section class="section" id="step3" aria-labelledby="step3-title">
-    <div class="prose top">
-      <h2 id="step3-title">3. 用紙を発行して印刷</h2>
-      <div class="pair">
-      <div class="flow">
-          <ol class="steps">
+    <div class="block">
+      <div class="block-head"><h2 id="step3-title">3. 用紙を発行して印刷</h2></div>
+      <figure class="stage-shot full"><video controls playsinline preload="none" poster="assets/videos/issue.jpg" src="assets/videos/issue.mp4" aria-label="操作の動画"></video></figure>
+      <div class="narrow-block flow-after">
+        
+        <ol class="steps">
             <li><span class="ui">「発行・取込」</span>のタブで、人数を入れます。名簿があるときは<span class="ui">「名簿CSVを選ぶ」</span>で読み込みます（1行目が見出し：<code>番号,氏名</code> か <code>組,番,氏名</code>）。</li>
             <li>名前を印刷しておくときは、<span class="ui">「氏名・生徒番号を事前印字」</span>にチェックを入れます。</li>
             <li><span class="ui">「印刷用PDFを作成」</span>を押し、できたPDFを<b>等倍</b>で印刷します。</li>
           </ol>
           <p>用紙には、右上にQRコード、四隅に黒い四角が入ります。取り込むときに、これで用紙を見分けます。</p>
-      </div>
-      <div class="media with-tall">
-      <figure class="shot tall">
-          <a class="zoom" href="assets/img/s09-issue.webp"><img src="assets/img/s09-issue.webp" width="420" height="1275" loading="lazy" alt="用紙の発行の欄。新しく発行する人数、名簿CSVを選ぶ、氏名・生徒番号を事前印字、印刷用PDFを作成のボタンと、発行した用紙のダウンロードが並び、下にスキャンPDFを入れる欄がある"></a>
-          <figcaption>用紙の発行</figcaption>
-        </figure>
-      <div class="note">
+        <div class="note">
         <span class="note-label">生徒への指示</span>
             <ul class="dots">
               <li>HBかBの鉛筆で、枠の中を濃くはっきり塗りつぶす。丸やチェックは付けない（原則として答えとは読まず、先生の確認に回します）。</li>
@@ -208,16 +178,16 @@
             </ul>
       </div>
       </div>
-      </div>
     </div>
   </section>
 
-  <section class="section" id="step4" aria-labelledby="step4-title">
-    <div class="prose top">
-      <h2 id="step4-title">4. 答案をスキャンして取り込む</h2>
-      <div class="pair">
-      <div class="flow">
-      <ol class="steps">
+  <section class="section band-soft" id="step4" aria-labelledby="step4-title">
+    <div class="block">
+      <div class="block-head"><h2 id="step4-title">4. 答案をスキャンして取り込む</h2></div>
+      <figure class="stage-shot full"><video controls playsinline preload="none" poster="assets/videos/scan.jpg" src="assets/videos/scan.mp4" aria-label="操作の動画"></video></figure>
+      <div class="narrow-block flow-after">
+        
+        <ol class="steps">
         <li>答案を複合機で読み取り、PDFにします。クラス分をまとめて1つのPDFにして構いません。</li>
         <li>左の<span class="ui">「スキャンPDF」</span>に、PDFを選ぶかドラッグして入れます。複数のファイル・両面にも対応します。向きと表裏の順番は、QRコードで自動で整えます。</li>
         <li>残っているものがあると、<span class="ui">「取り込んだ答案」</span>の上に<span class="ui">「直すページ」</span>（誰の答案か分からない・位置合わせに失敗・重複）や<span class="ui">「答案がまだない用紙を見る」</span>、<span class="ui">「氏名を確認」</span>が出ます。押して確かめます。</li>
@@ -228,23 +198,18 @@
         <tr><th scope="row">保存の形式</th><td>PDF</td></tr>
         <tr><th scope="row">用紙サイズ</th><td>印刷したときと同じ</td></tr>
       </table>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s09-scan.webp"><img src="assets/img/s09-scan.webp" width="1440" height="1100" loading="lazy" alt="発行・取込のタブ。左に用紙の発行と、PDFを選ぶかドロップするスキャンPDFの欄、右に取り込んだ5人分の答案が並ぶ"></a>
-        <figcaption>発行・取込のタブ。左で発行し、右で取り込んだ答案を確かめます</figcaption>
-      </figure>
-      </div>
+        
       </div>
     </div>
   </section>
 
   <section class="section" id="step5" aria-labelledby="step5-title">
-    <div class="prose top">
-      <h2 id="step5-title">5. 採点する</h2><p class="note">Codex・Claude Codeと連携して記述をAI採点する場合は、<a href="ai-grading.html">AI採点の導入手順</a>をご覧ください。必要な環境と答案の外部送信条件を説明しています。<a href="ai-grading-demo.html">見本の実画面デモ</a>もあります。</p>
-      <div class="pair">
-      <div class="flow">
-      <h3>記号問題は自動で</h3>
+    <div class="block">
+      <div class="block-head"><h2 id="step5-title">5. 採点する</h2></div>
+      <figure class="stage-shot full"><video controls playsinline preload="none" poster="assets/videos/grade.jpg" src="assets/videos/grade.mp4" aria-label="操作の動画"></video></figure>
+      <div class="narrow-block flow-after">
+        <p class="note">Codex・Claude Codeと連携して記述をAI採点する場合は、<a href="ai-grading.html">AI採点の導入手順</a>をご覧ください。必要な環境と答案の外部送信条件を説明しています。<a href="ai-grading-demo.html">見本の実画面デモ</a>もあります。</p>
+        <h3>記号問題は自動で</h3>
       <p>取り込むと、記号問題は塗りの濃さで自動で採点されます。はっきり塗った答えはその選択肢、何も書いていない問題は無回答です。塗りが薄い・一部だけの答え、2つ塗った答え、消し跡などが濃く残った答え、丸やチェックなど塗りつぶしではない書き込みがある答えは決めずに<span class="ui">「要確認」</span>に回ります。先生が見て決めてください。</p>
       <h3>記述問題は1問ずつ</h3>
       <ol class="steps">
@@ -257,23 +222,18 @@
         <span class="note-label">正解を直すとき</span>
         <p>配った後で正解・配点の誤りに気づいたら、<span class="ui">「正解・配点を訂正」</span>で直します。すべての答案を採点し直し、手で付けた点はそのまま残します。</p>
       </div>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s10-grading.webp"><img src="assets/img/s10-grading.webp" width="1440" height="900" loading="lazy" alt="記述問題の採点画面。上に模範解答、中央に生徒の答案、下に満点・0点・部分点の3つのボタン、右に採点内容の一覧が出ている"></a>
-        <figcaption>1人ずつ採点。上に模範解答（登録したとき）、右に採点の一覧</figcaption>
-      </figure>
-      </div>
+        
       </div>
     </div>
   </section>
 
-  <section class="section" id="step6" aria-labelledby="step6-title">
-    <div class="prose top">
-      <h2 id="step6-title">6. 返す・残す</h2>
-      <div class="pair">
-      <div class="flow">
-      <ol class="steps">
+  <section class="section band-soft" id="step6" aria-labelledby="step6-title">
+    <div class="block">
+      <div class="block-head"><h2 id="step6-title">6. 返す・残す</h2></div>
+      <figure class="stage-shot full"><video controls playsinline preload="none" poster="assets/videos/export.jpg" src="assets/videos/export.mp4" aria-label="操作の動画"></video></figure>
+      <div class="narrow-block flow-after">
+        
+        <ol class="steps">
         <li><span class="ui">「出力・バックアップ」</span>のタブで、確認が残っていないか見ます。</li>
         <li><span class="ui">「返却ZIPを作成」</span>を押します。生徒ごとの採点済みPDFと、得点のCSV（Excel で開けます）が入ります。</li>
       </ol>
@@ -282,26 +242,23 @@
       </div>
       <h3>バックアップ</h3>
       <p><span class="ui">「全試験をバックアップ」</span>で、すべての試験を1つのファイル（<code>.scoring64</code>）に保存します。採点が終わるたびに取り、USBメモリなど別の場所にも置いてください。戻すときは<span class="ui">「バックアップから復元」</span>です。</p>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s11-export.webp"><img src="assets/img/s11-export.webp" width="1440" height="900" loading="lazy" alt="出力・バックアップのタブ。左に「返却ZIPを作成」、右に「全試験をバックアップ」と「バックアップから復元」のボタンがある"></a>
-        <figcaption>出力・バックアップのタブ</figcaption>
-      </figure>
-      </div>
+        
       </div>
     </div>
   </section>
 
-<section class="section" id="free-marks" aria-labelledby="free-marks-title"><div class="prose top">
-  <h2 id="free-marks-title">無料のマークシート読み取り・採点</h2>
-  <div class="pair"><div class="flow">
-  <p>最初の画面の<span class="ui">「マークシート読み取り」</span>を押します。毎月2テストまで全機能を無料で使えます。最初にテストを選ぶか、新しいテスト名を入力してください。同じテストの答案を追加するときは前と同じテストを選びます。答案はこのPCで処理します。</p>
+<section class="section" id="free-marks" aria-labelledby="free-marks-title">
+    <div class="block">
+      <div class="block-head"><h2 id="free-marks-title">無料のマークシート読み取り・採点</h2></div>
+      <figure class="stage-shot full"><img src="assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙の上で、10問分のマーク欄に赤い枠を合わせ、下に問題数・選択肢数・位置・間隔・大きさと、正答・配点を入れた欄が並ぶ"></figure>
+      <div class="narrow-block flow-after">
+        
+        <p>最初の画面の<span class="ui">「マークシート読み取り」</span>を押します。毎月2テストまで全機能を無料で使えます。最初にテストを選ぶか、新しいテスト名を入力してください。同じテストの答案を追加するときは前と同じテストを選びます。答案はこのPCで処理します。</p>
   <ol class="steps"><li>未記入の用紙（1ページのPDF）と答案PDF（100ページまで）を選びます。各PDFは20MB以内。同じページサイズ・向きにそろえてください。</li><li>用紙上で最初のマーク欄の左上をクリックし、問題数・選択肢数・横間隔・縦間隔・マーク欄の大きさを入力します。赤い枠をマーク欄に合わせます。等間隔のマーク欄に対応します。</li><li>「読み取る」を押します。選択肢は左から1、2、3…です。「複数マーク」「要確認」は答案と見比べてください。</li><li>正答と配点を問題順に入力して「読み取り・採点」を押すと、正誤・得点・ページごとの合計点を計算します。「結果CSV」で保存できます。要確認があるページも、読み取り候補で採点して合計点と要確認の問数を表示します（複数マークや候補のない問題は0点です）。要確認の答案は用紙と見比べ、合計点をそのまま確定した点にしないでください。記述採点・成績表・返却PDFの作成は、上の6つの手順で行います（毎月2テストの無料枠に含まれます）。</li></ol>
-  </div><div class="media">
-  <figure class="shot"><a class="zoom" href="assets/img/free-marks.png"><img src="assets/img/free-marks.png" width="1440" height="900" loading="lazy" alt="無料のマークシート読み取り画面。未記入の用紙の上で、10問分のマーク欄に赤い枠を合わせ、下に問題数・選択肢数・位置・間隔・大きさと、正答・配点を入れた欄が並ぶ"></a><figcaption>無料のマークシート読み取り</figcaption></figure>
-  </div></div>
-</div></section>
+        
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer shell"><div class="footer-top"><a class="brand" href="index.html"><img src="assets/logo.svg" width="28" height="28" alt=""><span>Scoring<span class="brand-accent">64</span></span></a><nav aria-label="サイトの案内"><a href="guide.html">使い方</a><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a><a href="terms.html">利用規約</a></nav></div><details class="footer-more"><summary>その他のガイド・ポリシー</summary><nav aria-label="その他のガイド・ポリシー"><a href="start.html">はじめかた</a><a href="ai-grading.html">AI採点の始め方</a><a href="ai-grading-demo.html">AI採点デモ</a><a href="videos.html">使い方の動画</a><a href="digital-scoring.html">デジタル採点システムとは</a><a href="marksheet.html">マークシートの無料採点</a><a href="compare.html">無料の採点ソフト比較</a><a href="pricing.html">料金と申し込み</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html#analytics">アクセス解析について</a></nav></details><div class="footer-bottom"><p>© 2026 株式会社Fermion</p><a href="mailto:contact@fermion.company">contact@fermion.company</a></div></footer>

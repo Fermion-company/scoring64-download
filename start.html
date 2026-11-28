@@ -25,10 +25,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"株式会社Fermion","alternateName":"Fermion Inc.","url":"https://fermion.company/","email":"contact@fermion.company"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/"},{"@type":"ListItem","position":2,"name":"はじめかた","item":"https://scoring64.fermion.company/start.html"}]}]}</script>
 <!-- seo:end -->
-<link rel="stylesheet" href="assets/site.css?v=20261128-1">
-<link rel="stylesheet" href="assets/brand.css?v=20261128-1">
-<link rel="stylesheet" href="assets/pages.css?v=20261128-1">
-<script defer src="assets/ui.js?v=20261128-1"></script>
+<link rel="stylesheet" href="assets/site.css?v=20261128-2">
+<link rel="stylesheet" href="assets/brand.css?v=20261128-2">
+<link rel="stylesheet" href="assets/pages.css?v=20261128-2">
+<script defer src="assets/ui.js?v=20261128-2"></script>
 <script defer src="assets/analytics.js"></script>
 </head>
 <body class="content-page">
@@ -49,36 +49,36 @@
   </header>
 
 <main id="main">
-  <div class="wrap narrow page-head">
+  <div class="wrap page-head">
     <h1>はじめかた</h1>
     <p class="lead">ダウンロードから見本で試すまでの手順です。</p>
-    <ul class="toc" aria-label="このページの内容">
-      <li><a href="#install">インストール（Windows）</a></li>
-      <li><a href="#install-mac">インストール（Mac）</a></li>
-      <li><a href="#first">初めて開く</a></li>
-      <li><a href="#key">月2テストの無料枠とキー</a></li>
-      <li><a href="#sample">見本で試す</a></li>
-      <li><a href="#data">データの保存先</a></li>
-      <li><a href="#uninstall">アンインストール</a></li>
-      <li><a href="#move">別のパソコンへ移す</a></li>
-    </ul>
+    <ul class="toc" aria-label="このページの内容"><li><a href="#install">インストール</a></li><li><a href="#first">初めて開く</a></li><li><a href="#sample">見本で試す</a></li><li><a href="#more">そのほかの手順</a></li></ul>
   </div>
 
   <section class="section" id="install" aria-labelledby="install-title">
-    <div class="prose top">
-      <h2 id="install-title">ダウンロードとインストール</h2>
-      <p>Windows 10／11（Intel・AMD、64ビット）、または macOS 14 以降の Apple Silicon（M1 以降）の Mac で使えます。Mac のときは<a href="#install-mac">Mac に入れる</a>へ進んでください。このPC版は Intel Mac・スマートフォン・タブレットでは動きません。<a href="#troubleshooting">ダウンロード・起動ができないとき</a>はこちらをご確認ください。</p>
-      <div class="flow">
-      <h3>Windows に入れる</h3>
-      <ol class="steps">
-        <li>下のボタンから、インストーラー（Scoring64-Setup.exe）をダウンロードします。<br>
-          <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">ダウンロード</a>
-          <span class="muted small nowrap">　Windows 10／11（64ビット）</span></li>
+    <div class="block">
+      <div class="block-head"><h2 id="install-title">ダウンロードとインストール</h2><p>Windows 10／11（Intel・AMD、64ビット）、または macOS 14 以降の Apple Silicon（M1 以降）の Mac で使えます。このPC版は Intel Mac・スマートフォン・タブレットでは動きません。</p></div>
+      <div class="duo">
+        <div class="card"><h3>Windows に入れる</h3><p class="os">Windows 10／11（64ビット）</p>
+        <ol class="steps">
+        <li>下のボタンから、インストーラー（Scoring64-Setup.exe）をダウンロードします。</li>
         <li>ダウンロードしたファイルを開き、画面に従って進めます。管理者の権限は要りません。</li>
       </ol>
-
-      <h3>Windows の警告が出たとき</h3>
-      <p>Windows のインストーラーはコード署名がないため、Edge や Windows が警告することがあります。上のボタンから取得したファイルでは、次の操作で進める場合があります。所属先の設定で禁止されている場合や、続行するボタンがない場合は、管理者または<a href="#troubleshooting">当社へご相談ください</a>。</p>
+        
+        <a class="btn btn-primary" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-Setup.exe">ダウンロード</a></div>
+        <div class="card" id="install-mac"><h3>Mac に入れる</h3><p class="os">Mac（Apple Silicon・M1 以降）、macOS 14 以降。Intel Mac 非対応。</p>
+        <ol class="steps">
+        <li>下のボタンから、Mac 版（Scoring64-mac-arm64.zip）をダウンロードします。</li>
+        <li>ダウンロードした zip を開くと、<span class="ui">「Scoring64.app」</span>ができます。これを<span class="ui">「アプリケーション」</span>フォルダに移します。</li>
+        <li><span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>を開きます。コピーする権限がない場合は、Mac の管理者へご相談ください。</li>
+      </ol>
+        
+        <a class="btn btn-primary" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">ダウンロード</a></div>
+      </div>
+    </div>
+    <div class="folds folds-after">
+      <details class="fold"><summary>Windows の警告が出たとき</summary><div class="fold-body">
+        <p>Windows のインストーラーはコード署名がないため、Edge や Windows が警告することがあります。上のボタンから取得したファイルでは、次の操作で進める場合があります。所属先の設定で禁止されている場合や、続行するボタンがない場合は、管理者または<a href="#troubleshooting">当社へご相談ください</a>。</p>
 
       <p><b>Edge に「一般的にダウンロードされていません」と出たら</b></p>
       <ol class="seq" aria-label="押す順番">
@@ -93,26 +93,15 @@
         <li><span class="key">詳細情報</span></li>
         <li><span class="key">実行</span></li>
       </ol>
-
-      </div>
-      <div class="flow">
-      <h3 id="install-mac">Mac に入れる</h3>
-      <ol class="steps">
-        <li>下のボタンから、Mac 版（Scoring64-mac-arm64.zip）をダウンロードします。<br>
-          <a class="btn btn-primary step-btn" href="https://github.com/Fermion-company/scoring64-download/releases/latest/download/Scoring64-mac-arm64.zip">ダウンロード</a>
-          <span class="muted small">Mac（Apple Silicon・M1 以降）、macOS 14 以降。Intel Mac 非対応。</span></li>
-        <li>ダウンロードした zip を開くと、<span class="ui">「Scoring64.app」</span>ができます。これを<span class="ui">「アプリケーション」</span>フォルダに移します。</li>
-        <li><span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>を開きます。コピーする権限がない場合は、Mac の管理者へご相談ください。</li>
-      </ol>
-
-      <h3 id="mac-update">以前の Mac ダウンロード版から更新する</h3>
-      <p>Windows・Mac 版 1.3.1 を公開しました。Mac の 1.2.0 以前からは一度だけ手動で更新してください（1.2.1 からは自動更新）。アプリで対応する更新情報が見つからないと表示されたら、<a href="https://github.com/Fermion-company/scoring64-download/releases/latest">最新版の公開ページ</a>をご確認ください。Apple Silicon・macOS 14 以降で、編集中の内容を保存し、試験のバックアップを取って Scoring64 を終了したあと、上の Mac 用 ZIP でアプリケーション内のアプリを置き換えます。Scoring64 のデータフォルダは消さないでください。</p>
+      </div></details>
+      <details class="fold" id="mac-update"><summary>以前の Mac ダウンロード版から更新する</summary><div class="fold-body">
+        <p>Windows・Mac 版 1.3.1 を公開しました。Mac の 1.2.0 以前からは一度だけ手動で更新してください（1.2.1 からは自動更新）。アプリで対応する更新情報が見つからないと表示されたら、<a href="https://github.com/Fermion-company/scoring64-download/releases/latest">最新版の公開ページ</a>をご確認ください。Apple Silicon・macOS 14 以降で、編集中の内容を保存し、試験のバックアップを取って Scoring64 を終了したあと、上の Mac 用 ZIP でアプリケーション内のアプリを置き換えます。Scoring64 のデータフォルダは消さないでください。</p>
       <p>1.2.1 以降は、更新ファイルを取得する前に必要な macOS のバージョンを確認します。OS が条件を満たさない場合は、現在のアプリをそのまま残します。</p>
 
       <p>macOS 13 以前には対応していません。現在のアプリやデータを削除せず、OS を更新できるか Mac の管理者へご相談ください。OS 更新前にデータをバックアップしてください。13 で使える旧版への戻し方とデータ互換性は検証していないため、ダウングレードはご案内していません。<a href="contact.html">個別にご相談ください</a>。</p>
-
-      <h3>Mac で開けないとき</h3>
-      <p>現在のダウンロード版は Developer ID 署名と Apple の公証を取得しています。古いファイルをお持ちの場合は、上のボタンから再ダウンロードし、アプリケーション内のアプリを置き換えてください。Scoring64 のデータフォルダは消さないでください。</p>
+      </div></details>
+      <details class="fold"><summary>Mac で開けないとき</summary><div class="fold-body">
+        <p>現在のダウンロード版は Developer ID 署名と Apple の公証を取得しています。古いファイルをお持ちの場合は、上のボタンから再ダウンロードし、アプリケーション内のアプリを置き換えてください。Scoring64 のデータフォルダは消さないでください。</p>
       <p>「壊れている」「開発元を確認できない」「この Mac では使えない」などと表示されたら、<span class="ui">Apple メニュー → この Mac について</span>で、Mシリーズのチップと macOS 14 以降であることを確認してください。条件を満たしても開けない場合は、<a href="#troubleshooting">表示された文面を当社へお知らせください</a>。Gatekeeper の無効化や隔離属性の削除は必要ありません。</p>
 
       <p><b>アプリの中で更新したあとに「キーチェーンへのアクセス」と出たら</b></p>
@@ -121,68 +110,37 @@
         <li><span class="key">常に許可</span></li>
       </ol>
       <p>更新のあとに一度だけ出ることがあります。ライセンスはそのまま使えます。</p>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="troubleshooting" aria-labelledby="troubleshooting-title">
-    <div class="prose top">
-      <h2 id="troubleshooting-title">ダウンロード・起動ができないとき</h2>
-      <ul>
+      </div></details>
+      <details class="fold" id="troubleshooting"><summary id="troubleshooting-title">ダウンロード・起動ができないとき</summary><div class="fold-body">
+        <ul>
         <li><b>ダウンロードが終わらない：</b>ブラウザのダウンロード一覧を確認してください。Windows は <code>Scoring64-Setup.exe</code>、Mac は <code>Scoring64-mac-arm64.zip</code> を使います。末尾が <code>.html</code> の保存したページはアプリではありません。<a href="https://github.com/Fermion-company/scoring64-download/releases/latest">リリースページ</a>の Assets にも同じファイルがあります。学校のネットワークで GitHub が制限されている場合は、管理者または当社へご相談ください。</li>
         <li><b>ファイルが開けない：</b>OS に合うファイルと上の動作条件を確認し、取得が終わってから開いてください。Windows はインストーラーを実行し、Mac は ZIP を展開します。Windows の警告については<a href="#install">インストール手順</a>をご確認ください。</li>
         <li><b>それでも起動しない：</b>OS とそのバージョン、取得したファイル名、エラーの文面または画面写真を <a href="mailto:contact@fermion.company?subject=Scoring64%20installation%20help">contact@fermion.company</a> へお送りください。Mac は「この Mac について」のチップ名もお知らせください。ダウンロード・インストール・起動のどこで止まるかも添えてください。</li>
       </ul>
       <p>Scoring64 の起動と見本の操作は、AIサービスやプラグインを設定する前に確認できます。AI連携はその後に設定します。</p>
+      </div></details>
     </div>
   </section>
 
-  <section class="section" id="first" aria-labelledby="first-title">
-    <div class="prose top">
-      <h2 id="first-title">初めて開く</h2>
-      <div class="pair">
-      <div class="flow">
-      <ol class="steps">
+  <section class="section band-soft" id="first" aria-labelledby="first-title">
+    <div class="block">
+      <div class="block-head"><h2 id="first-title">初めて開く</h2></div>
+      <figure class="stage-shot full"><img src="assets/img/s01-welcome.webp" width="1440" height="900" loading="lazy" alt="Scoring64 の最初の画面。上に「PDF・教材を開く」「バックアップから復元」のボタンが並び、中ほどに「見本で試す」と「最初の試験を作成」のボタンがある"></figure>
+      <div class="narrow-block flow-after">
+        <ol class="steps">
         <li>インストールが終わると、Scoring64 が開きます。次からは、スタートメニューかデスクトップの<span class="ui">「Scoring64」</span>から開きます。Mac では<span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64」</span>から開きます。</li>
         <li>Windows でも Mac でも、Scoring64 の専用のウィンドウが開きます。ブラウザは開きません。<b>初めての起動は30秒ほどかかる</b>ことがあります。Mac の初回は、macOS の安全性確認で数分かかる場合があります。</li>
       </ol>
-      <div class="note">
+        <div class="note">
         <p>採点や読み取りはインターネットにつながず、このパソコンの中だけで動きます。ウィンドウを閉じると、採点の処理も終わります。新しい版の確認と、アプリで用紙を作るための TeX の準備のときだけ、接続を使います。</p>
       </div>
-      </div>
-      <div class="media">
-      <figure class="shot wide">
-        <a class="zoom" href="assets/img/s01-welcome.webp"><img src="assets/img/s01-welcome.webp" width="1440" height="900" loading="lazy" alt="Scoring64 の最初の画面。上に「PDF・教材を開く」「バックアップから復元」のボタンが並び、中ほどに「見本で試す」と「最初の試験を作成」のボタンがある"></a>
-        <figcaption>最初の画面</figcaption>
-      </figure>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="sec-grid">
-  <section class="section" id="key" aria-labelledby="key-title">
-    <div class="prose">
-      <h2 id="key-title">月2テストの無料枠とキー</h2>
-      <p>毎月2テストまで、人数制限なしですべての機能を使えます。無料枠を使い切ると、新しいテストの採点だけを停止します。同じテストの続きの採点・訂正・出力、用紙作成、保存済みデータの閲覧・バックアップ・復元は引き続き使えます。無料枠は日本時間の毎月1日に更新します。</p>
-      <p>同じ月に3つ目の新しいテストを採点するときは、<a href="pricing.html">料金と申し込み</a>から申し込みます。右上の<span class="ui">「今月あと◯テスト無料」</span>または<span class="ui">「ライセンス」</span>を押し、<span class="ui">「このPCのコード」</span>欄をクリックして全文をコピーしてください。</p>
-      <p>塾名・教室名・選んだプラン・PCコードを、申込時と同じメールアドレスから <a href="mailto:contact@fermion.company?subject=Scoring64%20PC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8F%90%E5%87%BA">contact@fermion.company</a> へお送りください。請求書フォームの<span class="ui">「ご質問・ご要望」</span>欄にも記入できます。<a href="pricing.html#license">PCコードの提出方法</a>もご覧ください。PC専用のキー（<code>S64-1.</code> で始まる長い文字列）がメールで届いたら、次のように入れます。</p>
-      <ol class="steps">
-        <li>画面の右上の<span class="ui">「今月あと◯テスト無料」</span>を押します。</li>
-        <li>メールのキーを、そのまま全部コピーして貼り付けます。途中で改行されていてもかまいません。</li>
-        <li><span class="ui">「登録」</span>を押します。作った試験や採点は、そのまま続きから使えます。</li>
-      </ol>
-      <div class="note">
-        <p>右上の表示で今月の残りテスト数を確認できます。有料キーを登録するとテスト数も無制限で使えます。無料枠を使い切っても、作成済みの試験や採点データは消えません。</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="sample" aria-labelledby="sample-title">
-    <div class="prose">
-      <h2 id="sample-title">見本で試す</h2>
-      <p>アプリに入っている見本の試験で、ひととおり試せます。紙・スキャナー・キーは要りません。5分ほどです。</p>
+    <div class="block-head"><h2 id="sample-title">見本で試す</h2><p>アプリに入っている見本の試験で、ひととおり試せます。紙・スキャナー・キーは要りません。5分ほどです。</p></div>
+    <div class="narrow-block">
       <ol class="steps">
         <li><span class="ui">「見本で試す」</span>を押します。</li>
         <li>見本の答案を取り込みます。</li>
@@ -195,34 +153,37 @@
     </div>
   </section>
 
-  </div>
-
-  <div class="sec-grid" style="--cols: 3">
-  <section class="section" id="data" aria-labelledby="data-title">
-    <div class="prose">
-      <h2 id="data-title">データの保存先</h2>
-      <p>試験・答案の画像・成績は、このパソコンの次のフォルダに保存します。外部のサーバーには送りません。</p>
+  <section class="section band-soft" id="more" aria-labelledby="more-title">
+    <div class="block-head"><h2 id="more-title">そのほかの手順</h2></div>
+    <div class="folds">
+      <details class="fold" id="key"><summary id="key-title">月2テストの無料枠とキー</summary><div class="fold-body">
+        <p>毎月2テストまで、人数制限なしですべての機能を使えます。無料枠を使い切ると、新しいテストの採点だけを停止します。同じテストの続きの採点・訂正・出力、用紙作成、保存済みデータの閲覧・バックアップ・復元は引き続き使えます。無料枠は日本時間の毎月1日に更新します。</p>
+      <p>同じ月に3つ目の新しいテストを採点するときは、<a href="pricing.html">料金と申し込み</a>から申し込みます。右上の<span class="ui">「今月あと◯テスト無料」</span>または<span class="ui">「ライセンス」</span>を押し、<span class="ui">「このPCのコード」</span>欄をクリックして全文をコピーしてください。</p>
+      <p>塾名・教室名・選んだプラン・PCコードを、申込時と同じメールアドレスから <a href="mailto:contact@fermion.company?subject=Scoring64%20PC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8F%90%E5%87%BA">contact@fermion.company</a> へお送りください。請求書フォームの<span class="ui">「ご質問・ご要望」</span>欄にも記入できます。<a href="pricing.html#license">PCコードの提出方法</a>もご覧ください。PC専用のキー（<code>S64-1.</code> で始まる長い文字列）がメールで届いたら、次のように入れます。</p>
+      <ol class="steps">
+        <li>画面の右上の<span class="ui">「今月あと◯テスト無料」</span>を押します。</li>
+        <li>メールのキーを、そのまま全部コピーして貼り付けます。途中で改行されていてもかまいません。</li>
+        <li><span class="ui">「登録」</span>を押します。作った試験や採点は、そのまま続きから使えます。</li>
+      </ol>
+      <div class="note">
+        <p>右上の表示で今月の残りテスト数を確認できます。有料キーを登録するとテスト数も無制限で使えます。無料枠を使い切っても、作成済みの試験や採点データは消えません。</p>
+      </div>
+      </div></details>
+      <details class="fold" id="data"><summary id="data-title">データの保存先</summary><div class="fold-body">
+        <p>試験・答案の画像・成績は、このパソコンの次のフォルダに保存します。外部のサーバーには送りません。</p>
       <p><code>%LOCALAPPDATA%\Scoring64\data</code></p>
       <p>スタートメニューの<span class="ui">「Scoring64 のデータフォルダ」</span>から開けます。</p>
       <p>Mac では、次のフォルダに保存します。</p>
       <p><code>~/Library/Application Support/Scoring64</code></p>
       <p>Finder の<span class="ui">「移動」</span>→<span class="ui">「フォルダへ移動」</span>に、この場所を貼り付けると開けます。</p>
-    </div>
-  </section>
-
-  <section class="section" id="uninstall" aria-labelledby="uninstall-title">
-    <div class="prose">
-      <h2 id="uninstall-title">アンインストール</h2>
-      <p>スタートメニューの<span class="ui">「Scoring64 をアンインストール」</span>を開きます。Windows の「設定」→「アプリ」からも消せます。</p>
+      </div></details>
+      <details class="fold" id="uninstall"><summary id="uninstall-title">アンインストール</summary><div class="fold-body">
+        <p>スタートメニューの<span class="ui">「Scoring64 をアンインストール」</span>を開きます。Windows の「設定」→「アプリ」からも消せます。</p>
       <p>Mac では、<span class="ui">「アプリケーション」</span>フォルダの<span class="ui">「Scoring64.app」</span>をゴミ箱に入れます。データは <code>~/Library/Application Support/Scoring64</code> に残ります。</p>
       <p>アンインストールしても、データのフォルダは消えません。入れ直すと、そのまま続きから使えます。</p>
-    </div>
-  </section>
-
-  <section class="section" id="move" aria-labelledby="move-title">
-    <div class="prose">
-      <h2 id="move-title">別のパソコンへ移す</h2>
-      <ol class="steps">
+      </div></details>
+      <details class="fold" id="move"><summary id="move-title">別のパソコンへ移す</summary><div class="fold-body">
+        <ol class="steps">
         <li>今のパソコンで、<span class="ui">「出力・バックアップ」</span>のタブの<span class="ui">「全試験をバックアップ」</span>を押します。すべての試験が1つのファイル（<code>.scoring64</code>）になります。</li>
         <li>そのファイルを、USBメモリなどで新しいパソコンに移します。</li>
         <li>新しいパソコンに Scoring64 を入れ、新しいPCのコードを販売元に知らせ、そのPC専用のキーを登録します。</li>
@@ -231,9 +192,9 @@
       <div class="note">
         <p>有料版は1教室・1契約につき最大5台です。複数の教室でお使いの場合は、お見積もりします。<a href="contact.html">お問い合わせ</a>ください。PCの買い替え・OSの再インストールでPCコードが変わった場合も、販売元にお問い合わせください。</p>
       </div>
+      </div></details>
     </div>
   </section>
-  </div>
 </main>
 
 <footer class="footer shell"><div class="footer-top"><a class="brand" href="index.html"><img src="assets/logo.svg" width="28" height="28" alt=""><span>Scoring<span class="brand-accent">64</span></span></a><nav aria-label="サイトの案内"><a href="guide.html">使い方</a><a href="faq.html">よくある質問</a><a href="contact.html">お問い合わせ</a><a href="terms.html">利用規約</a></nav></div><details class="footer-more"><summary>その他のガイド・ポリシー</summary><nav aria-label="その他のガイド・ポリシー"><a href="start.html">はじめかた</a><a href="ai-grading.html">AI採点の始め方</a><a href="ai-grading-demo.html">AI採点デモ</a><a href="videos.html">使い方の動画</a><a href="digital-scoring.html">デジタル採点システムとは</a><a href="marksheet.html">マークシートの無料採点</a><a href="compare.html">無料の採点ソフト比較</a><a href="pricing.html">料金と申し込み</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html#analytics">アクセス解析について</a></nav></details><div class="footer-bottom"><p>© 2026 株式会社Fermion</p><a href="mailto:contact@fermion.company">contact@fermion.company</a></div></footer>

@@ -13,7 +13,7 @@
     fetch(src, { method: 'HEAD', cache: 'no-store' })
       .then(function (r) { if (r.ok) ready(); else missing(); }, missing);
     var poster = src.replace(/\.mp4$/, '.jpg');
-    if (video.getAttribute('poster') === poster) return;
+    if (video.getAttribute('poster')) return;
     fetch(poster, { method: 'HEAD', cache: 'no-store' }).then(function (r) {
       if (!r.ok) return;
       video.setAttribute('poster', poster);
