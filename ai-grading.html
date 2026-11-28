@@ -26,10 +26,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://scoring64.fermion.company/#org","name":"株式会社Fermion","url":"https://fermion.company/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Scoring64","item":"https://scoring64.fermion.company/"},{"@type":"ListItem","position":2,"name":"AI採点ツール Scoring64","item":"https://scoring64.fermion.company/ai-grading.html"}]},{"@type":"WebPage","@id":"https://scoring64.fermion.company/ai-grading.html","url":"https://scoring64.fermion.company/ai-grading.html","name":"AI採点ツール Scoring64｜手書き答案・PDFをCodex・Claudeと採点","description":"Scoring64をCodex・Claude Codeと連携して、手書き答案やPDFをAI採点する方法。本体は毎月2テストまで無料。必要環境、AIサービスの料金、部分点、答案データの扱い、見本デモを紹介。","inLanguage":"ja","dateModified":"2026-10-24","about":{"@id":"https://scoring64.fermion.company/#app"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Scoring64はAI採点ツールとして使えますか。","acceptedAnswer":{"@type":"Answer","text":"Windows／Macのダウンロード版を、同じPCで動くCodex・Claude Codeと採点プラグインに連携して使えます。AIが答案画像と正解・部分点基準を照合し、画面を操作して点数を保存します。本体にAIモデルは内蔵しておらず、最終確認は教員が行います。"}},{"@type":"Question","name":"AI採点を無料で試せますか。","acceptedAnswer":{"@type":"Answer","text":"Scoring64本体は毎月2テストまで全機能無料で、採点プラグインも無料です。AIサービスの利用料・利用上限は別です。利用中の契約でローカル操作ができるかを確認してください。無料の見本で操作を確認できます。"}},{"@type":"Question","name":"ブラウザ版ChatGPTだけで採点できますか。","acceptedAnswer":{"@type":"Answer","text":"この連携には同じPCのローカルコマンド実行とブラウザ操作が必要です。通常のブラウザ版ChatGPTにPDFを添付するだけではScoring64を操作できません。対応するCodexまたはClaude Codeの環境を用意してください。"}},{"@type":"Question","name":"答案が外部に送られますか。","acceptedAnswer":{"@type":"Answer","text":"通常の画面採点とマーク読取はPC内で処理します。AI連携時は、AIが読む答案画像や文字、採点基準が利用中のAIサービスに送られる場合があります。匿名化し、送信先の規約と所属先の方針を確認してください。"}},{"@type":"Question","name":"手書きや部分点にも対応しますか。","acceptedAnswer":{"@type":"Answer","text":"手書きの答案画像をAIが読み、指定された正解と部分点基準を照合します。判読できない字や基準が不足した答案は未採点として残すよう指示できます。全教科・全筆跡の精度を保証するものではなく、教員による見直しが必要です。"}}]}]}</script>
 <!-- seo:end -->
-<link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/brand.css?v=20261026-1">
-<link rel="stylesheet" href="assets/pages.css?v=20261024-1">
-<script defer src="assets/ui.js?v=20261024-1"></script>
+<link rel="stylesheet" href="assets/site.css?v=20261128-1">
+<link rel="stylesheet" href="assets/brand.css?v=20261128-1">
+<link rel="stylesheet" href="assets/pages.css?v=20261128-1">
+<script defer src="assets/ui.js?v=20261128-1"></script>
 <script defer src="assets/analytics.js"></script>
 </head>
 <body class="content-page">
@@ -50,12 +50,10 @@
   </header>
 <main id="main">
 <div class="wrap page-head ai-head has-preview">
-<p class="eyebrow">Scoring64 / AI grading</p>
 <h1>AI採点ツールとして使う<br>Scoring64</h1>
 <figure class="page-preview"><a href="ai-grading-demo.html"><img src="assets/ai/ai-grading-review.jpg" width="1470" height="780" fetchpriority="high" alt="Scoring64の実画面。架空の見本答案の満点・部分点・0点を確認している様子。"></a><figcaption>架空の見本答案を使った実画面。</figcaption></figure>
 <p class="lead">紙のテスト・手書き答案のPDFをCodex・Claude Codeと連携してAI採点。正解と部分点の基準を渡すと、AIが答案を読み、Scoring64の画面を操作して採点結果を保存します。教員が見直し、成績表と返却PDFまで作れます。</p>
 <div class="page-actions"><a class="btn btn-primary" href="#setup">AI採点を始める</a><a class="btn" href="ai-grading-demo.html">見本の実画面デモを見る</a></div>
-<p class="small muted">Windows／Macのダウンロード版向け。本体は毎月2テストまで無料。AIサービスの利用料・上限は別です。</p>
 <ul class="toc" aria-label="このページの内容"><li><a href="#how">できること</a></li><li><a href="#cost">無料の範囲</a></li><li><a href="#requirements">必要な環境</a></li><li><a href="#setup">導入手順</a></li><li><a href="#data">答案データ</a></li><li><a href="#questions">よくある質問</a></li></ul>
 </div><section class="section" id="how" aria-labelledby="how-title"><div class="prose top"><h2 id="how-title">記述のAI採点とマークの自動採点</h2>
 <p>Scoring64は、学習塾の紙のテストを扱うデジタル採点ソフトです。AI連携では、答案を読む役割をCodex・Claude Codeが担い、答案の管理・点数の保存・集計・返却はScoring64で行います。</p>

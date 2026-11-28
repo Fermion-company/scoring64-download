@@ -324,3 +324,98 @@ html{scroll-padding-top:calc(var(--header-height) + 16px)}
 @media(max-width:540px){.lang-switch~.mobile-menu{margin-left:0}}
 .download-section .release-note,.download-section .maker-note{max-width:760px;margin:28px auto 0;color:var(--muted);font-size:14px;line-height:1.7;text-align:center}
 .download-section .maker-note{margin-top:36px}
+
+/* ---------------------------------------------------------------
+ * Shared controls (2026-11). Two button kinds, one text link, one
+ * disclosure. Pressing sinks a button by its edge; hover and focus
+ * change the fill and border instead of drawing a ring.
+ * ------------------------------------------------------------- */
+:root{--edge-primary:#054e51;--edge-secondary:#91aeae;--wash:#eaf0ed}
+body{font-size:17px;line-height:1.75}
+a:focus-visible{outline:none;background:var(--wash);color:var(--teal);border-radius:4px}
+.brand{border-radius:8px;outline:none}
+.brand:focus-visible{background:var(--wash)}
+.button,.btn,.btn-download{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:52px;margin:0 0 3px;padding:12px 24px;
+  border:1px solid var(--edge-secondary);border-radius:8px;
+  background:var(--bg);color:var(--teal);
+  font:700 15px/1.4 "Hanken Grotesk","Noto Sans JP",sans-serif;letter-spacing:0;
+  text-align:center;text-decoration:none;
+  box-shadow:0 3px 0 var(--edge-secondary);
+  outline:none;cursor:pointer;
+  transition:transform 120ms var(--ease),box-shadow 120ms var(--ease),background-color 180ms var(--ease),border-color 180ms var(--ease),color 180ms var(--ease)
+}
+.button:hover,.btn:hover,.button:focus-visible,.btn:focus-visible{
+  background:var(--wash);border-color:var(--teal);color:var(--teal);box-shadow:0 3px 0 var(--teal);transform:none
+}
+.button.primary,.btn-primary,.btn-download{
+  background:var(--teal);border-color:var(--teal);color:#fff;box-shadow:0 3px 0 var(--edge-primary)
+}
+.button.primary:hover,.btn-primary:hover,.btn-download:hover,
+.button.primary:focus-visible,.btn-primary:focus-visible,.btn-download:focus-visible{
+  background:#055357;border-color:var(--edge-primary);color:#fff;box-shadow:0 3px 0 var(--edge-primary)
+}
+.button:active,.btn:active,.btn-download:active{transform:translateY(3px);box-shadow:0 0 0 transparent}
+
+/* Header: the compact size of the same primary button. */
+.header-download{
+  align-items:center;min-height:44px;margin-bottom:3px;padding:8px 18px;
+  border:1px solid var(--teal);border-radius:8px;font-size:14px;font-weight:700;
+  box-shadow:0 3px 0 var(--edge-primary);outline:none;
+  transition:transform 120ms var(--ease),box-shadow 120ms var(--ease),background-color 180ms var(--ease)
+}
+.header-download:hover,.header-download:focus-visible{background:#055357;border-color:var(--edge-primary);color:#fff}
+.header-download:active{transform:translateY(3px);box-shadow:0 0 0 transparent}
+@media(min-width:541px){.header-download{display:inline-flex}}
+.desktop-nav{font-size:15px}
+.desktop-nav a,.mobile-menu nav a,.footer a{outline:none;border-radius:6px}
+.desktop-nav a{padding:6px 8px;margin:-6px -8px}
+.desktop-nav a:focus-visible{background:var(--wash);color:var(--teal)}
+.lang-switch{
+  display:inline-flex;align-items:center;min-height:36px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;
+  background:transparent;font-size:14px;outline:none;transition:background-color 180ms var(--ease),border-color 180ms var(--ease),color 180ms var(--ease)
+}
+.lang-switch:hover,.header .lang-switch:focus-visible{background:var(--wash);border-color:var(--teal);color:var(--teal);outline:none}
+.lang-switch:active{background:var(--teal-tint)}
+
+/* Mobile menu: a plain panel of full-width rows. */
+.mobile-menu summary{border-radius:8px;outline:none;justify-content:center;align-items:center;transition:background-color 180ms var(--ease)}
+.mobile-menu summary:hover,.header .mobile-menu summary:focus-visible,.mobile-menu[open] summary{background:var(--wash);outline:none}
+.mobile-menu nav{padding:8px;box-shadow:0 15px 35px #15212516}
+.mobile-menu nav a{padding:12px 14px;font-size:16px;border-radius:6px}
+.mobile-menu nav a:hover,.mobile-menu nav a:focus-visible{background:var(--wash);color:var(--teal)}
+.mobile-menu nav a[aria-current="page"]{text-decoration:none;background:var(--soft)}
+
+/* Text links and the footer. */
+.header a:focus-visible,.header summary:focus-visible,.footer a:focus-visible,.footer summary:focus-visible,.skip-link:focus-visible{outline:none}
+.footer a:focus-visible{background:var(--wash);color:var(--teal)}
+.footer-top nav{font-size:14px}
+.footer-bottom,.footer-bottom a{font-size:14px}
+.footer-more{font-size:14px}
+
+/* Disclosure rows (footer and guide) share one marker. */
+.footer-more summary,details.more summary{
+  display:flex;align-items:center;gap:10px;list-style:none;cursor:pointer;outline:none;border-radius:6px
+}
+.footer-more summary::-webkit-details-marker,details.more summary::-webkit-details-marker{display:none}
+.footer-more summary::after,details.more summary::after{
+  content:"";flex:none;width:7px;height:7px;margin-top:-3px;
+  border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);
+  transition:transform 180ms var(--ease),margin 180ms var(--ease)
+}
+.footer-more[open] summary::after,details.more[open] summary::after{transform:rotate(225deg);margin-top:3px}
+.footer-more summary:hover,.footer .footer-more summary:focus-visible{color:var(--teal)}
+.footer .footer-more summary:focus-visible{background:var(--wash)}
+
+/* Sections rise into place as they scroll into view. Without support,
+ * or with reduced motion, they are simply shown. */
+@supports (animation-timeline: view()) {
+  .reveal{animation:reveal-fade linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+  @media (prefers-reduced-motion: no-preference){.reveal{animation-name:reveal-rise}}
+}
+@keyframes reveal-fade{from{opacity:0}to{opacity:1}}
+@keyframes reveal-rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+  .button,.btn,.header-download,.btn-download{transition:none}
+}

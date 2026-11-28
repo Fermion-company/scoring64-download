@@ -480,9 +480,7 @@ h2 {
   margin-bottom:12px
 }
 .download-platform .button {
-  width:100%;
-  font-size:14px;
-  gap:16px
+  width:100%
 }
 .download-platform>p {
   font-size:11px;
@@ -576,11 +574,6 @@ h2 {
     grid-template-columns:47% 53%;
     padding-top:60px;
     min-height:700px
-  }
-  .hero-actions .button {
-    font-size:12px;
-    padding-inline:13px;
-    gap:7px
   }
   .hero-actions {
     gap:8px
@@ -698,10 +691,6 @@ h2 {
   .hero-actions {
     justify-content:center
   }
-  .hero-actions .button {
-    font-size:14px;
-    padding-inline:23px
-  }
   .hero-terms {
     font-size:12px;
     margin-top:18px
@@ -762,11 +751,6 @@ h2 {
   .download-platform {
     padding-inline:24px
   }
-  .download-platform .button {
-    font-size:12px;
-    padding-inline:12px;
-    gap:8px
-  }
   .footer-top nav {
     gap:20px
   }
@@ -826,10 +810,6 @@ h2 {
     display:grid;
     grid-template-columns:1fr;
     gap:10px
-  }
-  .hero-actions .button {
-    font-size:14px;
-    min-height:52px
   }
   .hero-terms {
     font-size:11px;
@@ -1001,10 +981,6 @@ h2 {
     border-left:0;
     border-top:1px solid #c8d2cb;
     padding-top:24px
-  }
-  .download-platform .button {
-    font-size:14px;
-    min-height:54px
   }
   .os-label {
     font-size:9px;
@@ -1228,7 +1204,6 @@ html { scroll-padding-top:calc(var(--header-height) + 12px); }
   .hero .eyebrow { margin-bottom:14px; }
   .hero h1 { font-size:clamp(34px,5.9vw,42px); line-height:1.45; }
   .hero-lead { font-size:15px; line-height:1.85; margin-block:14px 18px; }
-  .hero-actions .button { min-height:48px; }
   .hero-terms { margin-top:14px; }
   .hero-product { padding:0; }
   .hero-bottom { display:none; }
@@ -1254,3 +1229,55 @@ html { scroll-padding-top:calc(var(--header-height) + 12px); }
 .footer-more nav a{width:fit-content;text-decoration:none}
 .footer-more nav a:hover{text-decoration:underline}
 @media(max-width:540px){.footer-more nav{grid-template-columns:1fr 1fr;gap:14px 20px}}
+
+/* ---------------------------------------------------------------
+ * 2026-11 refinement: readable text sizes, no decorative labels.
+ * ------------------------------------------------------------- */
+body{font-size:17px;line-height:1.75}
+a:focus-visible,summary:focus-visible{outline:none}
+.hero-copy h1{margin:0}
+.hero-lead{max-width:30em;margin:24px 0 32px;font-size:17px;line-height:1.75;color:var(--muted)}
+.hero-actions{gap:12px}
+.hero-product figcaption{margin-top:16px;font-size:14px;letter-spacing:0}
+.section-heading h2{margin:0}
+.step-copy h3{margin-top:0}
+.step-copy>p{max-width:24em;margin-top:18px;font-size:17px;line-height:1.75}
+.text-link{
+  display:inline-block;margin-top:24px;padding:2px 0;border-bottom:1px solid #91aeae;
+  color:var(--teal);font-size:15px;font-weight:600;text-decoration:none;outline:none;
+  transition:border-color 180ms var(--ease),background-color 180ms var(--ease)
+}
+.text-link:hover,.text-link:focus-visible{border-bottom-color:var(--teal);background:var(--wash);color:var(--teal)}
+.screen-link{display:block;border-radius:9px;outline:none;cursor:zoom-in}
+.screen-link:focus-visible img{border-color:var(--teal)}
+.screen-link:hover img{border-color:#91aeae}
+.inline-screen img{transition:border-color 180ms var(--ease)}
+.scrolly-ready .inline-screen img{max-height:100%}
+.scrolly-ready .inline-screen .screen-link{min-height:0;max-height:100%}
+.section-lead{max-width:26em;margin-top:24px;font-size:17px;line-height:1.75}
+.ai-disclosure{margin-top:0;font-size:17px;line-height:1.75;color:var(--ink)}
+.local-note{margin-top:20px;padding-left:0;border-left:0;font-size:17px;line-height:1.75;color:var(--muted)}
+.download-heading h2{margin:0}
+.download-heading>p:last-child{margin-top:16px;font-size:17px}
+.download-platform>p{margin-top:12px;font-size:14px;line-height:1.7}
+.download-foot{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px;margin-top:36px;font-size:15px}
+.download-foot a{color:var(--teal);text-decoration:none;border-bottom:1px solid #91aeae;padding:2px 0;outline:none}
+.download-foot a:hover,.download-foot a:focus-visible{border-bottom-color:var(--teal);background:var(--wash)}
+.download-section .release-note,.download-section .maker-note{font-size:15px}
+@media(max-width:900px){
+  .hero-lead{margin-inline:auto}
+  .step-copy>p{max-width:none}
+}
+@media(max-width:540px){
+  .hero-lead{margin:18px 0 24px;font-size:16px}
+  .hero-product figcaption{font-size:14px}
+  .step-copy>p,.scrolly-ready .step-copy>p{font-size:16px;line-height:1.75}
+  .section-lead,.ai-disclosure,.local-note{font-size:16px}
+  .download-heading>p:last-child{font-size:16px}
+  .download-platform>p{font-size:14px}
+  .download-foot{font-size:15px;gap:12px 24px}
+  .text-link,.scrolly-ready .text-link{font-size:15px}
+}
+@media(min-width:541px) and (max-width:900px) and (min-height:720px){
+  .hero-lead{font-size:16px;line-height:1.75}
+}

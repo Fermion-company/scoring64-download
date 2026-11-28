@@ -14,7 +14,6 @@
   });
   let stackEnabled = false;
   let framePending = false;
-  let revealObserver;
 
   function renderStack() {
     framePending = false;
@@ -55,23 +54,7 @@
     renderStack();
   }
 
-  function configureReveals() {
-    revealObserver?.disconnect();
-    root.classList.remove('motion-ready');
-    if (reduced.matches || !('IntersectionObserver' in window)) return;
-    revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      });
-    }, { rootMargin: '0px 0px -24px 0px', threshold: 0.05 });
-    document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
-    root.classList.add('motion-ready');
-  }
-
   configureStory();
-  configureReveals();
   spacious.addEventListener('change', configureStory);
   addEventListener('scroll', queueStackFrame, { passive: true });
   let resizeTimer;
@@ -79,7 +62,7 @@
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(configureStory, 120);
   });
-  reduced.addEventListener('change', () => { configureStory(); configureReveals(); });
+  reduced.addEventListener('change', configureStory);
   document.fonts.ready.then(configureStory);
 
   document.querySelector('.story').addEventListener('focusin', event => {

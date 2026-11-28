@@ -1,22 +1,21 @@
 /* Guide pages use the homepage palette, spacing and controls. */
-.content-page{background:var(--bg);font-family:"Hanken Grotesk","Noto Sans JP",sans-serif;line-height:1.85}
+.content-page{background:var(--bg);font-family:"Hanken Grotesk","Noto Sans JP",sans-serif;font-size:17px;line-height:1.75}
 .content-page main{padding-bottom:72px}
 .content-page h1,.content-page h2,.content-page h3{letter-spacing:-.04em;line-height:1.5}
 .content-page h1{font-size:clamp(30px,3.3vw,48px)}
 .content-page h2{font-size:clamp(24px,2.2vw,32px)}
 .content-page h3{font-size:19px}
-.content-page a:focus-visible{outline:3px solid var(--teal);outline-offset:5px}
+.content-page a:not(.btn):focus-visible{outline:none;background:var(--wash);color:var(--teal)}
 .page-head{display:block;padding-block:72px 52px}
 .page-head h1{margin-bottom:24px;max-width:24em}
-.page-head .eyebrow{font:600 11px/1.6 var(--sans);letter-spacing:.12em;color:var(--teal);margin-bottom:20px}
-.page-head .lead{font-size:16px;color:var(--muted);max-width:48em;line-height:2}
+.page-head .lead{font-size:18px;color:var(--muted);max-width:44em;line-height:1.75}
 .page-head>.small{max-width:52em}
 .page-head .page-intro{max-width:780px}
 .page-head .page-actions{align-items:center;gap:12px;margin-bottom:22px}
 .page-head .page-intro .page-actions{margin-top:24px}
 .page-head>.toc{display:flex;grid-column:auto;grid-row:auto;gap:8px 24px;margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
-.page-head>.toc a{display:inline-block;padding:6px 0;font-size:13px;border-radius:0;box-shadow:none;color:var(--muted);text-decoration:underline;text-underline-offset:5px}
-.page-head>.toc a:hover{background:none;box-shadow:none;color:var(--teal)}
+.page-head>.toc a{display:inline-block;padding:4px 0;font-size:15px;border-radius:0;box-shadow:none;color:var(--muted);text-decoration:underline;text-decoration-color:#91aeae;text-underline-offset:6px}
+.page-head>.toc a:hover,.page-head>.toc a:focus-visible{background:none;box-shadow:none;color:var(--teal);text-decoration-color:var(--teal)}
 .section{padding-block:64px}
 .prose.top{width:min(960px,100% - 2 * var(--gutter));margin-inline:auto;display:block}
 .prose.top>*{max-width:none}
@@ -27,10 +26,6 @@
 .prose>h2,.measure>h2,.pair>.media{top:calc(var(--header-height) + 24px)}
 .sec-grid{gap:0 40px}
 .sec-grid .section h2{font-size:26px}
-.btn,.btn-download{min-height:54px;padding:12px 20px;border:1px solid #91aeae;border-radius:7px;box-shadow:none;font:700 14px/1.5 var(--sans);color:var(--teal);background:transparent}
-.btn:hover{background:#eaf0ed;box-shadow:none;color:var(--teal)}
-.btn-primary,.btn-download{background:var(--teal);border-color:var(--teal);color:#fff}
-.btn-primary:hover,.btn-download:hover{background:#055357;border-color:#055357;color:#fff;box-shadow:none}
 .btn-download .label small{color:#d6e9e4}
 .route,.plan,.three li,.cards a,.specs>div{background:#fff;border:1px solid var(--line);border-radius:14px}
 .cards a:hover{background:var(--soft)}
@@ -38,15 +33,18 @@
 .note{background:var(--teal-wash);border-radius:10px}
 .shot,.shot img,.ai-preview img,.ai-video video{border-radius:10px}
 .table th,.table td{padding-block:18px}
-.table caption{text-align:left;font-size:13px;color:var(--muted);padding-bottom:12px}
+.table caption{text-align:left;font-size:14px;color:var(--muted);padding-bottom:12px}
 .ai-prompt{font-size:15px;line-height:1.95}
 .mail-card{background:#07575b;border-radius:14px;margin-bottom:24px}
 .mail-card .muted{color:#d1e2dd}
-.mail-card .btn{border-color:#a5c6c2;color:#fff;background:transparent}
-.mail-card .btn-primary{background:#fff;color:var(--teal)}
+.mail-card .btn{border-color:#a5c6c2;color:#fff;background:transparent;box-shadow:0 3px 0 #a5c6c2}
+.mail-card .btn:hover,.mail-card .btn:focus-visible{background:#055357;border-color:#fff;color:#fff;box-shadow:0 3px 0 #a5c6c2}
+.mail-card .btn-primary{background:#fff;border-color:#fff;color:var(--teal)}
+.mail-card .btn-primary:hover,.mail-card .btn-primary:focus-visible{background:#eaf0ed;border-color:#eaf0ed;color:var(--teal)}
+.mail-card .btn:active{box-shadow:0 0 0 transparent}
 .page-preview{margin:0;min-width:0}
 .page-preview img{width:100%;height:auto;border:7px solid #192325;border-radius:12px;box-shadow:0 18px 36px #15212513}
-.page-preview figcaption{font-size:12px;color:var(--muted);margin-top:14px}
+.page-preview figcaption{font-size:14px;color:var(--muted);margin-top:14px}
 .has-preview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);column-gap:56px;align-items:start}
 .has-preview>.eyebrow{grid-column:1;grid-row:1}
 .has-preview>h1{grid-column:1;grid-row:2;font-size:clamp(30px,3vw,43px)}
@@ -58,10 +56,9 @@
 .plans{gap:20px}
 .plan{padding:30px 28px;min-width:0}
 .plan:nth-child(2){border-color:#87aba4;background:#f0f5f1}
-.plan-name{font:600 11px/1.6 var(--sans);letter-spacing:.12em}
-.plan-name span{display:block;margin:8px 0 0;font-size:22px}
+.plan-name{font:700 22px/1.4 var(--sans);letter-spacing:0;color:var(--ink)}
 .price{font-size:clamp(36px,3.6vw,50px);margin-top:28px}
-.tax{font:400 12px/1.7 var(--sans);margin-bottom:24px}
+.tax{font:400 14px/1.7 var(--sans);margin-bottom:24px}
 .plan .desc{padding-top:22px;font-size:14px}
 .perk{font-size:12px;border-radius:5px;padding:6px 10px}
 .perk::before{content:none}
@@ -82,25 +79,43 @@
  .has-preview>h1{font-size:34px}
  .plans{grid-template-columns:1fr}
  .plan{padding:28px}
- .plan-name span{display:inline-block;margin:0 0 0 12px}
  .price{font-size:46px}
  .section{padding-block:48px}
 }
 @media(max-width:540px){
  .page-head{padding-block:36px 32px}
  .content-page h1,.has-preview>h1{font-size:28px}
- .page-head .eyebrow{font-size:10px;margin-bottom:16px}
  .page-head h1{margin-bottom:20px}
- .page-head .lead{font-size:15px}
+ .page-head .lead{font-size:17px}
  .page-head .page-actions{display:grid;grid-template-columns:1fr}
  .page-actions .btn{width:100%}
  .page-head>.toc{gap:6px 20px;margin-top:24px;padding-top:16px}
  .page-preview img{border-width:5px;border-radius:8px}
- .page-preview figcaption{font-size:11px;margin-top:10px}
+ .page-preview figcaption{font-size:14px;margin-top:10px}
  .section{padding-block:40px}
  .content-page main{padding-bottom:40px}
  .plan{padding:24px}
  .plan .desc{font-size:14px}
  .route{padding:22px}
  .ai-prompt{padding:18px;font-size:14px}
+}
+
+/* 2026-11 refinement: labels in plain text, one quiet frame per figure. */
+.note-label{display:block;font:700 16px/1.5 var(--sans);letter-spacing:0;color:var(--ink);margin-bottom:4px}
+.note-label::before{content:none}
+.caution .note-label{color:var(--ink)}
+.toc a{font-size:15px}
+.page-head>.toc{display:flex;flex-wrap:wrap}
+.shot img{box-shadow:0 0 0 1px var(--line)}
+.qa h3{display:block;font-size:18px}
+.qa h3::before{content:none}
+.qa .a{padding-left:0}
+details.more summary{padding:14px 18px;transition:background-color 180ms var(--ease)}
+details.more summary:hover,details.more summary:focus-visible{background:var(--soft);color:var(--teal)}
+details.more summary::after{margin-left:auto}
+.content-page main p a:not(.btn),.content-page main li a:not(.btn),.content-page main td a{text-decoration-color:#91aeae;text-underline-offset:4px}
+.content-page main p a:not(.btn):hover,.content-page main li a:not(.btn):hover,.content-page main td a:hover{color:var(--teal);text-decoration-color:var(--teal)}
+.page-actions .btn{margin-bottom:3px}
+@media(min-width:1080px){
+ .page-head>.toc a{display:inline-block;padding:4px 0;font-size:15px}
 }
