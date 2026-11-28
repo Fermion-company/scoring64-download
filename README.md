@@ -39,9 +39,7 @@
 
 株式会社Fermion　contact@fermion.company
 
-Copyright (c) 2026 Kosei Kawaguchi. All rights reserved.
-
-Scoring64 本体および独自に作成したプログラム、画面デザイン、文書の単独の著作者・著作権者は Kosei Kawaguchi です。株式会社Fermion は運営・販売・サポートを行います。リポジトリ、開発者アカウントまたは販売元の名義は、著作権の譲渡を意味しません。使用には適用される使用許諾契約への同意が必要です。詳細は [LICENSE](LICENSE) と [利用規約](https://scoring64.fermion.company/terms.html) を参照してください。第三者および別途ライセンスされた構成要素の著作権表示・ライセンスは維持されます。
+このソフトウェアの著作権は株式会社Fermionにあります。使用には、当社との使用許諾契約への同意が必要です。第三者および別途ライセンスされた構成要素の著作権表示・ライセンスは維持されます。詳細は [LICENSE](LICENSE) と [利用規約](https://scoring64.fermion.company/terms.html) を参照してください。
 
 ## 申込とキーの案内
 
